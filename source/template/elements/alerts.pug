@@ -1,0 +1,115 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'alerts'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Alerts]
+
+	// promo end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+			.row
+				.col-xl-10
+
+					.alert.alert--success.alert--filled
+						.alert__icon
+							+svg('check')
+						p.alert__text #[strong Well done!] You successfully read this important alert message
+						span.alert__close
+							+svg('close')
+					.alert.alert--attention.alert--filled
+						.alert__icon
+							+svg('warning')
+						p.alert__text #[strong Heads up!] This alert needs your attention, but it's not super important
+						span.alert__close
+							+svg('close')
+					.alert.alert--warning.alert--filled
+						.alert__icon
+							+svg('question')
+						p.alert__text #[strong Warning!] Better check yourself, you're not looking too good
+						span.alert__close
+							+svg('close')
+					.alert.alert--error.alert--filled
+						.alert__icon
+							+svg('close')
+						p.alert__text #[strong Oh snap!] Change a few things up and try submitting again
+						span.alert__close
+							+svg('close')
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+			.row
+				.col-xl-10
+
+					.alert.alert--success.alert--transparent
+						.alert__icon
+							+svg('check')
+						p.alert__text #[strong Well done!] You successfully read this important alert message
+						span.alert__close
+							+svg('close')
+					.alert.alert--attention.alert--transparent
+						.alert__icon
+							+svg('warning')
+						p.alert__text #[strong Heads up!] This alert needs your attention, but it's not super important
+						span.alert__close
+							+svg('close')
+					.alert.alert--warning.alert--transparent
+						.alert__icon
+							+svg('question')
+						p.alert__text #[strong Warning!] Better check yourself, you're not looking too good
+						span.alert__close
+							+svg('close')
+					.alert.alert--error.alert--transparent
+						.alert__icon
+							+svg('close')
+						p.alert__text #[strong Oh snap!] Change a few things up and try submitting again
+						span.alert__close
+							+svg('close')
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

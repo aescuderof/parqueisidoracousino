@@ -1,0 +1,70 @@
+/* pricing style-1 start */
+
+.pricing-item--style-1
+	overflow: hidden
+	margin-bottom: 50px
+
+.pricing-item--style-1
+	.pricing-item__top,
+	.pricing-item__lower
+		background: #F4F6F7
+	.pricing-item__icon
+		color: #565B6E
+		display: inline-block
+		height: 140px
+		width: 140px
+		background: #FFF
+		border-radius: 50%
+		font-size: 80px
+		line-height: 140px
+		margin-bottom: 25px
+	.pricing-item__top
+		padding: 30px 0 15px 0
+		position: relative
+	.pricing-item__top::before,
+	.pricing-item__top::after
+		content: ""
+		display: block
+		height: 30px
+		width: 30px
+		background: #FFF
+		position: absolute
+		bottom: -15px
+		transform: rotate(-45deg)
+	.pricing-item__top::before
+		left: -15px
+	.pricing-item__top::after
+		right: -15px
+	.pricing-item__lower
+		padding: 25px 0
+		border-top: 1px dashed #FFF
+	.pricing-item__subject
+		color: #333333
+		font-size: 16px
+		font-weight: 700
+	.pricing-item__price span
+		display: inline-block
+		vertical-align: middle
+	.pricing-item__price span:first-of-type
+		color: #777
+		margin-right: 5px
+	.pricing-item__price span:nth-of-type(2)
+		color: $orange
+		font-size: 30px
+		font-family: $quicksand
+		font-weight: 700
+		text-transform: uppercase
+
+.pricing-item--white
+	.pricing-item__top,
+	.pricing-item__lower
+		background: #FFF
+	.pricing-item__top::before,
+	.pricing-item__top::after
+		background: #F3F4F5
+	.pricing-item__lower
+		border-top: 1px dashed #F3F4F5
+	.pricing-item__icon
+		background: #F3F4F5
+
+/* pricing style-1 end */

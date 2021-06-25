@@ -1,0 +1,227 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'events'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/events.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/events.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Special] #[span Events]
+
+	// promo end
+
+	// cta start
+
+	.cta-block
+
+		.container
+			.row.align-items-center
+				.col-lg-8
+
+					p.cta-block__text #[strong Have a WILD time at the Zoo’s special events – planned just for you!]
+
+				.col-lg-4.text-left.text-lg-right
+
+					a.cta-block__button(href="calendar.html") Calendar
+
+	// cta end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-margin
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 11
+								span Nov
+							img.img--bg(src="img/events_1.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Veterans Day
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 20
+								span Apr
+							img.img--bg(src="img/events_2.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Easter Eggstravaganza
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 11
+								span Apr
+							img.img--bg(src="img/events_3.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Party for the Planet
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 5
+								span May
+							img.img--bg(src="img/events_4.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Cinco de Mayo celebration
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 12
+								span May
+							img.img--bg(src="img/events_5.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Mother’s Day
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 16
+								span Jun
+							img.img--bg(src="img/events_6.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Father’s Day Car Show
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 02
+								span Jul
+							img.img--bg(src="img/events_7.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Twilight Tuesday
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 04
+								span Jul
+							img.img--bg(src="img/events_8.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Farms Festivals
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 03
+								span Aug
+							img.img--bg(src="img/events_9.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Back to School Bash
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 07
+								span Sep
+							img.img--bg(src="img/events_10.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Zoobilee
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 15
+								span Sep
+							img.img--bg(src="img/events_11.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Breakfast With the Birds
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-xl-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 09
+								span Oct
+							img.img--bg(src="img/events_12.jpg", alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Chimps & Salsa Mexican Food
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+			.row.top-70
+
+				.col-12
+
+					ul.pagination.events__pagination
+						li.pagination__item.pagination__item--prev
+							+fa('angle-left')
+							span Back
+						li.pagination__item
+							span 1
+						li.pagination__item.pagination__item--active
+							span 2
+						li.pagination__item
+							span 3
+						li.pagination__item
+							span 4
+						li.pagination__item
+							span 5
+						li.pagination__item.pagination__item--next
+							span Next
+							+fa('angle-right')
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

@@ -1,0 +1,132 @@
+/* team start */
+
+.team-item
+	margin-bottom: 50px
+
+.team-item
+	&__name
+		font-size: 18px
+		font-weight: 700
+		font-family: $quicksand
+		transition: color .3s
+	&__position
+		color: #777
+		margin: 13px 0
+	&__socials
+		display: inline-flex
+		padding: 0
+		margin: 0
+		list-style: none
+	&__socials li a
+		font-size: 18px
+		transition: color .3s
+	&__socials li a:hover
+		color: $orange
+	&__socials li:not(:last-of-type)
+		margin-right: 20px
+	.link--facebook
+		color: #1C388C
+	.link--twitter
+		color: #1C90F3
+	.link--youtube
+		color: #E11717
+
+/* team item style-1 */
+
+.team-item--style-1
+	.team-item__img
+		position: relative
+		overflow: hidden
+		margin-bottom: 23px
+		filter: grayscale(1)
+		transition: filter .3s
+	.team-item__img::before
+		content: ""
+		display: block
+		padding-top: percentage(270/270)
+
+.team-item--style-1:hover
+	.team-item__img
+		filter: grayscale(0)
+
+/* team item style-2 */
+
+.team-item--style-2
+	.team-item__img
+		position: relative
+		overflow: hidden
+		background: rgba(0,0,0, 0.4)
+		transition: background .3s
+	.team-item__img::before
+		content: ""
+		display: block
+		padding-top: percentage(400/270)
+	.team-item__socials,
+	.team-item__description
+		position: absolute
+	.team-item__socials
+		background: #1D252B
+		top: 20px
+		left: 0
+		padding: 5px 20px
+		transform: translateX(-100px)
+		opacity: 0
+		transition: all .3s
+	.team-item__socials a
+		color: #FFF
+	.team-item__socials .link--facebook:hover
+		color: #1C388C
+	.team-item__socials .link--twitter:hover
+		color: #1C90F3
+	.team-item__socials .link--youtube:hover
+		color: #E11717
+	.team-item__description
+		padding: 30px
+		bottom: 0
+		left: 0
+	.team-item__name
+		color: #FFF
+	.team-item__position
+		color: #FFF
+		opacity: 0.6
+		margin: 8px 0 0 0
+
+.team-item--style-2:hover
+	.team-item__name
+		color: $orange
+	.team-item__img
+		background: rgba(0,0,0, 0.6)
+	.team-item__socials
+		opacity: 1
+		transform: translateX(0)
+
+/* team item style-3 */
+
+.team-item--style-3
+	.team-item__img
+		position: relative
+		overflow: hidden
+		border-radius: 50%
+		filter: grayscale(1)
+		margin-bottom: 20px
+		transition: filter .3s
+
+	+r992
+
+		.team-item__img
+			margin-bottom: 0
+
+	.team-item__img::before
+		content: ""
+		display: block
+		padding-top: percentage(170/170)
+	.team-item__position
+		margin-top: 0
+
+.team-item--style-3:hover
+	.team-item__img
+		filter: grayscale(0)
+	.team-item__name
+		color: $orange
+
+/* team end */

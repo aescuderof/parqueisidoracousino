@@ -1,0 +1,37 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = '404'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// section start
+
+	section.error.section.no-padding-top.no-padding-bottom
+		img.img--bg(src="img/404.jpg", alt="img")
+		.align-container
+			.align-container__item
+				.container
+					.row
+
+						.col-lg-6.offset-lg-6.col-xl-5.offset-xl-7.text-center
+
+							.error__title 404
+							.error__subtitle Page not found
+							.error__text Sorry, that page never returned from a trip to the Africa. So you better come back home
+							a.button.button--filled(href="index.html") Home
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

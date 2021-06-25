@@ -1,0 +1,236 @@
+// checkout start
+
+form.form.checkout-form(action="javascript:void(0);")
+	.row
+
+		.col-lg-7.col-xl-8
+
+			.checkout__wrapper
+
+				.form__fieldset
+
+					h6.form__title Personal Information
+
+					.row.offset-30
+
+						.col-md-6
+
+							input.form__field(type="text" name="first-name" placeholder="First Name")
+
+						.col-md-6
+
+							input.form__field(type="text" name="last-name" placeholder="Last Name")
+
+						.col-md-6
+
+							input.form__field(type="tel" name="phone-number" placeholder="Phone")
+
+						.col-md-6
+
+							input.form__field(type="email" name="email" placeholder="Email")
+
+				.form__fieldset
+
+					h6.form__title Payment Method
+
+					.row.offset-30
+
+						.col-12
+
+							.form__payments
+
+								label.form__radio-label
+									img.form__label-img(src="img/paypal.png" alt="paypal")
+									input.form__input-radio(type="radio" name="method-select" value="paypal")
+									span.form__radio-mask.form__radio-mask
+
+								label.form__radio-label
+									img.form__label-img(src="img/klarna.png" alt="klarna")
+									input.form__input-radio(type="radio" name="method-select" value="klarna")
+									span.form__radio-mask.form__radio-mask
+
+								label.form__radio-label
+									img.form__label-img(src="img/visa.png" alt="visa")
+									input.form__input-radio(type="radio" name="method-select" value="visa" checked)
+									span.form__radio-mask.form__radio-mask
+
+						.col-md-6
+
+							input.form__field(type="text" name="first-name" placeholder="First Name")
+
+						.col-md-6
+
+							input.form__field(type="text" name="last-name" placeholder="Last Name")
+
+						.col-12
+
+							.row
+
+								.col-xl-6
+
+									input.form__field(type="number" name="card-number" placeholder="Card Number")
+
+								.col-xl-6
+
+									.row
+
+										.col-md-4
+
+											select.form__select(name="month-select")
+												option(value="value") MM
+												option(value="value2") Value 2
+												option(value="value3") Value 3
+												option(value="value3") Value 4
+												option(value="value3") Value 5
+
+										.col-md-4
+
+											select.form__select(name="year-select")
+												option(value="value") YY
+												option(value="value2") Value 2
+												option(value="value3") Value 3
+												option(value="value3") Value 4
+												option(value="value3") Value 5
+
+
+										.col-md-4
+
+											input.form__field(type="text" name="cvv" placeholder="CVV")
+
+				.form__fieldset.no-margin-bottom
+
+					h6.form__title Shipping Information
+
+					.row.offset-30
+
+						.col-12
+
+							input.form__field(type="text" name="adress" placeholder="Adress Line 1")
+
+						.col-md-6
+
+							select.form__select(name="state-select")
+								option(value="value") State
+								option(value="value2") Value 2
+								option(value="value3") Value 3
+
+						.col-md-6
+
+							select.form__select(name="country-select")
+								option(value="value") Country
+								option(value="value2") Value 2
+								option(value="value3") Value 3
+
+						.col-md-6
+
+							input.form__field(type="text" name="city" placeholder="City")
+
+						.col-md-6
+
+							input.form__field(type="text" name="zip" placeholder="Zip")
+
+						.col-12
+
+							select.form__select(name="shipping-select")
+								option(value="value") Choose shipping method
+								option(value="value2") Value 2
+								option(value="value3") Value 3
+
+						.col-12
+
+							textarea.form__field.form__message(name="message" placeholder="Comment")
+
+		.col-lg-5.col-xl-4
+
+			.checkout__wrapper
+
+				.form__fieldset
+
+					h6.form__title Order Summary
+
+					.order-item
+						.row.no-gutters.align-items-center
+
+							.col-4.col-sm-3.col-md-2.col-lg-4
+
+								.order-item__img
+									img.img--contain(src="img/shop_7.png" alt="img")
+
+							.col-7.col-sm-8.col-md-9.col-lg-7
+
+								.order-item__description
+									a.order-item__link(href="shop-product.html") Mama Lama Cup
+									.order-item__count 
+										span 15.99 USD 
+										span x3
+
+							.col-1.text-right
+
+								span.order-item__remove
+
+									+svg('remove')
+
+					.order-item
+						.row.no-gutters.align-items-center
+
+							.col-4.col-sm-3.col-md-2.col-lg-4
+
+								.order-item__img
+									img.img--contain(src="img/shop_8.png" alt="img")
+
+							.col-7.col-sm-8.col-md-9.col-lg-7
+
+								.order-item__description
+									a.order-item__link(href="shop-product.html") Lion Water Bottle
+									.order-item__count 
+										span 25.99 USD 
+										span x1
+
+							.col-1.text-right
+
+								span.order-item__remove
+
+									+svg('remove')
+
+					.order-item
+						.row.no-gutters.align-items-center
+
+							.col-4.col-sm-3.col-md-2.col-lg-4
+
+								.order-item__img
+									img.img--contain(src="img/shop_9.png" alt="img")
+
+							.col-7.col-sm-8.col-md-9.col-lg-7
+
+								.order-item__description
+									a.order-item__link(href="shop-product.html") Zoo T-Shirt
+									.order-item__count 
+										span 35.99 USD 
+										span x2
+
+							.col-1.text-right
+
+								span.order-item__remove
+
+									+svg('remove')
+
+				.form__fieldset.no-margin-bottom
+
+					.cart-totals
+
+						h6.form__title Cart Total
+
+						ul.cart-totals__list
+							li
+								span Subtotal:
+								span 146 USD
+							li
+								span Sale:
+								span 16 USD
+							li
+								span Total:
+								span 130 USD
+
+						button.form__submit(type="submit") Checkout
+
+// checkout end

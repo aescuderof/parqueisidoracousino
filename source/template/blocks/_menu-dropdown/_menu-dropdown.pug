@@ -1,0 +1,174 @@
+// menu dropdown start
+
+.menu-dropdown
+
+	.menu-dropdown__inner(data-value="start")
+
+		.screen.screen--start
+			.screen__item.screen--trigger(data-category="home" class=(type === "front" ? "item--active" : undefined))
+				span Home
+				span #[+svg('chevron')]
+			.screen__item.screen--trigger(data-category="pages" class=(dest === "pages" ? "item--active" : undefined))
+				span Pages
+				span #[+svg('chevron')]
+			.screen__item(class=(page === "blog" ? "item--active" : undefined))
+				a.screen__link(href="blog.html") Blog
+			.screen__item.screen--trigger(data-category="shop" class=(dest === "shop" ? "item--active" : undefined))
+				span Shop
+				span #[+svg('chevron')]
+			.screen__item(class=(page === "contacts" ? "item--active" : undefined))
+				a.screen__link(href="contacts.html") Contacts
+			.screen__item.screen--trigger(data-category="elements" class=(dest === "elements" ? "item--active" : undefined))
+				span Elements
+				span #[+svg('chevron')]
+			.screen__item.screen--trigger(data-category="language")
+				span Language
+				span #[+svg('chevron')]
+
+			ul.screen__socials
+				li
+					a.item--facebook(href="#") #[+fa('facebook')]
+				li
+					a.item--twitter(href="#") #[+fa('twitter')]
+				li
+					a.item--youtube(href="#") #[+fa('youtube-play')]
+				li
+					a.item--instagram(href="#") #[+fa('instagram')]
+
+			a.screen__button(href="#") Tickets
+
+	.menu-dropdown__inner(data-value="home")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Home]
+			.screen__item(class=(page === "index" ? "item--active" : undefined))
+				a.screen__link(href="index.html") Home Zoo
+			.screen__item(class=(page === "front_2" ? "item--active" : undefined))
+				a.screen__link(href="front_2.html") Home Aquarium
+			.screen__item(class=(page === "front_3" ? "item--active" : undefined))
+				a.screen__link(href="front_3.html") Home Terrarium
+			.screen__item(class=(page === "front_4" ? "item--active" : undefined))
+				a.screen__link(href="front_4.html") Home Protections
+			.screen__item(class=(page === "front_5" ? "item--active" : undefined))
+				a.screen__link(href="front_5.html") Home Safari
+			.screen__item(class=(page === "front_6" ? "item--active" : undefined))
+				a.screen__link(href="front_6.html") Home Shop
+
+	.menu-dropdown__inner(data-value="pages")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Pages]
+			.screen__item(class=(page === "about" ? "item--active" : undefined))
+				a.screen__link(href="about.html") About
+			.screen__item(class=(page === "services" ? "item--active" : undefined))
+				a.screen__link(href="services.html") Services
+			.screen__item(class=(page === "blog-details" ? "item--active" : undefined))
+				a.screen__link(href="blog-details.html") Blog Details
+			.screen__item(class=(page === "gallery" ? "item--active" : undefined))
+				a.screen__link(href="gallery.html") Gallery
+			.screen__item(class=(page === "gallery_2" ? "item--active" : undefined))
+				a.screen__link(href="gallery_2.html") Gallery v.2
+			.screen__item(class=(page === "calendar" ? "item--active" : undefined))
+				a.screen__link(href="calendar.html") Calendar
+			.screen__item(class=(page === "membership" ? "item--active" : undefined))
+				a.screen__link(href="membership.html") Membership
+			.screen__item(class=(page === "events" ? "item--active" : undefined))
+				a.screen__link(href="events.html") Events
+			.screen__item(class=(page === "event-details" ? "item--active" : undefined))
+				a.screen__link(href="event-details.html") Event Details
+			.screen__item(class=(page === "tickets" ? "item--active" : undefined))
+				a.screen__link(href="tickets.html") Tickets
+			.screen__item(class=(page === "foundation" ? "item--active" : undefined))
+				a.screen__link(href="foundation.html") Foundation
+			.screen__item(class=(page === "education" ? "item--active" : undefined))
+				a.screen__link(href="education.html") Education
+			.screen__item(class=(page === "donation" ? "item--active" : undefined))
+				a.screen__link(href="donation.html") Donation
+			.screen__item(class=(page === "donation-details" ? "item--active" : undefined))
+				a.screen__link(href="donation-details.html") Donation Details
+			.screen__item(class=(page === "animals" ? "item--active" : undefined))
+				a.screen__link(href="animals.html") Animals
+			.screen__item(class=(page === "animal-details" ? "item--active" : undefined))
+				a.screen__link(href="animal-details.html") Animal Details
+			.screen__item(class=(page === "safari-tours" ? "item--active" : undefined))
+				a.screen__link(href="safari-tours.html") Safari Tours
+			.screen__item(class=(page === "tour-details" ? "item--active" : undefined))
+				a.screen__link(href="tour-details.html") Tour Details
+			.screen__item(class=(page === "typography" ? "item--active" : undefined))
+				a.screen__link(href="typography.html") Typography
+			.screen__item(class=(page === "faq" ? "item--active" : undefined))
+				a.screen__link(href="faq.html") Faq
+			.screen__item(class=(page === "map" ? "item--active" : undefined))
+				a.screen__link(href="map.html") Map
+			.screen__item(class=(page === "404" ? "item--active" : undefined))
+				a.screen__link(href="404.html") 404
+
+	.menu-dropdown__inner(data-value="shop")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Shop]
+			.screen__item(class=(page === "catalog" ? "item--active" : undefined))
+				a.screen__link(href="shop-catalog.html") Shop Catalog
+			.screen__item(class=(page === "single" ? "item--active" : undefined))
+				a.screen__link(href="shop-product.html") Shop Product
+			.screen__item(class=(page === "cart" ? "item--active" : undefined))
+				a.screen__link(href="shop-cart.html") Shop Cart
+			.screen__item(class=(page === "checkout" ? "item--active" : undefined))
+				a.screen__link(href="shop-checkout.html") Shop Checkout
+			.screen__item(class=(page === "account" ? "item--active" : undefined))
+				a.screen__link(href="shop-account.html") Shop Account
+
+	.menu-dropdown__inner(data-value="elements")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Elements]
+			.screen__item(class=(page === "accordion" ? "item--active" : undefined))
+				a.screen__link(href="accordion.html") Accordion
+			.screen__item(class=(page === "alerts" ? "item--active" : undefined))
+				a.screen__link(href="alerts.html") Alerts
+			.screen__item(class=(page === "breadcrumbs" ? "item--active" : undefined))
+				a.screen__link(href="breadcrumbs.html") Breadcrumbs
+			.screen__item(class=(page === "buttons" ? "item--active" : undefined))
+				a.screen__link(href="buttons.html") Buttons
+			.screen__item(class=(page === "charts" ? "item--active" : undefined))
+				a.screen__link(href="charts.html") Charts
+			.screen__item(class=(page === "counters" ? "item--active" : undefined))
+				a.screen__link(href="counters.html") Counters
+			.screen__item(class=(page === "forms" ? "item--active" : undefined))
+				a.screen__link(href="forms.html") Forms
+			.screen__item(class=(page === "icon-list" ? "item--active" : undefined))
+				a.screen__link(href="icon-list.html") Icon List
+			.screen__item(class=(page === "logos" ? "item--active" : undefined))
+				a.screen__link(href="logos.html") Logos
+			.screen__item(class=(page === "paginations" ? "item--active" : undefined))
+				a.screen__link(href="paginations.html") Paginations
+			.screen__item(class=(page === "pricing-tables" ? "item--active" : undefined))
+				a.screen__link(href="pricing-tables.html") Pricing Tables
+			.screen__item(class=(page === "tabs" ? "item--active" : undefined))
+				a.screen__link(href="tabs.html") Tabs
+			.screen__item(class=(page === "team" ? "item--active" : undefined))
+				a.screen__link(href="team.html") Tean
+			.screen__item(class=(page === "testimonials" ? "item--active" : undefined))
+				a.screen__link(href="testimonials.html") Testimonials
+
+	.menu-dropdown__inner(data-value="language")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Language]
+			.screen__item
+				a.screen__link(href="javascript:void(0);") English
+			.screen__item
+				a.screen__link(href="javascript:void(0);") French
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Spanish
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Deutsch
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Russian
+
+// menu dropdown end

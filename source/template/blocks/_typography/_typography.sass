@@ -1,0 +1,282 @@
+/* typography start */
+
+*::selection
+	color: #333333
+	background-color: $orange
+
+h1, h2, h3, h4, h5, h6
+	color: #333333
+	font-family: $quicksand
+	font-weight: 700
+
+h1, h2, h3, h4
+	letter-spacing: -0.050em
+
+h5, h6
+	letter-spacing: 0
+
+h1
+	font-size: 70px
+
+h2
+	font-size: 50px
+
+h3
+	font-size: 40px
+
+h4
+	font-size: 30px
+
+h5
+	font-size: 25px
+
+h6
+	font-size: 18px
+
+a
+	color: $orange
+
+p
+	color: #555
+
+mark
+	background: #FDD340
+
+a:hover
+	color: $orange
+	text-decoration: none
+
+.link--green:hover
+	color: $green
+
+/* text filled */
+
+.text-filled
+	color: #333
+	font-size: 18px
+	font-weight: 700
+	background-color: $orange
+	padding: 15px 20px
+
++r768
+
+	.text-filled
+		padding: 30px 40px 34px 40px
+
++r992
+
+	.text-filled
+		font-size: 20px
+		padding: 61px 70px 65px 70px
+
+/* custom list */
+
+.unordered-list,
+.ordered-list
+	padding: 0
+	margin: 0
+
+.unordered-list
+	li
+		position: relative
+		list-style: none
+		padding-left: 25px
+	li::before
+		content: ""
+		display: inline-block
+		height: 6px
+		width: 6px
+		background-color: $orange
+		position: absolute
+		top: 9px
+		left: 0
+	li:not(:last-of-type)
+		margin-bottom: 10px
+
+.ordered-list
+	li
+		counter-increment: list
+		list-style-type: none
+		position: relative
+		padding-left: 25px
+	li::before
+		content: counter(list) "."
+		color: $orange
+		font-weight: 700
+		position: absolute
+		top: 0
+		left: 0
+	li:not(:last-of-type)
+		margin-bottom: 10px
+
+/* blockquote */
+
+.blockquote
+	padding: 0
+	position: relative
+
+.blockquote
+	&__text
+		font-size: 18px
+		font-style: italic
+		font-weight: 500
+		padding-left: 20px
+		border-left: 5px solid $orange
+
+	+r768
+
+		&__text
+			font-size: 20px
+			padding-left: 40px
+
+/* dropcap */
+
+.dropcap
+	&__text:last-of-type
+		margin-bottom: 0
+	&__text::first-letter
+		color: $orange
+		float: left
+		font-size: 50px
+		font-weight: 700
+		margin: 7px 15px 0 15px
+
+/* column text */
+
+.two-columns
+	column-count: 1
+
++r576
+
+	.two-columns
+		column-count: 2
+
+.three-columns
+	column-count: 1
+
++r576
+
+	.three-columns
+		column-count: 2
+
++r992
+	
+	.three-columns
+		column-count: 3
+
+.four-columns
+	column-count: 1
+
++r576
+
+	.four-columns
+		column-count: 2
+
++r992
+	
+	.four-columns
+		column-count: 3
+
++r1200
+
+	.four-columns
+		column-count: 4
+
+
++r1200
+	
+	section.typography
+		padding: 120px 0
+
+.typography
+	.ordered-list
+		margin-top: 50px
+
+	+r768
+
+		.ordered-list
+			margin-top: 0
+
+/* cta block */
+
+.cta-block
+	position: relative
+	background: $orange
+	padding: 50px 0
+
++r992
+
+	.cta-block
+		padding: 65px 0
+
+.cta-block
+	&__title
+		text-transform: uppercase
+	&__title span
+		font-weight: 300
+	.img--bg
+		z-index: 0
+	&__text
+		color: #333
+		margin-bottom: 0
+	&__text:not(:last-of-type)
+		margin-bottom: 20px
+	&__button
+		display: inline-block
+		color: inherit
+		font-weight: 700
+		background: #FFF
+		padding: 18px 55px
+		margin-top: 30px
+		transition: all .3s
+
+	+r992
+
+		&__button
+			margin-top: 0
+
+	&__button:hover
+		color: #FFF
+		background: #282F34
+
+/* cta form */
+
+.cta-form
+	display: flex
+	flex-direction: column
+	align-items: baseline
+	margin-top: 30px
+
++r576
+
+	.cta-form
+		flex-direction: row
+
++r992
+
+	.cta-form
+		margin-top: 0
+
+.cta-form
+	.form__field
+		margin: 0 0 30px 0
+		background: transparent
+		border: 2px solid #333
+
+	+r576
+
+		.form__field
+			margin: 0 30px 0 0
+
+	.form__field::placeholder
+		color: #333
+	.form__submit
+		border: none
+		background: #333
+		color: #FFF
+		padding: 18px 50px
+	.form__submit:hover
+		background: #FFF
+		color: #333
+
+/* typography end */

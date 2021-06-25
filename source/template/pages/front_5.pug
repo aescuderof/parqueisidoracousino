@@ -1,0 +1,584 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'front_5'
+
+	-var type = 'front'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo.promo--front-5
+
+		.promo-slider
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/front_5-promo-1.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/front_5-promo-1.jpg', alt='img')
+				.container
+					.row
+						.col-xl-10.offset-xl-1
+							.align-container
+								.align-container__item.text-center
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span Incredible]#[br]#[span Safari Adventures]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Roughy longnose dace plownose chimaera pineconefish, hawkfish pike conger; cownose ray flagtail barbelless catfish tripod fish silver driftfish. Southern sandfish yellowmargin trigg
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary Discover
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/front_5-promo-2.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/front_5-promo-2.jpg', alt='img')
+				.container
+					.row
+						.col-xl-6.offset-xl-6
+							.align-container
+								.align-container__item
+									//- .promo-slider__wrapper-1
+									//- 	h2.promo-slider__title #[span AnimalWorld]#[br] #[span Biggest Cats]
+									//- .promo-slider__wrapper-2
+									//- 	p.promo-slider__subtitle Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing
+									//- .promo-slider__wrapper-3
+									//- 	a(href="#").button.promo-slider__button.button--primary Discover
+
+			.promo-slider__item.promo-slider__item--style-3
+				picture
+					source(srcset='img/front_5-promo-3.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/front_5-promo-3.jpg', alt='img')
+				.container
+					.row
+						.col-xl-8.offset-xl-2
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span Meet our]#[br]#[span awesome safari]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary Discover
+
+		.container
+			.row
+				.col-12
+
+					// slider nav start
+
+					.promo-slider__nav
+
+					// slider nav end
+
+		// promo pannel start
+
+		.promo-pannel
+
+			a.video-trigger(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk")
+				img.img--bg(src="img/video-block_2.jpg", alt="image")
+				span.video-trigger__icon
+					span Live Cam
+					+fa('play')
+
+			.promo-pannel__weather
+				span Kenya - Today, November 20
+				.weather-lower #[+svg('wind')] #[span Cold Wind | -14 °]
+
+		// promo pannel end
+
+	// promo end
+
+	// section start
+
+	section.section.about-safari
+
+		img.about-safari__left(src="img/about-safari_left.png", alt="img")
+		img.about-safari__right(src="img/about-safari_right.png", alt="img")
+
+		.container
+			.row.bottom-70
+
+				.col-lg-4
+
+					.heading.heading--style-2.bottom-30
+						span.heading__pre-title About safari
+						h2.heading__title.no-margin-bottom #[span Awesome] #[span safari]
+
+					a.button.button--primary.d-none.d-lg-inline-block(href="#") Read more
+
+				.col-lg-8
+
+					p #[strong Fathead sculpin long-whiskered catfish river stingray mako shark silver carp: scaleless black dragonfish." Humuhumunukunukuapua'a North Pacific daggertooth northern sea robin gurnard yellow]
+					p.no-margin-bottom Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish. Ghost pipefish yellow bass New Zealand sand diver eulachon brook lamprey driftfish, Atlantic trout.
+
+			.row
+
+				.col-12
+
+					.about-safari__img
+						img.img--bg(src="img/about-safari_img.png", alt="img")
+
+			.row.top-50.d-flex.d-lg-none
+
+				.col-12.text-center
+
+					a.button.button--primary(href="#") Read more
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title safari tour
+						h2.heading__title.no-margin-bottom #[span Discover your] #[span way]
+
+			.row
+
+				.col-md-6.col-lg-4.bottom-30
+
+					.tours-item
+						.tours-item__img
+							img.img--bg(src="img/tour_1.jpg", alt="img")
+						.tours-item__details
+							h4.tours-item__title Find an #[br] #[span cool safari]
+							.tours-item__price 125.99 USD
+							.tours-item__edition Limited Edition
+							a.tours-item__link(href="#") Read more
+
+				.col-md-6.col-lg-4.bottom-30
+
+					.tours-item
+						.tours-item__img
+							img.img--bg(src="img/tour_2.jpg", alt="img")
+						.tours-item__details
+							h4.tours-item__title meet rare #[br] #[span animals]
+							.tours-item__price 225.99 USD
+							.tours-item__edition Standart Edition
+							a.tours-item__link(href="#") Read more
+
+				.col-md-6.col-lg-4
+
+					.tours-item
+						.tours-item__img
+							img.img--bg(src="img/tour_3.jpg", alt="img")
+						.tours-item__details
+							h4.tours-item__title get memories #[br] #[span for life]
+							.tours-item__price 555.99 USD
+							.tours-item__edition Premium Edition
+							a.tours-item__link(href="#") Read more
+
+			.row.top-50
+
+				.col-12.text-center
+
+					a.button.button--primary(href="#") View all tours
+
+	// section end
+
+	// section start
+
+	section.section.animals-section
+
+		img.animals-section__left(src="img/animals-section_left.png", alt="img")
+		img.animals-section__right(src="img/animals-section_right.png", alt="img")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Animals
+						h2.heading__title.no-margin-bottom #[span Animals you] #[span will meet]
+
+			.row.offset-30
+
+				.col-6.col-sm-4.col-md-3.col-xl-2.bottom-30
+
+					.amimal.text-center
+						.animal__img
+							img(src="img/tigers.png", alt="img")
+						h6.animal__title Tigers
+
+				.col-6.col-sm-4.col-md-3.col-xl-2.bottom-30
+
+					.amimal.text-center
+						.animal__img
+							img(src="img/girafes.png", alt="img")
+						h6.animal__title Girafes
+
+				.col-6.col-sm-4.col-md-3.col-xl-2.bottom-30
+
+					.amimal.text-center
+						.animal__img
+							img(src="img/orangutans.png", alt="img")
+						h6.animal__title Orangutans
+
+				.col-6.col-sm-4.col-md-3.col-xl-2.bottom-30
+
+					.amimal.text-center
+						.animal__img
+							img(src="img/zebras.png", alt="img")
+						h6.animal__title Zebras
+
+				.col-6.col-sm-4.col-md-3.col-xl-2.bottom-30
+
+					.amimal.text-center
+						.animal__img
+							img(src="img/elephants.png", alt="img")
+						h6.animal__title Elephants
+
+				.col-6.col-sm-4.col-md-3.col-xl-2.bottom-30
+
+					.amimal.text-center
+						.animal__img
+							img(src="img/lions.png", alt="img")
+						h6.animal__title Lions
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top
+		.container
+			.row.bottom-50.align-items-end
+
+				.col-md-8
+
+					.heading.heading--style-2
+						span.heading__pre-title Destination
+						h2.heading__title.no-margin-bottom #[span your adventure] #[span begins here]
+
+				.col-md-4
+
+					.destination-slider__dots.text-left.text-md-right
+
+		.slider-holder
+			.slider-holder__wrapper
+
+				.destination-slider
+
+					.destination-slider__item
+
+						.destination-item
+							img.img--bg(src="img/destination_1.jpg", alt="img")
+							.destination-item__count
+								span 01
+							.destination-item__details
+								h6.destination-item__title Bostwana
+								a.destination-item__link(href="#") Learn Adventure
+
+					.destination-slider__item
+
+						.destination-item
+							img.img--bg(src="img/destination_2.jpg", alt="img")
+							.destination-item__count
+								span 02
+							.destination-item__details
+								h6.destination-item__title Kenya
+								a.destination-item__link(href="#") Learn Adventure
+
+					.destination-slider__item
+
+						.destination-item
+							img.img--bg(src="img/destination_3.jpg", alt="img")
+							.destination-item__count
+								span 03
+							.destination-item__details
+								h6.destination-item__title South Africa
+								a.destination-item__link(href="#") Learn Adventure
+
+					.destination-slider__item
+
+						.destination-item
+							img.img--bg(src="img/destination_4.jpg", alt="img")
+							.destination-item__count
+								span 04
+							.destination-item__details
+								h6.destination-item__title Uganda
+								a.destination-item__link(href="#") Learn Adventure
+
+					.destination-slider__item
+
+						.destination-item
+							img.img--bg(src="img/destination_5.jpg", alt="img")
+							.destination-item__count
+								span 05
+							.destination-item__details
+								h6.destination-item__title Tanzania
+								a.destination-item__link(href="#") Learn Adventure
+
+					.destination-slider__item
+
+						.destination-item
+							img.img--bg(src="img/destination_1.jpg", alt="img")
+							.destination-item__count
+								span 06
+							.destination-item__details
+								h6.destination-item__title Bostwana
+								a.destination-item__link(href="#") Learn Adventure
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.map-banner
+			img.img--bg(src="img/cta_bg.jpg" alt="img")
+			.container
+				.row
+
+					.col-lg-6
+
+						.align-container
+							.align-container__item
+
+								.heading.heading--primary
+									h2.heading__title.no-margin-bottom #[span Map of Animals world] #[span Zoo]
+
+								a.button.button--primary(href="#") See map
+
+	// section end
+
+	// section start
+
+	section.section
+
+		.testimonials.testimonials--style-1
+			.container
+				.row
+
+					.col-lg-3.d-none.d-lg-block
+
+						.testimonials__img
+							img.img--bg(src="img/man.jpg", alt="img")
+
+					.col-lg-9
+
+						.row
+
+							.col-md-7
+
+								.heading.heading--primary
+									span.heading__pre-title Testimonials
+									h2.heading__title #[span What People#[br] Says] #[span About Us]
+							
+							.col-md-5
+
+								.testimonials--style-1__dots.text-md-right
+
+						.row
+
+							.col-12
+
+								.testimonials-slider.testimonials-slider--style-1
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+	// section end
+
+	// instagram start
+
+	section.section.instagram.instagram--front-5
+
+		img.instagram__img(src="img/instagram_img.png", alt="img")
+
+		.container
+			.row.align-items-end.bottom-30
+
+				.col-7.col-lg-8
+
+					.heading.heading--primary
+						h2.heading__title.no-margin-bottom #[span #Safariadventures]
+
+				.col-5.col-lg-4.text-right
+
+					span.instagram__icon #[+fa('instagram')]
+
+		.instagram-slider
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_1.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_2.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_3.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_4.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_5.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_6.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/ig_4.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+	// instagram end
+
+block footer
+
+	// footer start
+
+	footer.footer.footer--front_5
+		img.footer__bg.img--bg(src="img/footer-bg.png" alt="bg")
+		.container
+			.row
+
+				.col-lg-4.d-none.d-lg-block
+
+					h6.footer__title Menu & Links
+
+					ul.footer-menu
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Home
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Membership 
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Pages
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Education
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Animals
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Support
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Schedule
+						li.footer-menu__item
+							a.footer-menu__link(href="#") Events
+
+					ul.footer-submenu
+						li.footer-submenu__item
+							a.footer-submenu__link(href="#") Documents
+						li.footer-submenu__item
+							a.footer-submenu__link(href="#") Association of Zoo
+						li.footer-submenu__item
+							a.footer-submenu__link(href="#") Aqurium
+						li.footer-submenu__item
+							a.footer-submenu__link(href="#") Terrarium
+
+				.col-sm-6.col-lg-4
+
+					h6.footer__title USA Office
+
+
+					.footer__details.bottom-30
+
+						p #[strong Location:] #[span av. Washington 165, NY CA 54003]
+						p #[strong Phone:] #[a(href="tel:+31859644725") +31 85 964 47 25] #[a(href="tel:+31859644725") +31 65 792 63 11]
+						p #[strong Email:] #[a(href="mailto:info@animalsworld.com") info@animalsworld.com]
+						p #[strong Openning hours:] #[span 9:00 AM - 5:00 PM]
+
+				.col-sm-6.col-lg-4.bottom-30
+
+					h6.footer__title Africa Office
+
+					.footer__details
+
+						p #[strong Location:] #[span Mpumalanga, Belfast, 400  Oost St]
+						p #[strong Phone:] #[a(href="tel:+31859644725") 083 846 0522] #[a(href="tel:+31859644725") 083 543 0322]
+						p #[strong Email:] #[a(href="mailto:info@animalsworld.com") infoafrica@animalsworld.com]
+						p #[strong Openning hours:] #[span 9:00 AM - 5:00 PM]
+
+			.row.align-items-end
+
+				.col-md-6.text-center.text-md-left
+
+					ul.socials
+						li.socials__item
+							a.socials__link(href="#") #[+fa('facebook')]
+						li.socials__item
+							a.socials__link(href="#") #[+fa('twitter')]
+						li.socials__item
+							a.socials__link(href="#") #[+fa('youtube-play')]
+						li.socials__item
+							a.socials__link(href="#") #[+fa('instagram')]
+
+					ul.footer__additional
+						li
+							a(href="#") Contact Information
+						li
+							a(href="#") Site Map
+						li
+							a(href="#") Privacy Policy
+
+
+				.col-md-6.text-center.text-md-right
+
+					a.logo.logo--footer(href="index.html")
+						img.logo__img(src="img/logo_zoo_white.png" alt="logo")
+
+					.footer-privacy
+						span © 2020 Wild World
+						span.footer-privacy__divider |
+						a.footer-privacy__link(href="#") Term and Condision
+
+	// footer end

@@ -1,0 +1,119 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'accordion'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Accordion]
+
+	// promo end
+
+	// section start
+
+	section.section.elements.no-padding-bottom
+
+		.container
+			.row
+
+				.col-xl-8
+
+					h4.elements__title Variant 1
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h6.accordion__title SAFE: Saving Animals From Extinction
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h6.accordion__title Mobile App of Animal World Zoo
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h6.accordion__title Free Wi-Fi with Hi Speed
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h6.accordion__title Restaraunts & Fast Foods
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+	// section end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+
+				.col-xl-8
+
+					h4.elements__title Variant 2
+
+					.accordion.accordion--bordered
+						.accordion__title-block
+							h6.accordion__title Mobile App of Animal World Zoo
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.accordion.accordion--bordered
+						.accordion__title-block
+							h6.accordion__title Free Wi-Fi with Hi Speed
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.accordion.accordion--bordered
+						.accordion__title-block
+							h6.accordion__title SAFE: Saving Animals From Extinction
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.accordion.accordion--bordered
+						.accordion__title-block
+							h6.accordion__title Restaraunts & Fast Foods
+							span.accordion__close
+						.accordion__text-block
+							p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

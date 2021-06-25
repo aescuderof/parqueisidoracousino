@@ -1,0 +1,239 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'logos'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Logos]
+
+	// promo end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+			.row
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-1.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-2.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-3.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-4.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-5.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-6.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-7.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-8.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-9.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-10.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-11.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item
+						img.logo-item__img(src="img/logo-12.png", alt="logo")
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+			.row
+
+				.col-12
+
+					.logos-slider
+
+						.logos-slider__item
+							img(src="img/logo-1.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-2.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-3.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-4.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-5.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-6.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-7.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-8.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-9.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-10.png", alt="logo")
+						
+						.logos-slider__item
+							img(src="img/logo-11.png", alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo-12.png", alt="logo")
+
+					.logos-slider__dots
+			
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 3
+
+			.row
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-1.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-2.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-3.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-4.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-5.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-6.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-7.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-8.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-9.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-10.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-11.png", alt="logo")
+
+				.col-6.col-sm-4.col-lg-3
+
+					.logo-item.logo-item--style-2
+						img.logo-item__img(src="img/logo-12.png", alt="logo")
+
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

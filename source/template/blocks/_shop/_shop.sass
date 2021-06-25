@@ -1,0 +1,477 @@
+/* shop start */
+
+section.shop
+	position: static
+
+.shop
+	&__pagination
+		justify-content: center
+		margin-top: 40px
+	.shop-filter
+		margin-bottom: 10px
+	.range-slider
+		margin-top: -10px
+	.recent-posts
+		margin-top: 30px
+
+/* shop aside */
+
+.aside-holder
+	position: fixed
+	top: 0
+	left: 0
+	transform: translateX(-320px)
+	width: 100%
+	height: 100%
+	max-width: 320px
+	overflow-y: scroll
+	z-index: 10
+	transition: all .3s
+	opacity: 0
+	visibility: hidden
+
++r992
+
+	.aside-holder
+		position: static
+		max-width: none	
+		overflow: auto
+		z-index: 0
+		opacity: 1
+		visibility: visible
+		transform: translateX(0)
+
+.aside-holder--visible
+	opacity: 1
+	visibility: visible
+	transform: translateX(0)
+
+.aside-holder
+	.recent-posts
+		display: none
+
+	+r992
+
+		.recent-posts
+			display: block
+
+.shop-aside
+	padding: 72px 30px 52px 30px
+	background: #FFF
+	box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.04)
+
++r992
+
+	.shop-aside
+		padding: 0
+		margin-bottom: 60px
+		box-shadow: none
+
+.shop-aside
+	&__filter-block &__title
+		margin-bottom: 20px
+	&__price-block
+		margin-top: 47px
+	&__option-block
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin-top: 52px
+	&__option-block label:not(:last-of-type)
+		margin-bottom: 8px
+	&__option-block &__title
+		margin-bottom: 23px
+	&__color-block
+		margin-top: 52px
+	&__color-block &__title
+		margin-bottom: 24px
+	&__color-block-inner
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__tags-block
+		margin-top: 49px
+	&__tags-block &__title
+		margin-bottom: 25px
+	&__buttons-block
+		margin-top: 50px
+		display: flex
+		justify-content: space-between
+	&__checkbox-block
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin-top: 54px
+	&__checkbox-block &__title
+		margin-bottom: 23px
+	&__checkbox-block label:not(:last-of-type)
+		margin-bottom: 8px
+
+/* brand filter */
+
+.brand-filter
+	padding: 0
+	margin: 0
+	list-style: none
+
+.brand-filter
+	&__item
+		cursor: pointer
+		display: flex
+		align-items: center
+		transition: color .3s
+	&__item:not(:last-of-type)
+		margin-bottom: 9px
+	&__item span:first-of-type
+		width: 85%
+	&__item span:first-of-type::after
+		content: ""
+		display: block
+		width: 0px
+		height: 2px
+		background: $orange
+		position: absolute
+		bottom: 0
+		left: 0px
+		transition: width .3s
+	&__item span
+		position: relative
+		display: inline-flex
+		align-items: baseline
+	&__item span .icon
+		font-size: 25px
+		margin-right: 20px
+	&__item--active
+		pointer-events: none
+	&__item--active span
+		font-weight: 700
+	&__item:hover span:first-of-type::after,
+	&__item--active span:first-of-type::after
+		width: 50px
+
+/* range slider */
+
+.range-slider
+	.irs-from,
+	.irs-to,
+	.irs-min,
+	.irs-max,
+	.irs-single
+		display: none
+	.irs-handle
+		height: 18px
+		width: 18px
+		top: 29px
+		border: 2px solid #E1E1E1
+		box-shadow: none
+		background: $orange
+		cursor: pointer
+	.irs-handle:hover
+		background: $orange
+	.irs-handle::after
+		content: ""
+		display: block
+		height: 8px
+		width: 8px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background: #FFF
+		border-radius: 50%
+	.irs-bar,
+	.irs-line
+		background: #E1E1E1
+	&__values
+		display: flex
+		justify-content: space-between
+		margin-top: 10px
+	&__input
+		height: 50px
+		width: 90px
+		border: 2px solid #E1E1E1
+		text-align: center
+		color: #999
+		font-size: 14px
+		font-weight: 700
+
+	+r1200
+
+		&__input
+			width: 120px
+
+/* filter form */
+
+.filter-form
+	font-size: 14px
+
+.filter-form
+	.form__clear
+		display: inline-block
+		cursor: pointer
+		color: #333
+		font-weight: 700
+		width: 120px
+		padding: 16px 30px
+		text-align: center
+		transition: opacity .3s
+
+	+r1200
+		
+		.form__clear
+			margin-top: 0
+
+	.form__clear:hover
+		color: #333
+		opacity: 0.7
+	.form__submit
+		padding: 16px 30px
+		width: 120px
+		text-align: center
+
+/* shop item */
+
+.shop-item
+	background: #F8F8F8
+	margin-bottom: 30px
+
+.shop-item
+	&__img
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		overflow: hidden
+	.img--contain
+		max-height: 60%
+		max-width: 60%
+		z-index: 0
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(220/270)
+	&__badge
+		display: inline-block
+		color: #FFF
+		font-size: 12px
+		text-transform: uppercase
+		font-weight: 700
+		padding: 3px 14px 5px 14px
+		position: absolute
+		top: 0px
+		left: 0px
+		z-index: 1
+	.shop-item__badge--sale
+		background: #E44134
+	.shop-item__badge--new
+		background: #56C2B1
+	.shop-item__badge--hot
+		background: #FDD340
+		color: #333
+	&__add
+		display: inline-flex
+		align-items: center
+		color: #333
+		font-size: 14px
+		font-weight: 700
+		padding: 16px 30px
+		text-decoration: none
+		text-transform: uppercase
+		background: $orange
+		z-index: 1
+		transform: translateY(30px)
+		opacity: 0
+		transition: all .3s
+	&__add:hover
+		color: #FFF
+		background: #333
+	&__add .icon
+		font-size: 20px
+		margin-right: 10px
+	&__details
+		min-height: 105px
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		padding: 0 20px 20px 20px
+	&__name
+		font-size: 16px
+		margin-bottom: 6px
+	&__name a
+		color: #333
+		text-decoration: none
+		transition: opacity .3s
+	&__name a:hover
+		color: #333
+		opacity: 0.75
+	&__price
+		color: #777
+	&__price-old
+		margin-right: 15px
+	.rating-list
+		font-size: 12px
+		margin: 0 15px 5px 0
+	.rating-list__item:not(:last-of-type)
+		margin-right: 5px
+	.rate-count
+		color: #777
+		font-size: 14px
+	&__sale
+		display: inline-flex
+		flex-wrap: wrap
+	&__sale &__price
+		color: #E44134
+		font-weight: 700
+
+.shop-item:hover
+	.shop-item__add
+		opacity: 1
+		transform: translate(0)
+
+.shop-item--style-2
+	background: none
+
+.shop-item--style-2
+	.rating-list
+		display: flex
+		margin: 8px 0 0 0
+	.shop-item__name
+		margin-bottom: 5px
+	.shop-item__img
+		background: #f8f8f8
+	.shop-item__details
+		padding: 0
+		min-height: auto
+	.shop-item__img
+		margin-bottom: 15px
+
+	+r992
+
+		.shop-item__img
+			margin-bottom: 0
+
+	.shop-item__img::before
+		padding-top: percentage(120/170)
+	.shop-item__add
+		padding: 10px 15px
+		font-size: 16px
+		text-transform: initial
+
+/* shop filter */
+
+.shop-filter
+	display: inline-block
+	padding: 0
+	margin: 0
+	list-style: none
+
+.shop-filter
+	&__item--active
+		cursor: pointer
+		position: relative
+		padding: 14px 20px
+	&__item--active span
+		position: relative
+		font-size: 14px
+		font-weight: 700
+	&__item--active span::before,
+	&__item--active span::after
+		content: ""
+		display: block
+		background: #181919
+		width: 6px
+		height: 2px
+		position: absolute
+		top: 8px
+		transition: all .3s
+		pointer-events: none
+	&__item--active span::before
+		right: -17px
+		transform: rotate(45deg)
+	&__item--active span::after
+		right: -20px
+		transform: rotate(-45deg)
+	&__item--active:hover span::after
+		transform: rotate(45deg)
+	&__item--active:hover span::before
+		transform: rotate(-45deg)
+	&__sub-list
+		margin: 0
+		padding: 12px 30px 18px 30px
+		list-style: none
+		background: #FFF
+		position: absolute
+		top: 100%
+		right: -10px
+		transform: translateY(15px)
+		width: 250px
+		opacity: 0
+		visibility: hidden
+		text-align: left
+		z-index: 2
+		box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.05)
+		transition: all .3s
+	&__sub-list li a
+		position: relative
+		display: inline-block
+		color: $gray
+		font-size: 14px
+		line-height: 36px
+		font-weight: 700
+		text-decoration: none
+		transition: opacity .3s
+	&__sub-list li a:hover
+		color: $gray
+		opacity: 0.75
+	&__item--active:hover &__sub-list
+		transform: translate(0)
+		opacity: 1
+		visibility: visible
+
+/* aside trigger */
+
+.shop__aside-trigger
+	cursor: pointer
+	display: inline-block
+	font-size: 14px
+	font-weight: 700
+
++r992
+
+	.shop__aside-trigger
+		display: none
+
+/* aside close */
+
+.shop__aside-close
+	display: inline-block
+	position: absolute
+	top: 15px
+	right: 15px
+	cursor: pointer
+	padding: 10px
+
++r992
+
+	.shop__aside-close
+		display: none
+
+/* shop backdrop */
+
+.shop__backdrop
+	display: block
+	transition: all .3s
+
++r992
+
+	.shop__backdrop
+		display: none
+
+.shop__backdrop--visible
+	position: fixed
+	height: 100%
+	width: 100%
+	background-color: rgba(0,0,0, 0.4)
+	z-index: 4
+
+/* shop end */

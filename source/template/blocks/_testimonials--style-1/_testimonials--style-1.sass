@@ -1,0 +1,63 @@
+/* testimonials style-1 start */
+
+.testimonials
+	&__bg
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: -1
+
+.testimonials--style-1
+	.testimonials__img
+		position: relative
+		width: 100%
+		max-width: 200px
+		background: rgba(0,0,0,0.4)
+	.testimonials__img::before
+		position: relative
+		content: ""
+		display: block
+		padding-top: percentage(385/200)
+	.testimonials__img::after
+		content: "“"
+		display: block
+		height: 100px
+		width: 60px
+		position: absolute
+		right: -15px
+		top: 15px
+		background: $orange
+		font-size: 85px
+		font-weight: 300
+		padding-top: 15px
+		text-align: center
+
+	+r1200
+
+		.testimonials__img::after
+			top: 50px
+			right: -30px
+
+	&__dots
+		margin-bottom: 20px
+
+	+r768
+
+		&__dots
+			margin-bottom: 0
+
+.testimonials--green
+	.testimonials__img::after
+		color: #FFF
+		background: $green
+	.testimonials-slider__details::before
+		background: $green
+
+.testimonials--cyan
+	.testimonials__img::after
+		color: #262626
+		background: $cyan
+	.testimonials-slider__details::before
+		background: $cyan
+
+/* testimonials style-1 end */

@@ -1,0 +1,660 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'front_4'
+
+	-var type = 'front'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	// header start
+
+	header.header.shop-header.header-f4
+
+		.header__lower
+			.row
+
+				.col-12.d-flex.align-items-center.justify-content-between
+
+					.header__lower-inner
+						ul.lower-menu
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Membership
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Education
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Map Zoo
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Events
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Donate
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Foundation
+
+					.header__lower-inner
+						// lang select start
+						ul.lang-select
+							li.lang-select__item.lang-select__item--active
+								span English
+								ul.lang-select__sub-list
+									li
+										a(href="#") French
+									li
+										a(href="#") Spanish
+									li
+										a(href="#") Deutsch
+									li
+										a(href="#") Russian
+						// lang select end
+
+						ul.header__socials
+							li
+								a.item--facebook(href="#") #[+fa('facebook')]
+							li
+								a.item--twitter(href="#") #[+fa('twitter')]
+							li
+								a.item--youtube(href="#") #[+fa('youtube-play')]
+							li
+								a.item--instagram(href="#") #[+fa('instagram')]
+
+		.header__top
+			.row.align-items-center
+
+				.col-6.col-lg-3
+
+					a.logo(href="index.html")
+						img.logo__img(src="img/logo_zoo_black.png", alt="logo")
+
+				.col-6.col-lg-9.d-flex.justify-content-end.align-items-center
+
+					include ../blocks/_main-menu/_main-menu
+
+					a.header__button(href="#") Tickets
+
+					include ../blocks/_menu-trigger/_menu-trigger
+
+	// header end
+
+block main
+
+	// promo start
+
+	section.promo.promo--front-4
+
+		.promo-slider
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/promo_1f4.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/promo_1f4.jpg' alt='img')
+				.container
+					.row
+						.col-xl-7
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span The reason you need]#[br]#[span Help Animals]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing to EAZA being a 
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary Discover
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/promo_2.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/promo_2.jpg' alt='img')
+				.container
+					.row
+						.col-xl-6.offset-xl-6
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span AnimalWorld]#[br] #[span Protection]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary Discover
+
+			.promo-slider__item.promo-slider__item--style-3
+				picture
+					source(srcset='img/promo_3f4.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/promo_3f4.jpg' alt='img')
+				.container
+					.row
+						.col-xl-8.offset-xl-2
+							.align-container
+								.align-container__item
+
+		.container
+			.row
+				.col-12
+
+					// slider nav start
+
+					.promo-slider__nav
+
+					// slider nav end
+
+		.promo-cta
+			img.img--bg(src="img/promo-cta.jpg", alt="img")
+			h4.promo-cta__title volunteer #[br]#[span you`ll help nature]
+			a.promo-cta__link(href="#") Become a volunteer
+
+	// promo end
+
+	// section start
+
+	section.section.about.no-padding-bottom
+		.container
+			.row
+
+				.col-xl-5
+
+					.heading.heading--style-2.bottom-30
+						span.heading__pre-title About us
+						h2.heading__title.no-margin-bottom #[span our main goal is to] #[span protect animals]
+
+					a.video-trigger.video-trigger--primary.video-trigger--about.bottom-30(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk")
+						span.video-trigger__icon
+							+fa('play')
+						span Watch Video
+
+				.col-xl-7
+
+					p #[strong Harelip sucker great white shark archerfish Russian sturgeon redtooth triggerfish? Rice eel goblin shark! Yellowfin cutthroat trout; tapetail sand diver hillstream loach orangestriped triggerfish, Atlantic saury.]
+					p.no-margin-bottom Menhaden boafish Cornish Spaktailed Bream capelin lagena spiny dogfish, "beachsalmon, razorfish elephantnose fish." Paradise fish scaly dragonfish Razorback sucker darter jewfish chubsucker titan triggerfish: armorhead giant danio eel mora! Arctic char arrowtooth eelRazorback sucker darter jewfish chubsucker titan triggerfish: armorhead giant danio eel mora! Arctic char arrowtooth eel ish Spaktailed Bream capelin lagena spiny dogfish, "beachsalmon, razorfish elephantnose fish."
+
+					a.button.button--primary.top-30(href="#") More about
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--style-2.text-center
+						span.heading__pre-title What we do
+						h2.heading__title.no-margin-bottom #[span what we do to] #[span protect animals]
+
+			.row.offset-margin
+
+				.col-md-6.col-lg-3
+
+					.img-item
+						.img-item__img
+							img.img--bg(src="img/img-item_1.jpg" alt="img")
+						.img-item__description
+							h6.img-item__title
+								a(href="#") Raising money to help
+							p.img-item__text Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+
+				.col-md-6.col-lg-3
+
+					.img-item
+						.img-item__img
+							img.img--bg(src="img/img-item_2.jpg" alt="img")
+						.img-item__description
+							h6.img-item__title
+								a(href="#") Сlose work with services
+							p.img-item__text Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+
+				.col-md-6.col-lg-3
+
+					.img-item
+						.img-item__img
+							img.img--bg(src="img/img-item_3.jpg" alt="img")
+						.img-item__description
+							h6.img-item__title
+								a(href="#") Pro Guided tours only
+							p.img-item__text Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+
+				.col-md-6.col-lg-3
+
+					.img-item
+						.img-item__img
+							img.img--bg(src="img/img-item_4.jpg" alt="img")
+						.img-item__description
+							h6.img-item__title
+								a(href="#") Protecting animal area
+							p.img-item__text Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+
+	// section end
+
+	// section start
+
+	section.section.donation.no-padding-bottom
+		.container
+			.row.bottom-50.align-items-end
+
+				.col-lg-8
+
+					.heading.heading--style-2
+						span.heading__pre-title Donation
+						h2.heading__title.no-margin-bottom #[span your money saves] #[span lives]
+
+				.col-lg-4
+
+					.donation-slider__dots
+
+		.slider-holder.bottom-50
+			.slider-holder__wrapper
+
+				.donation-slider
+
+					.donation-slider__item
+
+						.donate-box
+							img.img--bg(src="img/donation-box_1.jpg", alt="img")
+
+							.donate-box__inner
+
+								.heading
+									span.heading__pre-title Donation
+									h2.heading__title.no-margin-bottom #[span Help us more] #[br] #[span protect animals]
+								
+								p Fangtooth yellowtail banded killifish seamoth triplefin blenny Rudderfish longfinned pikrazorfish menhaden
+
+								a.donate-box__link(href="#") Donate !
+
+					.donation-slider__item
+
+						.donate-box
+							img.img--bg(src="img/donation-box_2.jpg", alt="img")
+
+							.donate-box__inner
+
+								.heading
+									span.heading__pre-title Donation
+									h2.heading__title.no-margin-bottom #[span Help us more] #[br] #[span protect animals]
+								
+								p Fangtooth yellowtail banded killifish seamoth triplefin blenny Rudderfish longfinned pikrazorfish menhaden
+
+								a.donate-box__link(href="#") Donate !
+
+					.donation-slider__item
+
+						.donate-box
+							img.img--bg(src="img/donation-box_3.jpg", alt="img")
+
+							.donate-box__inner
+
+								.heading
+									span.heading__pre-title Donation
+									h2.heading__title.no-margin-bottom #[span Help us more] #[br] #[span protect animals]
+								
+								p Fangtooth yellowtail banded killifish seamoth triplefin blenny Rudderfish longfinned pikrazorfish menhaden
+
+								a.donate-box__link(href="#") Donate !
+
+					.donation-slider__item
+
+						.donate-box
+							img.img--bg(src="img/donation-box_2.jpg", alt="img")
+
+							.donate-box__inner
+
+								.heading
+									span.heading__pre-title Donation
+									h2.heading__title.no-margin-bottom #[span Help us more] #[br] #[span protect animals]
+								
+								p Fangtooth yellowtail banded killifish seamoth triplefin blenny Rudderfish longfinned pikrazorfish menhaden
+
+								a.donate-box__link(href="#") Donate !
+
+		.container
+			.row
+
+				.col-12
+
+					a.button.button--primary(href="#") All donation
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-bottom
+		.container
+			.row.align-items-center
+
+				.col-lg-5.col-xl-4.d-none.d-lg-block
+
+					.img-box
+						.img-box__img
+							img.img--contain(src="img/owl-bg.jpg" alt="img")
+
+				.col-lg-7.col-xl-7.offset-xl-1
+
+					.heading.heading--style-2.bottom-50
+						span.heading__pre-title Achievements
+						h2.heading__title #[span a lot of animals need] #[span our protection]
+						p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+					.row.offset-30
+
+						.col-sm-4
+
+							.counter-item.counter-item--front
+								.counter-item__top
+									h6.counter-item__title Poaching cases
+								.counter-item__lower
+									span.js-counter.color--orange 850
+
+						.col-sm-4
+
+							.counter-item.counter-item--front
+								.counter-item__top
+									h6.counter-item__title Rescued animals
+								.counter-item__lower
+									span.js-counter.color--orange 230
+
+						.col-sm-4
+
+							.counter-item.counter-item--front
+								.counter-item__top
+									h6.counter-item__title Volunteers
+								.counter-item__lower
+									span.js-counter.color--orange 160.000
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-bottom
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--style-2
+						span.heading__pre-title Our work
+						h2.heading__title.no-margin-bottom #[span We consider animal welfare]#[br] #[span our top priority]
+
+		.row.no-gutters
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_1.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_1.jpg" alt="img")
+					.gallery-masonry__description
+						span Mamals
+						span Giraffes
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_2.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_2.jpg" alt="img")
+					.gallery-masonry__description
+						span Mamals
+						span Lions
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_3.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_3.jpg" alt="img")
+					.gallery-masonry__description
+						span Birds
+						span Parrots
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_4.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_4.jpg" alt="img")
+					.gallery-masonry__description
+						span Reptiles
+						span Lizards
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_5.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_5.jpg" alt="img")
+					.gallery-masonry__description
+						span Fishes
+						span Clown
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_6.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_6.jpg" alt="img")
+					.gallery-masonry__description
+						span Mamals
+						span Monkeys
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_7.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_7.jpg" alt="img")
+					.gallery-masonry__description
+						span Mamals
+						span Elephants
+
+			.col-6.col-md-3.gallery-masonry__item
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_8.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_8.jpg" alt="img")
+					.gallery-masonry__description
+						span Mamals
+						span Koala Bear
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--style-2.heading--center
+						span.heading__pre-title Fundraising campaings
+						h2.heading__title.no-margin-bottom #[span ability to] #[span save animals]
+
+			.row.offset-margin
+
+				.col-md-6.col-xl-4
+
+					.campaign-item
+						.campaign-item__img
+							img.img--bg(src="img/campaign_1.jpg" alt="img")
+						h6.campaign-item__title
+							a(href="#") Let's confront even more poachers
+						p Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+						.campaign-item__detail
+
+							.row
+
+								.col-4
+
+									strong $ 20.000
+									p Target amount
+
+								.col-4
+
+									strong $ 10.000
+									p Rasied so far
+
+								.col-4
+
+									strong $ 10.000
+									p Still need
+							
+								.col-12
+
+									.progress-bar
+										.progress-bar__inner(style="width: 30%;")
+											.progress-bar__value 30%
+
+				.col-md-6.col-xl-4
+
+					.campaign-item
+						.campaign-item__img
+							img.img--bg(src="img/campaign_2.jpg" alt="img")
+						h6.campaign-item__title
+							a(href="#") We all must save the last elephant
+						p Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+						.campaign-item__detail
+							.row
+
+								.col-4
+
+									strong $ 20.000
+									p Target amount
+
+								.col-4
+
+									strong $ 10.000
+									p Rasied so far
+
+								.col-4
+
+									strong $ 10.000
+									p Still need
+
+								.col-12
+
+									.progress-bar
+										.progress-bar__inner(style="width: 60%;")
+											.progress-bar__value 60%
+
+				.col-md-6.col-xl-4
+
+					.campaign-item
+						.campaign-item__img
+							img.img--bg(src="img/campaign_3.jpg" alt="img")
+						h6.campaign-item__title
+							a(href="#") Help in feeding animals
+						p Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+						.campaign-item__detail
+							.row
+
+								.col-4
+
+									strong $ 20.000
+									p Target amount
+
+								.col-4
+
+									strong $ 10.000
+									p Rasied so far
+
+								.col-4
+
+									strong $ 10.000
+									p Still need
+
+								.col-12
+
+									.progress-bar
+										.progress-bar__inner(style="width: 80%;")
+											.progress-bar__value 80%
+
+	// section end
+
+	include ../blocks/_info-block/_info-block
+
+	// section start
+
+	section.section.testimonials.testimonials--style-1
+		.container
+			.row
+
+				.col-lg-3.d-none.d-lg-block
+
+					.testimonials__img
+						img.img--bg(src="img/man.jpg", alt="img")
+
+				.col-lg-9
+
+					.row.align-items-center
+
+						.col-md-7
+
+							.heading.heading--primary
+								span.heading__pre-title Testimonials
+								h2.heading__title #[span What People#[br] Says] #[span About Us]
+						
+						.col-md-5
+
+							.testimonials--style-1__dots.text-md-right
+
+					.row
+
+						.col-12
+
+							.testimonials-slider.testimonials-slider--style-1
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein
+
+	// section end
+
+	include ../blocks/_front-events/_front-events
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Our donors
+						h2.heading__title.no-margin-bottom #[span Companies that] #[span help us]
+
+			.row
+
+				.col-12
+
+					.logos-slider
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_5.png" alt="logo")
+
+					.logos-slider__dots
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

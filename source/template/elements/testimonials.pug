@@ -1,0 +1,234 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'testimonials'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Animal World
+							h1.promo-primary__title #[span Element] #[span Testimonials]
+
+	// promo end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+		.testimonials.testimonials--style-1
+			.container
+				.row
+
+					.col-lg-3.d-none.d-lg-block
+
+						.testimonials__img
+							img.img--bg(src="img/man.jpg", alt="img")
+
+					.col-lg-9
+
+						.row
+
+							.col-md-7
+
+								.heading.heading--primary
+									span.heading__pre-title Testimonials
+									h2.heading__title #[span What People#[br] Says] #[span About Us]
+							
+							.col-md-5
+
+								.testimonials--style-1__dots.text-md-right
+
+						.row
+
+							.col-12
+
+								.testimonials-slider.testimonials-slider--style-1
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+		.testimonials.testimonials--style-2
+			.container
+				.row
+
+					.col-xl-1
+
+						.testimonials__icon “
+
+					.col-xl-11
+
+						.row.align-items-center
+
+							.col-md-7
+
+								.heading.heading--primary
+									span.heading__pre-title Testimonials
+									h2.heading__title #[span People] #[span Says]
+							
+							.col-md-5
+
+								.testimonials--style-2__dots.text-md-right
+
+						.row
+
+							.col-12
+
+								.testimonials-slider.testimonials-slider--style-2
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein, 
+											span.testimonials-slider__position CEO Solar Systems LLC
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+											p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein, 
+											span.testimonials-slider__position CEO Solar Systems LLC
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+											p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+											p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein, 
+											span.testimonials-slider__position CEO Solar Systems LLC
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 3
+
+		.testimonials.testimonials--style-3
+			.container
+				.row
+
+					.col-lg-8
+
+						.row
+
+							.col-md-7
+
+								.heading.heading--primary
+									span.heading__pre-title Testimonials
+									h2.heading__title #[span People] #[span Says]
+							
+							.col-md-5
+
+								.testimonials--style-3__dots.text-md-right
+
+						.row
+
+							.col-12
+
+								.testimonials-slider.testimonials-slider--style-3
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein, 
+											span.testimonials-slider__position CEO Solar Systems LLC
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein, 
+											span.testimonials-slider__position CEO Solar Systems LLC
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein, 
+											span.testimonials-slider__position CEO Solar Systems LLC
+
+					.col-lg-4.d-none.d-lg-block
+
+						.testimonials__img
+							img.img--bg(src="img/man_2.jpg", alt="img")
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

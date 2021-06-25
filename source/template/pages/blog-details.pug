@@ -1,0 +1,60 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'blog-details'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/blog-details.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/blog-details.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Happy birthday,] #[span Hertha!]
+
+	// promo end
+
+	include ../blocks/_blog-post/_blog-post
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.row.no-gutters
+
+			.col-lg-6
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_4.jpg" alt="img")
+						h3.action-block__title #[span Previous Post]#[br] #[span New at the zoo...]
+
+			.col-lg-6
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_5.jpg" alt="img")
+						h3.action-block__title #[span Next Post]#[br] #[span Going ape over...]
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

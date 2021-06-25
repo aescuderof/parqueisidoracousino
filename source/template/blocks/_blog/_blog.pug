@@ -1,0 +1,397 @@
+// blog start
+
+section.section.blog
+	.container
+		.row
+
+			.col-lg-8.col-xl-9
+
+				.row
+
+					.col-12
+
+						.blog-item
+							.blog-item__img
+								img.img--bg(src="img/blog_1.jpg", alt="blog")
+								.blog-item__date
+									span 02
+									span Nov
+							h4.blog-item__title
+								a(href="#") Animal friendships at Zoo Berlin
+							p To celebrate the 40th birthday of beloved cartoon cat Garfield, who lives in not-so-perfect harmony with dog Odie and human Jon, we are dedicating this blog entry to the curious cohabitations and fascinating friendships that have arisen over the years among animals at Zoo Berlin. 
+							.blog-item__details
+								.row.align-items-center
+
+									.col-8
+
+										.blog-item__author
+											.blog-item__author-img
+												img.img--bg(src="img/author_1.png", alt="author")
+											.blog-item__author-name Lisa Lee
+
+									.col-4.text-right
+
+										.blog-item__comments
+											+svg('comment')
+											span 250
+					
+					.col-12
+
+						.blog-item
+							.blog-item__img
+								img.img--bg(src="img/blog_2.jpg", alt="blog")
+								.blog-item__date
+									span 03
+									span Nov
+							h4.blog-item__title
+								a(href="#") Making love, not war
+							p To celebrate the 40th birthday of beloved cartoon cat Garfield, who lives in not-so-perfect harmony with dog Odie and human Jon, we are dedicating this blog entry to the curious cohabitations and fascinating friendships that have arisen over the years among animals at Zoo Berlin. 
+							.blog-item__details
+								.row.align-items-center
+
+									.col-8
+
+										.blog-item__author
+											.blog-item__author-img
+												img.img--bg(src="img/author_2.png", alt="author")
+											.blog-item__author-name Jack Lambert
+
+									.col-4.text-right
+
+										.blog-item__comments
+											+svg('comment')
+											span 250
+
+					.col-12
+
+						.blog-item.blog-item--style-2
+							h4.blog-item__title
+								a(href="#") Happy birthday, Hertha!
+							p To celebrate the 40th birthday of beloved cartoon cat Garfield, who lives in not-so-perfect harmony with dog Odie and human Jon, we are dedicating this blog entry to the curious cohabitations and fascinating friendships that have arisen over the years among animals at Zoo Berlin. 
+							.blog-item__details
+								.row.align-items-center
+
+									.col-8
+
+										.blog-item__author
+											.blog-item__author-img
+												img.img--bg(src="img/author_3.png", alt="author")
+											.blog-item__author-name Rick Garrix
+
+									.col-4.text-right
+
+										.blog-item__comments
+											+svg('comment')
+											span 250
+
+					.col-12
+
+						.blog-item
+							.blog-item__img
+								img.img--bg(src="img/blog_3.jpg", alt="blog")
+								.blog-item__date
+									span 04
+									span Nov
+							h4.blog-item__title
+								a(href="#") For she’s a jolly good fellow
+							p To celebrate the 40th birthday of beloved cartoon cat Garfield, who lives in not-so-perfect harmony with dog Odie and human Jon, we are dedicating this blog entry to the curious cohabitations and fascinating friendships that have arisen over the years among animals at Zoo Berlin. 
+							.blog-item__details
+								.row.align-items-center
+
+									.col-8
+
+										.blog-item__author
+											.blog-item__author-img
+												img.img--bg(src="img/author_1.png", alt="author")
+											.blog-item__author-name Lisa Lee
+
+									.col-4.text-right
+
+										.blog-item__comments
+											+svg('comment')
+											span 250
+
+					.col-12
+
+						.blog-item
+							.blog-item__img
+								img.img--bg(src="img/blog_4.jpg", alt="blog")
+								.blog-item__date
+									span 05
+									span Nov
+							h4.blog-item__title
+								a(href="#") Animal friendships at Zoo Berlin
+							p To celebrate the 40th birthday of beloved cartoon cat Garfield, who lives in not-so-perfect harmony with dog Odie and human Jon, we are dedicating this blog entry to the curious cohabitations and fascinating friendships that have arisen over the years among animals at Zoo Berlin. 
+							.blog-item__details
+								.row.align-items-center
+
+									.col-8
+
+										.blog-item__author
+											.blog-item__author-img
+												img.img--bg(src="img/author_1.png", alt="author")
+											.blog-item__author-name Lisa Lee
+
+									.col-4.text-right
+
+										.blog-item__comments
+											+svg('comment')
+											span 250
+
+					.col-12.text-center
+
+						ul.pagination.blog__pagination
+							li.pagination__item.pagination__item--prev
+								+fa('angle-left')
+								span Back
+							li.pagination__item
+								span 1
+							li.pagination__item.pagination__item--active
+								span 2
+							li.pagination__item
+								span 3
+							li.pagination__item
+								span 4
+							li.pagination__item
+								span 5
+							li.pagination__item.pagination__item--next
+								span Next
+								+fa('angle-right')
+
+			.col-md-8.offset-md-2.col-lg-4.offset-lg-0.col-xl-3
+
+				.blog__inner-block.bottom-50
+
+					form.search-form(action="javascript:void(0);")
+						input.search-form__input(type="search" name="search" placeholder="Search Here")
+						button.search-form__submit(type="submit")
+							+svg('search')
+
+				.blog__inner-block.bottom-50
+
+					h5.blog__title Categories
+
+					ul.categories-list
+						li.categories-list__item.categories-list__item--active
+							span.categories-list__name Our Employees
+							span.categories-list__count 15
+						li.categories-list__item
+							span.categories-list__name Zoo News
+							span.categories-list__count 29
+						li.categories-list__item
+							span.categories-list__name Insider Tips from the Zoo
+							span.categories-list__count 67
+						li.categories-list__item
+							span.categories-list__name News from the Aquarium
+							span.categories-list__count 105
+						li.categories-list__item
+							span.categories-list__name News from the Terrarium
+							span.categories-list__count 38
+						li.categories-list__item
+							span.categories-list__name Animal Babies
+							span.categories-list__count 21
+
+				.blog__inner-block.bottom-50
+
+					h5.blog__title Latest Posts
+
+					.latest-item
+						.row.align-items-center
+							
+							.col-4
+
+								.latest-item__img
+									img.img--bg(src="img/latest_1.jpg", alt="img")
+
+							.col-8
+
+								h6.latest-item__title
+									a(href="#") Scottish wildcat kitten is arrival to the zoo
+
+								.latest-item__details
+									.row
+
+										.col-7
+
+											.latest-item__date 11 nov 2018
+
+										.col-5
+
+											.latest-item__comments
+												+svg('comment')
+												span 250
+
+					.latest-item
+						.row.align-items-center
+							
+							.col-4
+
+								.latest-item__img
+									img.img--bg(src="img/latest_2.jpg", alt="img")
+
+							.col-8
+
+								h6.latest-item__title
+									a(href="#") Team Rickshaw visits the zoo for Children 
+
+								.latest-item__details
+									.row
+
+										.col-7
+
+											.latest-item__date 11 nov 2018
+
+										.col-5
+
+											.latest-item__comments
+												+svg('comment')
+												span 250
+
+					.latest-item
+						.row.align-items-center
+							
+							.col-4
+
+								.latest-item__img
+									img.img--bg(src="img/latest_3.jpg", alt="img")
+
+							.col-8
+
+								h6.latest-item__title
+									a(href="#") Birth of rare gibbon adds to record baby
+
+								.latest-item__details
+									.row
+
+										.col-7
+
+											.latest-item__date 11 nov 2018
+
+										.col-5
+
+											.latest-item__comments
+												+svg('comment')
+												span 250
+
+					.latest-item
+						.row.align-items-center
+							
+							.col-4
+
+								.latest-item__img
+									img.img--bg(src="img/latest_4.jpg", alt="img")
+
+							.col-8
+
+								h6.latest-item__title
+									a(href="#") Christmas shopping at Chester Zoo
+
+								.latest-item__details
+									.row
+
+										.col-7
+
+											.latest-item__date 11 nov 2018
+
+										.col-5
+
+											.latest-item__comments
+												+svg('comment')
+												span 250
+
+					.latest-item
+						.row.align-items-center
+							
+							.col-4
+
+								.latest-item__img
+									img.img--bg(src="img/latest_5.jpg", alt="img")
+
+							.col-8
+
+								h6.latest-item__title
+									a(href="#") There's always something new at Zoo
+
+								.latest-item__details
+									.row
+
+										.col-7
+
+											.latest-item__date 11 nov 2018
+
+										.col-5
+
+											.latest-item__comments
+												+svg('comment')
+												span 250
+
+				.blog__inner-block.bottom-50
+
+					h5.blog__title Archive
+
+					ul.categories-list
+						li.categories-list__item.categories-list__item--active
+							span.categories-list__name October
+							span.categories-list__count 2017
+						li.categories-list__item
+							span.categories-list__name November
+							span.categories-list__count 2018
+						li.categories-list__item
+							span.categories-list__name December
+							span.categories-list__count 2018
+						li.categories-list__item
+							span.categories-list__name January
+							span.categories-list__count 2018
+						li.categories-list__item
+							span.categories-list__name February
+							span.categories-list__count 2019
+						li.categories-list__item
+							span.categories-list__name March
+							span.categories-list__count 2019
+
+				.blog__inner-block.bottom-50
+
+					h5.blog__title Instagram #[+fa('instagram')]
+
+					.footer-instagram
+						a.footer-instagram__item(href="#")
+							.footer-instagram__img
+								img.img--bg(src="img/f_ig-1.jpg" alt="ig")
+						a.footer-instagram__item(href="#")
+							.footer-instagram__img
+								img.img--bg(src="img/f_ig-2.jpg" alt="ig")
+						a.footer-instagram__item(href="#")
+							.footer-instagram__img
+								img.img--bg(src="img/f_ig-3.jpg" alt="ig")
+						a.footer-instagram__item(href="#")
+							.footer-instagram__img
+								img.img--bg(src="img/f_ig-4.jpg" alt="ig")
+						a.footer-instagram__item(href="#")
+							.footer-instagram__img
+								img.img--bg(src="img/f_ig-5.jpg" alt="ig")
+						a.footer-instagram__item(href="#")
+							.footer-instagram__img
+								img.img--bg(src="img/f_ig-6.jpg" alt="ig")
+
+				.blog__inner-block.bottom-50
+
+					h5.blog__title Tags
+
+					.tags.tags--style-2
+						a.tags__item(href="#") Animal
+						a.tags__item(href="#") Monkey
+						a.tags__item(href="#") Zoo
+						a.tags__item(href="#") Kids
+						a.tags__item(href="#") Lion
+						a.tags__item(href="#") Giraffe
+
+				.subscribe-block
+
+					h5.subscribe-block__title Subscribe Now
+					p Lorem ipsum dolor sit amet, conse ctetur adipisicing mit
+
+					form.form.subscribe-form(action="javascript:void(0);")
+						input.form__field(type="email" placeholder="Enter your mail here...")
+						input.form__submit(type="submit" value="Subscribe")
+
+// blog end

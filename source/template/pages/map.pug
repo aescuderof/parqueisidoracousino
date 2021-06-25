@@ -1,0 +1,29 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'map'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// section start
+
+	section.section.zoo-map.background--gray
+
+		.zoo-map__img
+
+			img(src="img/map.jpg", alt="map")
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

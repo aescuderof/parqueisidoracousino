@@ -1,0 +1,38 @@
+/* testimonials style-3 start */
+
+.testimonials--style-3
+	padding: 30px 0
+
+.testimonials--style-3
+	&__dots
+		margin-bottom: 20px
+
+	+r768
+
+		&__dots
+			margin-bottom: 0px	
+
+.testimonials--style-3
+	.testimonials__img
+		position: relative
+		width: 100%
+		background: rgba(0,0,0,0.1)
+	.testimonials__img::before
+		position: relative
+		content: ""
+		display: block
+		padding-top: percentage(410/370)
+	.testimonials__img::after
+		content: "“"
+		display: block
+		height: 80px
+		width: 80px
+		background: $orange
+		font-size: 85px
+		font-weight: 300
+		text-align: center
+		position: absolute
+		left: -15px
+		top: 20px
+
+/* testimonials style-3 end */

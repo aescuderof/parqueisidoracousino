@@ -1,0 +1,142 @@
+/* shop product start */
+
+.shop-product
+	&__top
+		margin-top: 50px
+		padding-bottom: 10px
+
+	+r992
+		
+		&__top
+			margin-top: 0
+
+	&__name
+		text-transform: uppercase
+	.rating-list
+		margin: 0 20px 0 15px
+	&__old-price
+		color: #777
+	&__description
+		padding: 25px 0 20px 0
+		border-top: 1px solid #E1E1E1
+		border-bottom: 1px solid #E1E1E1
+	&__rating
+		display: inline-flex
+		flex-wrap: wrap
+		align-items: baseline
+		margin-top: 10px
+	&__list
+		font-size: 16px
+		line-height: 27px
+		font-weight: 700
+		padding: 0
+		margin: 0 0 30px 0
+		list-style: none
+	&__reviews-count
+		color: #777
+	.product-form
+		margin-top: 30px
+
+/* product form */
+
+.product-form
+	.form__field
+		margin-bottom: 0
+	.form__plus,
+	.form__minus,
+	.form__count .form__field
+		width: 40px
+
+	+r576
+
+		.form__plus,
+		.form__minus,
+		.form__count .form__field
+			width: 50px
+
+	.form__submit
+		display: inline-flex
+		align-items: center
+		margin-left: 0
+		font-size: 12px
+		padding: 11px 15px
+		margin-left: 20px
+
+	+r576
+
+		.form__submit
+			font-size: 16px
+			padding: 11px 30px
+
+	.form__submit .icon
+		font-size: 18px
+		stroke: #333
+		color: transparent
+		margin-left: 5px
+	.form__wrapper
+		display: flex
+	.shop-item__add
+		opacity: 1
+		transform: translateY(0)
+	.shop-item__add .icon
+		display: none
+	
+	+r576
+
+		.shop-item__add .icon
+			display: inline-block
+
+/* shop product tabs */
+
+.shop-product-tabs
+	.r-tabs-accordion-title
+		text-align: center
+	p:last-of-type
+		margin-bottom: 0
+	&__title
+		margin: 40px 0 10px 0
+	.table
+		margin-top: 30px
+	.comments-form
+		margin-top: 50px
+	.horizontal-tabs__header
+		border-bottom: 1px solid #E1E1E1
+	.horizontal-tabs__header li:not(:last-of-type)
+		margin-right: 50px 
+	&__header a,
+	.r-tabs-anchor
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #C3C3C3
+		font-weight: 700
+		text-decoration: none
+		padding: 10px 0
+
+	.r-tabs-state-active .r-tabs-anchor
+		background: none
+
+	+r769
+
+		.r-tabs-state-active a
+			background: none
+
+	+r769
+
+		.r-tabs-anchor
+			display: inline-flex
+			padding: 25px 0
+
+	&__header a:hover,	
+	.horizontal-tabs__header .r-tabs-state-active a
+		border-bottom: 3px solid $orange
+	.r-tabs-panel
+		padding: 30px 0
+		background: none
+	
+	+r769
+
+		.r-tabs-panel
+			padding: 50px 0 0 0
+
+/* shop product end */

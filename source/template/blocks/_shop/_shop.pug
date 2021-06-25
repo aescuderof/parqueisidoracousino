@@ -1,0 +1,487 @@
+// shop start
+
+section.section.shop
+	.container
+		.row.align-items-baseline
+
+			.col-5
+
+				span.shop__aside-trigger Filter
+
+			.col-7.text-right
+
+				// shop filter start
+				ul.shop-filter
+					li.shop-filter__item.shop-filter__item--active
+						span Sorting by latest
+						ul.shop-filter__sub-list
+							li
+								a(href="#") Sort by latest
+							li
+								a(href="#") Sort by populirity
+							li
+								a(href="#") Sort by price: low to high
+							li
+								a(href="#") Sort by price: high to low
+							li
+								a(href="#") Sort by adding
+				// shop filter end	
+
+		.row
+
+			.col-lg-3
+
+				.aside-holder
+
+					span.shop__aside-close
+						+svg('close')
+
+					.shop-aside
+	
+						.shop-aside__filter-block
+
+							h6.shop-aside__title Item
+
+							ul.brand-filter
+								li.brand-filter__item.brand-filter__item--active
+									span.brand-filter__brand Clothes
+									span.brand-filter__count 23
+								li.brand-filter__item
+									span.brand-filter__brand Accessories
+									span.brand-filter__count 12
+								li.brand-filter__item
+									span.brand-filter__brand Kids Toys
+									span.brand-filter__count 10
+	
+						form.form.filter-form(action="javascript:void(0);" autocomplete="off")
+	
+							.shop-aside__price-block
+	
+								h6.shop-aside__title Price
+	
+								.range-slider
+									input.range-slider__bar(type="text" name="price")
+									.range-slider__values
+										input.range-slider__input.range-slider__min(type="text" name="min-price" value="0" readonly)
+										input.range-slider__input.range-slider__max(type="text" name="max-price" value="3000" readonly)
+	
+							.shop-aside__checkbox-block
+	
+								h6.shop-aside__title Filter by size
+	
+								label.form__checkbox-label
+									span.form__label-text Size XXL
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size XXL" checked)
+									span.form__checkbox-mask
+	
+								label.form__checkbox-label
+									span.form__label-text Size L
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size L")
+									span.form__checkbox-mask
+	
+								label.form__checkbox-label
+									span.form__label-text Size S
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+									span.form__checkbox-mask
+	
+							.shop-aside__option-block
+	
+								h6.shop-aside__title Filter by option
+	
+								label.form__radio-label
+									span.form__label-text Option 1
+									input.form__input-radio(type="radio" name="option-select" value="option-1" checked)
+									span.form__radio-mask
+	
+								label.form__radio-label
+									span.form__label-text Option 2
+									input.form__input-radio(type="radio" name="option-select" value="option-2")
+									span.form__radio-mask
+	
+								label.form__radio-label
+									span.form__label-text Option 3
+									input.form__input-radio(type="radio" name="option-select" value="option-3")
+									span.form__radio-mask
+
+							.shop-aside__color-block
+	
+								h6.shop-aside__title Color
+
+								.shop-aside__color-block-inner
+
+									label.form__color-label(style="background-color: #30D158;")
+										input.form__input-checkbox(type="checkbox" name="color-select" value="color")
+										span.form__color-mask
+		
+									label.form__color-label(style="background-color: #5E5CE6;")
+										input.form__input-checkbox(type="checkbox" name="color-select" value="color" checked)
+										span.form__color-mask
+		
+									label.form__color-label(style="background-color: #FF9F0B;")
+										input.form__input-checkbox(type="checkbox" name="color-select" value="color")
+										span.form__color-mask
+	
+									label.form__color-label(style="background-color: #FF3760;")
+										input.form__input-checkbox(type="checkbox" name="color-select" value="color")
+										span.form__color-mask
+	
+									label.form__color-label(style="background-color: #65D3FF;")
+										input.form__input-checkbox(type="checkbox" name="color-select" value="color")
+										span.form__color-mask
+	
+							.shop-aside__tags-block
+	
+								h6.shop-aside__title Tags
+	
+								.tags.tags--style-2
+									a.tags__item(href="#") Animal
+									a.tags__item(href="#") Monkey
+									a.tags__item(href="#") Zoo
+									a.tags__item(href="#") Kids
+									a.tags__item(href="#") Lion
+									a.tags__item(href="#") Giraffe
+	
+							.shop-aside__buttons-block
+	
+								button.form__submit(type="submit") Apply
+								span.form__clear Clear
+
+			.col-lg-9
+
+				.row.offset-30
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_1.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Mama Lama Cup
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 15.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--hot Hot
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_2.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Zoo G T-Shirt
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 35.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--new New
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_3.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Monkey Toy
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 65.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--sale Sale
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_4.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Zoo L T-Shirt
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__sale
+										s.shop-item__price-old 15.99
+										span.shop-item__price 10.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_5.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Giraffe Toy
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 65.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--new New
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_6.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Monkey Toy
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 65.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_1.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Mama Lama Cup
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 15.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--hot Hot
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_2.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Zoo G T-Shirt
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 35.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--new New
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_3.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Monkey Toy
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 65.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--sale Sale
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_4.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Zoo L T-Shirt
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__sale
+										s.shop-item__price-old 15.99
+										span.shop-item__price 10.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_5.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Giraffe Toy
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 65.99 USD
+
+					.col-12.col-sm-6.col-md-4
+
+						.shop-item
+							.shop-item__img
+								span.shop-item__badge.shop-item__badge--new New
+								a.shop-item__add(href="#")
+									+svg('bag')
+									span Add to cart
+								img.img--contain(src="img/shop_6.png" alt="img")
+							.shop-item__details
+								h6.shop-item__name
+									a(href="shop-product.html") Monkey Toy
+								ul.rating-list
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item
+										+fa('star')
+									li.rating-list__item.rating-list__item--disabled
+										+fa('star')
+								.shop-item__details-lower
+									span.shop-item__price 65.99 USD
+
+				.row
+
+					.col-12
+
+						ul.pagination.shop__pagination
+							li.pagination__item.pagination__item--prev
+								+fa('angle-left')
+								span Back
+							li.pagination__item
+								span 1
+							li.pagination__item.pagination__item--active
+								span 2
+							li.pagination__item
+								span 3
+							li.pagination__item
+								span 4
+							li.pagination__item
+								span 5
+							li.pagination__item.pagination__item--next
+								span Next
+								+fa('angle-right')
+
+// shop end

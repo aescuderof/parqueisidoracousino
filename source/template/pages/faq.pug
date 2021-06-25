@@ -1,0 +1,126 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'faq'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/faq.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/faq.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span FREQUENTLY ASKED] #[span questions]
+
+	// promo end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-margin
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span Do you ever] #[span offer discounts ?]
+						p We offer special rates for #[mark groups of 20+] and #[mark school groups.] Guests with a #[mark military ID] receive $1 off regular gate admission for everyone in their party. On Wednesdays from November through February, tickets are $3 per person for #[mark Winter Wednesdays.]
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span What kind of payments] #[span do you accept ?]
+						p We accept cash and most major credit cards. We do not take personal checks.
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span CAN I PURCHASE] #[span TICKETS ONLINE?]
+						p Yes! You can purchase your tickets online and print them at home before you visit.
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span HOW MUCH IS] #[span A MEMBERSHIP?]
+						p Memberships start at $93.50 for a whole year of unlimited visits and more. See our #[a(href="#") Membership] page for full details and benefits.
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span iS THERE A FEE] #[span FOR PARKING?]
+						p Parking is FREE!
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span WHAT DAYS ARE] #[span YOU CLOSED?]
+						p We close the Saturday after Labor Day for our annual fundraiser, Zoobilee. But we are open all other 364 days of the year.
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span CAN WE BRING OUR] #[span STROLLER OR WAGON?]
+						p We close the Saturday after Labor Day for our annual fundraiser, Zoobilee. But we are open all other 364 days of the year.
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span DO YOU HAVE] #[span WHEELCHAIRS AVAILABLE?]
+						p Yes, wheelchairs are available to rent. A push wheelchair is $8, and an electric wheelchair is $25 for the first 3 hours and $5 for each additional hour. Call 316-266-8217 to reserve a wheelchair or inquire at the information kiosk inside the Zoo entrance.
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span CAN MY CHILD BRING A SKATEBOARD,] #[span BICYCLE, OR SCOOTER?]
+						p For the safety of our animals and our guests, we do not allow bikes, scooters, skates, skate-shoes, skateboards, hoverboards, or Segways
+
+				.col-xl-8.offset-xl-2
+
+					.faq-item
+						h4.faq-item__title #[span DO YOU HAVE LOCKERS] #[span AVAILABLE FOR RENT?]
+						p No, we do not have lockers available. Feel free to bring a cooler, bag, or wagon to carry your items around with you.
+						
+	// section end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.row.no-gutters
+
+			.col-lg-6
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_1.jpg" alt="img")
+						h3.action-block__title #[span The Biggest Aquarium]#[br] #[span in America]
+
+			.col-lg-6
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_2.jpg" alt="img")
+						h3.action-block__title #[span Amazing Terrarium]#[br] #[span in Europe]
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

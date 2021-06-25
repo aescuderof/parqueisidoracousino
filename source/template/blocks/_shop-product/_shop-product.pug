@@ -1,0 +1,59 @@
+// shop product start
+
+section.section.shop-product.background--brown
+	.container
+		.row
+
+			.col-md-8.offset-md-2.col-lg-6.offset-lg-0
+
+				include ../_dual-slider/_dual-slider
+
+			.col-lg-6.col-xl-5.offset-xl-1
+
+				.shop-product__top
+
+					h4.shop-product__name Zoo Cap
+
+					s.shop-product__old-price 35.99 USD
+
+					h4.shop-product__price 15.00$
+
+				.shop-product__description
+
+					ul.shop-product__list
+						li Material: Laser
+						li Color: Black
+						li Coutry: Ukraine
+
+					p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert  dogfish whalefish.
+
+					.shop-product__rating
+
+						h6.shop-product__title Rating
+
+						ul.rating-list
+							li.rating-list__item
+								+fa('star')
+							li.rating-list__item
+								+fa('star')
+							li.rating-list__item
+								+fa('star')
+							li.rating-list__item
+								+fa('star')
+							li.rating-list__item.rating-list__item--disabled
+								+fa('star')
+						
+						span.shop-product__reviews-count (4 Reviews)
+
+				form.form.product-form(action="javascript:void(0);" autocomplete="off")
+
+					.form__wrapper
+						.form__count
+							span.form__minus
+							input.form__field(type="number" value="1")
+							span.form__plus
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+
+// shop product end

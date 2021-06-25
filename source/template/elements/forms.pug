@@ -1,0 +1,117 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'forms'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+
+				.col-auto
+
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Forms]
+
+	// promo end
+
+	// section start
+
+	section.section.elements.form-elements
+
+		.container
+			.row
+
+				.col-xl-10
+
+					h4.elements__title Variant 1
+
+			.row
+				.col-md-6.col-xl-5
+
+					h6.elements__subtitle Input Disabled
+
+					input.form__field(type="text" placeholder="Text" disabled)
+
+					h6.elements__subtitle Input Focus
+
+					input.form__field.border--orange(type="text" placeholder="Focus")
+
+					h6.elements__subtitle Input Error
+
+					input.form__field.border--red(type="text" placeholder="Error")
+
+					h6.elements__subtitle Textarea disabled
+
+					textarea.form__field.form__message(placeholder="Text" disabled)
+
+				.col-md-6.col-xl-6.offset-xl-1
+
+					h6.elements__subtitle Radio
+
+					div.bottom-20
+
+						label.form__radio-label
+							span.form__label-text Checked
+							input.form__input-radio(type="radio" checked)
+							span.form__radio-mask
+
+					div.bottom-20
+
+						label.form__radio-label
+							span.form__label-text Unchecked
+							input.form__input-radio(type="radio")
+							span.form__radio-mask
+
+					div.bottom-20
+
+						label.form__radio-label
+							span.form__label-text Disabled
+							input.form__input-radio(type="radio" disabled)
+							span.form__radio-mask
+
+					div.bottom-40
+
+						label.form__radio-label
+							span.form__label-text Disabled Checked
+							input.form__input-radio(type="radio" disabled checked)
+							span.form__radio-mask
+
+					h6.elements__subtitle Checkbox
+
+					div.bottom-20
+
+						label.form__checkbox-label
+							span.form__label-text Cheked
+							input.form__input-checkbox(type="checkbox" name="size-select" value="Size XXL" checked)
+							span.form__checkbox-mask
+
+					div
+	
+						label.form__checkbox-label
+							span.form__label-text Uncheked
+							input.form__input-checkbox(type="checkbox" name="size-select" value="Size L")
+							span.form__checkbox-mask
+
+block footer
+
+	include ../blocks/_footer/_footer

@@ -1,0 +1,376 @@
+/* footer start */
+
+.footer
+	font-size: 14px
+	position: relative
+	background: #282F34
+	padding: 65px 0 45px 0
+
+.footer
+	&__bg
+		z-index: 0
+	&__title
+		display: flex
+		align-items: baseline
+		justify-content: space-between
+		color: #FFF
+		font-size: 18px
+		padding-top: 10px
+	&__details
+		color: #C9CDCF
+		margin-top: 25px
+	&__details p:not(:last-of-type)
+		margin-bottom: 5px
+	&__details p:last-of-type
+		margin-bottom: 0
+	&__details a
+		color: #C9CDCF
+		text-decoration: none
+		white-space: nowrap
+		transition: color .3s
+	&__details a:hover
+		color: $orange
+	&__details a:not(:last-of-type)
+		margin-right: 8px
+	.socials
+		margin-top: 35px
+	&__link,
+	&__link img
+		display: inline-block
+	&__link img
+		height: 30px
+		width: auto
+	p
+		color: inherit
+	&__additional
+		display: none
+		flex-wrap: wrap
+		justify-content: center
+		padding: 0
+		margin: 0 0 25px 0
+		list-style: none
+
+	+r576
+
+		&__additional
+			display: flex
+
+	+r768
+
+		&__additional
+			margin: 0
+			justify-content: flex-start
+
+	&__additional li:not(:last-of-type)
+		margin-right: 30px
+	&__additional a
+		color: #83888B
+	&__additional a:hover
+		color: $orange
+		text-decoration: underline
+	&__schedule
+		margin: 18px 0 28px 0
+		padding: 0
+		left: 0
+		list-style: none
+		color: #c9cdcf
+
+	+r992
+
+		&__schedule
+			margin-bottom: 0
+
+	&__schedule li
+		margin-bottom: 8px
+	&__schedule li span
+		display: inline-block
+	&__schedule li span:first-of-type
+		width: 40%
+	&__schedule li span:last-of-type
+		color: $green
+		width: 60%
+
+/* logo */
+
+.logo--footer
+	color: #FFF
+
+.logo--footer:hover
+	color: #FFF
+
+.logo.logo--footer
+	.logo__text
+		display: flex
+
+.logo.logo--footer
+	.logo__img
+		display: inline-block
+		width: auto
+		height: 50px
+
+	+r1366
+
+		.logo__img
+			height: 60px
+
+/* menu */
+
+.footer-menu
+	display: inline-flex
+	flex-wrap: wrap
+	width: 100%
+	max-width: 260px
+	padding: 0
+	margin: 10px 0 0 0
+	list-style: none
+
++r992
+
+	.footer-menu
+		max-width: 300px
+
+.footer-menu
+	&__item
+		width: 50%
+		margin-bottom: 8px
+	&__link
+		color: #C9CDCF
+		transition: color .3s
+	&__link:hover
+		color: $orange
+		text-decoration: none
+
+.footer-submenu
+	display: inline-flex
+	flex-direction: column
+	padding: 0
+	margin: 10px 0 0 0
+	list-style: none
+
+.footer-submenu
+	&__item
+		margin-bottom: 8px
+	&__link
+		color: $orange
+		transition: color .3s
+	&__link:hover
+		color: #C9CDCF
+		text-decoration: none
+
+.footer-menu--style-2
+	.footer-menu__item
+		width: 100%
+	.footer-menu__link
+		text-decoration: underline
+	.footer-menu__link:hover
+		color: $green
+		text-decoration: none
+
+/* instagram */
+
+.footer-instagram
+	display: flex
+	flex-wrap: wrap
+	margin: 15px -4px 0 -4px
+
+.footer-instagram
+	&__item
+		width: calc(33.333% - 8px)
+		margin: 4px
+	&__img
+		overflow: hidden
+		position: relative
+		z-index: 2
+	&__img::before
+		content: ""
+		position: relative
+		display: block
+		padding-top: percentage(84.65/84.65)
+		transition: background .3s
+		z-index: 2
+	.img--bg
+		z-index: 0
+	&__item:hover &__img::before
+		background: rgba(253, 211, 64, 0.4)
+
+/* footer privacy */
+
+.footer-privacy
+	color: #83888B
+	margin-bottom: 30px
+
++r576
+
+	.footer-privacy
+		margin-bottom: 0
+
+.footer-privacy
+	&__link
+		color: #83888B
+		text-decoration: none
+	&__link:hover
+		color: $orange
+		text-decoration: underline
+	&__divider
+		color: #83888B
+		padding: 0 8px
+
+/* shop footer */
+
+.shop-footer
+	padding: 65px 0
+
+.shop-footer
+	.footer-privacy
+		margin: 50px 0 0 0
+
+	+r1200
+
+		.footer-privacy
+			margin: 136px 0 0 0
+
+.footer-payments
+	display: inline-flex
+	padding: 0
+	margin: 13px 0 0 0
+	list-style: none
+
+.footer-payments
+	&__item:not(:last-of-type)
+		margin-right: 10px
+	&__item
+		transition: all .6s
+	&__item:hover
+		transform: scale(0.9)
+		opacity: 0.6
+	img
+		height: 35px
+		width: auto
+
+/* footer front_2 */
+
+.footer--front-2
+	padding: 0
+
+.footer--front-2
+	.footer-privacy
+		margin: 20px 0 15px 0
+
+	+r992
+
+		.footer-privacy
+			margin: 0
+
+	.footer__details a:not(:last-of-type)
+		margin-right: 0
+	.footer__details a:not(:first-of-type)
+		margin-left: 8px
+	.footer__top
+		padding: 55px 0 67px 0
+
+	+r992
+
+		.footer__top
+			padding: 75px 0 87px 0
+
+	.footer-privacy__link:hover
+		color: $cyan
+	.footer__details a:hover
+		color: $cyan
+	.footer__lower
+		position: relative
+		z-index: 1
+		background: #192126
+		padding: 46px 0
+	.footer__details
+		margin-top: 0
+	.footer__link img
+		height: 50px
+	.socials
+		margin: 40px 0 29px 0
+
+	+r992
+
+		.socials
+			margin: 60px 0 49px 0
+
+	.socials__link
+		font-size: 20px
+	.socials__link:hover
+		color: $cyan
+	.socials,
+	.footer-submenu,
+	.footer-menu
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		max-width: none
+	.footer-menu__item
+		width: auto
+		margin-bottom: 3px
+	.footer-menu__item:not(:last-of-type)
+		margin-right: 25px
+	.footer-menu__link
+		color: #FFF
+		font-size: 18px
+		font-weight: 700
+	.footer-menu__link:hover
+		color: $cyan
+	.footer-submenu__link
+		color: $cyan
+	.footer-submenu__link:hover
+		color: #FFF
+	.footer-submenu__item
+		margin-bottom: 3px
+	.footer-submenu__item:not(:last-of-type)
+		margin-right: 20px
+
+/* footer front_3 */
+
+.footer--front-3
+	.footer__details a:hover,
+	.socials__link:hover,
+	.footer-privacy__link:hover
+		color: $green
+
+.newsletter-form
+	margin-top: 20px
+
+.newsletter-form
+	.form__field
+		color: #C9CDCF
+		background: none
+		border: 2px solid #3D474E
+		margin-bottom: 10px
+		padding: 11px 20px
+	.form__field::placeholder
+		color: #C9CDCF
+	.form__submit
+		margin-top: 20px
+		color: #FFF
+		border: 2px solid $green
+	.form__submit:hover
+		background: $green
+
+/* footer front_5 */
+
+.footer--front_5
+	.logo--footer
+		margin-bottom: 15px
+	.footer-menu
+		max-width: 170px
+
+	+r1200
+
+		.footer-menu
+			max-width: 200px
+
+	.footer__details
+		margin-top: 18px
+	.socials
+		margin-bottom: 28px
+	.socials__link
+		font-size: 20px
+
+/* footer end */

@@ -1,0 +1,124 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'account'
+
+	-var dest = 'shop'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_shop-header/_shop-header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Shop] #[span Account]
+
+	// promo end
+
+	// section start
+
+	section.section.background--gray
+		.container
+			.row.offset-margin
+
+				.col-md-8.offset-md-2.col-lg-6.offset-lg-0.col-xl-4.margin-bottom
+
+					form.form.account-form.sign-in-form(action="javascript:void(0);")
+						.form__fieldset
+							h6.form__title Sign In
+
+							.row
+
+								.col-12
+
+									input.form__field(type="text" name="username" placeholder="Username")
+									input.form__field(type="password" name="password" placeholder="Password")
+
+								.col-12
+
+									span I agree with #[a.form__link(href="#") Term of Services]
+
+								.col-12
+
+									button.form__button(type="submit").form__submit Sign In
+
+								.col-12.text-center
+
+									span #[a.form__link(href="#") Sign up] if you don’t have an account
+
+				.col-md-8.offset-md-2.col-lg-6.offset-lg-0.col-xl-4.margin-bottom
+
+					form.form.account-form.sign-up-form(action="javascript:void(0);")
+						.form__fieldset
+							h6.form__title Sign Up
+
+							.row
+
+								.col-12
+
+									input.form__field(type="text" name="fullname" placeholder="Full Name")
+									input.form__field(type="email" name="email" placeholder="Email")
+									input.form__field(type="password" name="password" placeholder="Password")
+									input.form__field(type="password" name="confirm-password" placeholder="Confirm Password")
+
+
+								.col-12
+
+									span I agree with #[a.form__link(href="#") Term of Services]
+
+
+								.col-12
+
+									button.form__button(type="submit").form__submit Sign Up
+
+								.col-12.text-center
+
+									span #[a.form__link(href="#") Sign in] if you an account
+
+				.col-md-8.offset-md-2.col-lg-6.offset-lg-0.col-xl-4.margin-bottom
+
+					form.form.account-form.password-form(action="javascript:void(0);")
+						.form__fieldset
+							h6.form__title Sign Up
+
+							.row
+
+								.col-12
+
+									input.form__field(type="email" name="email" placeholder="Email")
+
+								.col-12
+
+									a.form__link(href="#") Didn’t get email?
+
+
+								.col-12
+
+									button.form__button(type="submit").form__submit Submit
+
+								.col-12.text-center
+
+									span Back to #[a.form__link(href="#") Sign in]
+
+	// section end
+
+block footer
+
+	include ../blocks/_shop-footer/_shop-footer

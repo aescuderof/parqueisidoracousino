@@ -1,0 +1,177 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'breadcrumbs'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Bread] #[span Crumbs]
+
+	// promo end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+			.row
+
+				.col-12
+
+					ul.breadcrumbs.breadcrumbs--with-line
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Home
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') About
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Services
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Portfolio
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Blog
+						li.breadcrumbs__item.breadcrumbs__item--active Contact
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+			.row
+
+				.col-12
+
+					ul.breadcrumbs
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Home
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') About
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Services
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Portfolio
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Blog
+						li.breadcrumbs__item.breadcrumbs__item--active Contact
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 3
+
+			.row
+
+				.col-12
+
+					ul.breadcrumbs.breadcrumbs--with-dot
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Home
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') About
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Services
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Portfolio
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Blog
+						li.breadcrumbs__item.breadcrumbs__item--active Contact
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 4
+
+			.row
+
+				.col-12
+
+					ul.breadcrumbs.breadcrumbs--with-icon
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') #[+fa('home')] Home
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') #[+fa('info-circle')] About
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') #[+fa('cog')] Services
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') #[+fa('briefcase')] Portfolio
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') #[+fa('users')] Blog
+						li.breadcrumbs__item.breadcrumbs__item--active #[+fa('location-arrow')] Contact
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 5
+
+			.row
+
+				.col-12
+
+					ul.breadcrumbs.breadcrumbs--with-number
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Home
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') About
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Services
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Portfolio
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href='#') Blog
+						li.breadcrumbs__item.breadcrumbs__item--active Contact
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

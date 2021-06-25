@@ -1,0 +1,117 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'counters'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Counters]
+
+	// promo end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+			.row.offset-margin
+
+				.col-md-4.text-center
+
+					.counter-item
+						.counter-item__top
+							h6.counter-item__title Reptiles
+						.counter-item__lower.color--orange
+							span.js-counter 850
+
+				.col-md-4.text-center
+
+					.counter-item
+						.counter-item__top
+							h6.counter-item__title Species
+						.counter-item__lower.color--orange
+							span.js-counter 230
+
+				.col-md-4.text-center
+
+					.counter-item
+						.counter-item__top
+							h6.counter-item__title Visitors per Year
+						.counter-item__lower.color--orange
+							span.js-counter 160.000
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+			.row.offset-margin
+
+				.col-md-4.text-center
+
+					.counter-item
+						.counter-item__icon
+							+svg('reptiles')
+						.counter-item__lower
+							span.js-counter 850
+						.counter-item__top
+							h6.counter-item__title Reptiles
+
+				.col-md-4.text-center
+
+					.counter-item
+						.counter-item__icon
+							+svg('species')
+						.counter-item__lower
+							span.js-counter 230
+						.counter-item__top
+							h6.counter-item__title Species
+
+				.col-md-4.text-center
+
+					.counter-item
+						.counter-item__icon
+							+svg('visitors')
+						.counter-item__lower
+							span.js-counter 160.000
+						.counter-item__top
+							h6.counter-item__title Visitors per Year
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

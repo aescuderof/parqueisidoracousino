@@ -1,0 +1,324 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'tour-details'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/safari-tours.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/safari-tours.jpg' alt='img')
+
+		.container
+			.row
+
+				.col-auto
+
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Tour] #[span Details]
+
+	// promo end
+
+	// section start
+
+	section.section.tour-details.no-padding-bottom
+		.container
+			.row
+
+				.col-lg-9
+
+					.row
+
+						.col-12.bottom-50
+
+							h4.tour-details__section-title Find a cool #[span Safari]
+							span.tour-details__price 125.99 USD
+							p Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout; Chinook salmon bramble shark sand stargazer Steve fish. Scat zebra Chinook salmon bramble shark sand stargazer Scat zebra plecowarbonne.
+							p.no-margin-bottom Moray eel; tailor goatfish houndshark airsac catfish silver driftfish sand tilefish! Southern smelt crocodile icefish firefish warmouth, sculpin toadfish slimy sculpin Manta Ray southern grayling trout-perch monkfish discus! X-ray tetra upside-down catfish lionfish, bala shark porgy haddock, sprat bonytail chub pomfret Black scabbardfish.
+
+						.col-12.bottom-30
+
+							h5.tour-details__title Tour Achivments
+
+							ul.list-icon
+								li.list-icon__item Australasian salmon dace
+								li.list-icon__item Australasian salmon dace
+								li.list-icon__item Australasian salmon dace
+								li.list-icon__item Blenny tailor northern
+								li.list-icon__item Blenny tailor northern
+								li.list-icon__item Blenny tailor northern
+
+						.col-12.bottom-30
+							
+							.row
+
+								.col-6.col-md-3
+
+									.icon-item.text-center
+
+										.icon-item__icon
+											+svg('direction')
+										h6.icon-item__title.no-margin-bottom Interesting Route
+
+								.col-6.col-md-3
+
+									.icon-item.text-center
+
+										.icon-item__icon
+											+svg('bed')
+										h6.icon-item__title.no-margin-bottom Interesting Route
+
+								.col-6.col-md-3
+
+									.icon-item.text-center
+
+										.icon-item__icon
+											+svg('pawprint')
+										h6.icon-item__title.no-margin-bottom Interesting Route
+
+								.col-6.col-md-3
+
+									.icon-item.text-center
+
+										.icon-item__icon
+											+svg('jeep')
+										h6.icon-item__title.no-margin-bottom Interesting Route
+
+						.col-12
+
+							.row.bottom-30
+
+								.col-md-8
+
+									h5.tour-details__title.no-margin-bottom Gallery
+
+								.col-md-4.text-left.text-md-right
+
+									.tours-slider__dots
+
+							.row
+
+								.col-12
+
+									.tours-slider
+
+										a.tours-slider__item.photo-trigger(href="img/tours-slider_1.jpg" data-fancybox="gallery")
+											img.img--bg(src="img/tours-slider_1.jpg", alt="img")
+											h6.tours-slider__name Lemour
+										a.tours-slider__item.photo-trigger(href="img/tours-slider_2.jpg" data-fancybox="gallery")
+											img.img--bg(src="img/tours-slider_2.jpg", alt="img")
+											h6.tours-slider__name Antelope
+										a.tours-slider__item.photo-trigger(href="img/tours-slider_3.jpg" data-fancybox="gallery")
+											img.img--bg(src="img/tours-slider_3.jpg", alt="img")
+											h6.tours-slider__name Jaguar
+										a.tours-slider__item.photo-trigger(href="img/tours-slider_2.jpg" data-fancybox="gallery")
+											img.img--bg(src="img/tours-slider_2.jpg", alt="img")
+											h6.tours-slider__name Antelope
+
+						.col-12
+
+							.tour-details__tickets
+
+								h4.tour-details__section-title.bottom-30 buy #[span online tickets]
+	
+								.pricing-item.pricing-item--style-2.pricing-item--selected
+									.row.align-items-center
+										.col-lg-4
+											span Baby (0-4 yrs)
+										.col-lg-4.text-center
+											.pricing-item__price Free
+										.col-lg-4.text-lg-right
+	
+								.pricing-item.pricing-item--style-2
+									.row.align-items-center
+										.col-lg-4
+											span Child (4-12 yrs)
+										.col-lg-4.text-center
+											.pricing-item__price 96.00$
+										.col-lg-4.text-lg-right
+											a.pricing-item__button.button.button--primary(href="#") Buy Ticket
+	
+	
+								.pricing-item.pricing-item--style-2.pricing-item--selected
+									.row.align-items-center
+										.col-lg-4
+											span Adults (12+ yrs)
+										.col-lg-4.text-center
+											.pricing-item__price 139.00$
+										.col-lg-4.text-lg-right
+											a.pricing-item__button.button.button--primary(href="#") Buy Ticket
+	
+								.pricing-item.pricing-item--style-2
+									.row.align-items-center
+										.col-lg-4
+											span Group (10+)
+										.col-lg-4.text-center
+											.pricing-item__price 159.00$
+										.col-lg-4.text-lg-right
+											a.pricing-item__button.button.button--primary(href="#") Buy Ticket
+
+				.col-md-8.offset-md-2.col-lg-3.offset-lg-0
+
+					.tour-details__inner-block
+
+						h5.tour-details__title Categories
+
+						ul.categories-list
+							li.categories-list__item
+								span.categories-list__name Botswana
+								span.categories-list__count 5
+							li.categories-list__item
+								span.categories-list__name Kenya
+								span.categories-list__count 14
+							li.categories-list__item.categories-list__item--active
+								span.categories-list__name South Africa
+								span.categories-list__count 1
+							li.categories-list__item
+								span.categories-list__name Uganda
+								span.categories-list__count 4
+							li.categories-list__item
+								span.categories-list__name Tanzania
+								span.categories-list__count 8
+							li.categories-list__item
+								span.categories-list__name Wakanda
+								span.categories-list__count 8
+
+					.tour-details__inner-block
+
+						h5.tour-details__title Popular Destinations
+
+						a.popular-item(href="#")
+							img.img--bg(src="img/popular_1.jpg", alt="")
+							h6.popular-item__title Bostwana
+
+						a.popular-item(href="#")
+							img.img--bg(src="img/popular_2.jpg", alt="")
+							h6.popular-item__title Uganda
+
+						a.popular-item(href="#")
+							img.img--bg(src="img/popular_3.jpg", alt="")
+							h6.popular-item__title Wakanda
+
+						a.popular-item(href="#")
+							img.img--bg(src="img/popular_4.jpg", alt="")
+							h6.popular-item__title Tanzania
+
+					.tour-details__inner-block
+
+						.action-item
+							img.img--bg(src="img/action_bg.jpg", alt="img")
+							h5.action-item__title Safari #[span Map]
+							a.button.action-item__button(href="#") See map
+
+					.tour-details__inner-block
+
+						h6.footer__title.color--primary.no-padding-top #[span Instagram] #[+fa('instagram')]
+
+						.footer-instagram
+							a.footer-instagram__item(href="#")
+								.footer-instagram__img
+									img.img--bg(src="img/f_ig-1.jpg" alt="ig")
+							a.footer-instagram__item(href="#")
+								.footer-instagram__img
+									img.img--bg(src="img/f_ig-2.jpg" alt="ig")
+							a.footer-instagram__item(href="#")
+								.footer-instagram__img
+									img.img--bg(src="img/f_ig-3.jpg" alt="ig")
+							a.footer-instagram__item(href="#")
+								.footer-instagram__img
+									img.img--bg(src="img/f_ig-4.jpg" alt="ig")
+							a.footer-instagram__item(href="#")
+								.footer-instagram__img
+									img.img--bg(src="img/f_ig-5.jpg" alt="ig")
+							a.footer-instagram__item(href="#")
+								.footer-instagram__img
+									img.img--bg(src="img/f_ig-6.jpg" alt="ig")
+
+					.tour-details__inner-block
+						.tour-details__contacts
+							p #[strong Phone:] #[a(href="tel:+31859644725") +31 85 964 47 25]
+							p #[strong Email:] #[a(href="mailto:info@animalsworld.com") info@animalsworld.com]
+
+							ul.socials.socials--rounded
+								li.socials__item
+									a.socials__link(href="#")
+										+fa('facebook')
+								li.socials__item
+									a.socials__link(href="#")
+										+fa('twitter')
+								li.socials__item
+									a.socials__link(href="#")
+										+fa('youtube-play')
+								li.socials__item
+									a.socials__link(href="#")
+										+fa('instagram')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Similar Tours
+						h2.heading__title.no-margin-bottom #[span similar tours] #[span you may like]
+
+			.row
+
+				.col-sm-6.col-xl-4.bottom-30
+
+					.tours-item
+						.tours-item__img
+							img.img--bg(src="img/tour_1.jpg" alt="img")
+						.tours-item__details
+							h4.tours-item__title Find an #[br] #[span cool safari]
+							.tours-item__price 125.99 USD
+							.tours-item__edition Limited Edition
+							a.tours-item__link(href="#") Read more
+
+				.col-sm-6.col-xl-4.bottom-30
+
+					.tours-item
+						.tours-item__img
+							img.img--bg(src="img/tour_2.jpg" alt="img")
+						.tours-item__details
+							h4.tours-item__title meet rare #[br] #[span animals]
+							.tours-item__price 225.99 USD
+							.tours-item__edition Standart Edition
+							a.tours-item__link(href="#") Read more
+
+				.col-sm-6.col-xl-4.bottom-30
+
+					.tours-item
+						.tours-item__img
+							img.img--bg(src="img/tour_3.jpg" alt="img")
+						.tours-item__details
+							h4.tours-item__title get memories #[br] #[span for life]
+							.tours-item__price 555.99 USD
+							.tours-item__edition Premium Edition
+							a.tours-item__link(href="#") Read more
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

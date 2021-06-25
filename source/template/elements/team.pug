@@ -1,0 +1,266 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'team'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Team]
+
+	// promo end
+
+	// section start
+
+	section.section.elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+			.row.offset-margin
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_1.jpg", alt="img")
+						.team-item__name Chris Patt
+						.team-item__position Director of Animal Health
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_2.jpg", alt="img")
+						.team-item__name Anastasia Lee
+						.team-item__position Presedent & CEO
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_3.jpg", alt="img")
+						.team-item__name Martin Garix
+						.team-item__position Director of Wildlife Care
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_4.jpg", alt="img")
+						.team-item__name Rebeka Koha
+						.team-item__position Director of Wildlife Care
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+			.row.offset-margin
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-2
+						.team-item__img
+							img.img--bg(src="img/team_1.jpg", alt="img")
+							ul.team-item__socials
+								li
+									a.link--facebook(href="#") #[+fa('facebook')]
+								li
+									a.link--twitter(href="#") #[+fa('twitter')]
+								li
+									a.link--youtube(href="#") #[+fa('youtube-play')]
+							.team-item__description
+								.team-item__name Chris Patt
+								.team-item__position Director of Animal Health
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-2
+						.team-item__img
+							img.img--bg(src="img/team_2.jpg", alt="img")
+							ul.team-item__socials
+								li
+									a.link--facebook(href="#") #[+fa('facebook')]
+								li
+									a.link--twitter(href="#") #[+fa('twitter')]
+								li
+									a.link--youtube(href="#") #[+fa('youtube-play')]
+							.team-item__description
+								.team-item__name Anastasia Lee
+								.team-item__position Presedent & CEO
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-2
+						.team-item__img
+							img.img--bg(src="img/team_3.jpg", alt="img")
+							ul.team-item__socials
+								li
+									a.link--facebook(href="#") #[+fa('facebook')]
+								li
+									a.link--twitter(href="#") #[+fa('twitter')]
+								li
+									a.link--youtube(href="#") #[+fa('youtube-play')]
+							.team-item__description
+								.team-item__name Martin Garix
+								.team-item__position Director of Wildlife Care
+						
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-2
+						.team-item__img
+							img.img--bg(src="img/team_4.jpg", alt="img")
+							ul.team-item__socials
+								li
+									a.link--facebook(href="#") #[+fa('facebook')]
+								li
+									a.link--twitter(href="#") #[+fa('twitter')]
+								li
+									a.link--youtube(href="#") #[+fa('youtube-play')]
+							.team-item__description
+								.team-item__name Rebeka Koha
+								.team-item__position Director of Wildlife Care
+
+	// section end
+
+	// section start
+
+	section.section.elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 3
+
+			.row.offset-margin
+
+				.col-sm-6.col-md-4
+
+					.team-item.team-item--style-3
+						.row.align-items-center
+
+							.col-lg-6
+
+								.team-item__img
+									img.img--bg(src="img/team_1.jpg", alt="img")
+
+							.col-lg-6.text-center.text-lg-left
+
+								.team-item__name Chris Patt
+								.team-item__position Director of Animal Health
+								ul.team-item__socials
+									li
+										a.link--facebook(href="#") #[+fa('facebook')]
+									li
+										a.link--twitter(href="#") #[+fa('twitter')]
+									li
+										a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-md-4
+
+					.team-item.team-item--style-3
+						.row.align-items-center
+
+							.col-lg-6
+
+								.team-item__img
+									img.img--bg(src="img/team_2.jpg", alt="img")
+
+							.col-lg-6.text-center.text-lg-left
+
+								.team-item__name Anastasia Lee
+								.team-item__position Presedent & CEO
+								ul.team-item__socials
+									li
+										a.link--facebook(href="#") #[+fa('facebook')]
+									li
+										a.link--twitter(href="#") #[+fa('twitter')]
+									li
+										a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-md-4
+
+					.team-item.team-item--style-3
+						.row.align-items-center
+
+							.col-lg-6
+
+								.team-item__img
+									img.img--bg(src="img/team_3.jpg", alt="img")
+
+							.col-lg-6.text-center.text-lg-left
+
+								.team-item__name Martin Garix
+								.team-item__position Director of Wildlife Care
+								ul.team-item__socials
+									li
+										a.link--facebook(href="#") #[+fa('facebook')]
+									li
+										a.link--twitter(href="#") #[+fa('twitter')]
+									li
+										a.link--youtube(href="#") #[+fa('youtube-play')]
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

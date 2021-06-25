@@ -1,0 +1,295 @@
+// calendar start
+
+section.section.calendar
+	.container
+		.row.align-items-center.bottom-50
+
+			.col-xl-5
+
+				ul.dates-filter
+					li.dates-filter__prev
+						+fa('chevron-left')
+					li.dates-filter__current
+						span December 2018
+					li.dates-filter__next
+						+fa('chevron-right')
+
+			.col-xl-7
+
+				// filter panel start
+
+				ul.filter-panel.calendar-filter
+					li.filter-panel__item.filter-panel__item--active
+						span Animal Extra
+					li.filter-panel__item
+						span Attractions
+					li.filter-panel__item
+						span Discount
+					li.filter-panel__item
+						span Special Event
+					li.filter-panel__item
+						span Keeper Chat
+				
+				// filter panel end
+
+		.row
+
+			.col-12
+
+				.calendar__block.bottom-50
+
+					.row
+
+						.col-md-2.col-lg-1
+
+							.calendar__date
+								span 01
+								span Dec
+
+						.col-md-10.col-lg-11
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_1.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Animals Return From Night Pasture]
+											span.calendar-item__category Animal Extra
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 9 am
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_2.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Giraffe Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 11 am
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_3.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Bird Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 2 pm
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_4.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Cow & Horse Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 3 pm
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_5.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Riverbank Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 3.30 pm
+										a.calendar-item__link(href="#") More Info
+
+				.calendar__block.bottom-50
+
+					.row
+
+						.col-md-2.col-lg-1
+
+							.calendar__date
+								span 02
+								span Dec
+
+						.col-md-10.col-lg-11
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_6.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Animals Return From Night Pasture]
+											span.calendar-item__category Animal Extra
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 9 am
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_7.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Giraffe Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 11 am
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_8.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Bird Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 2 pm
+										a.calendar-item__link(href="#") More Info
+
+				.calendar__block
+
+					.row
+
+						.col-md-2.col-lg-1
+
+							.calendar__date
+								span 03
+								span Dec
+
+						.col-md-10.col-lg-11
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_9.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Animals Return From Night Pasture]
+											span.calendar-item__category Animal Extra
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 9 am
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_10.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Giraffe Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 11 am
+										a.calendar-item__link(href="#") More Info
+
+							.calendar-item
+								.row.align-items-center
+
+									.col-lg-4.col-xl-3
+
+										.calendar-item__img
+											img.img--bg(src="img/calendar_11.jpg", alt="img")
+
+									.col-lg-6.col-xl-7
+
+										.calendar-item__details
+
+											h6.calendar-item__title #[a(href="#") Bird Feeding]
+											span.calendar-item__category Atraction
+
+									.col-lg-2.col-xl-2.text-center.d-none.d-lg-block
+
+										.calendar-item__time 2 pm
+										a.calendar-item__link(href="#") More Info
+
+// calendar end

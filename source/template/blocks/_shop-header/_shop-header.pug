@@ -1,0 +1,80 @@
+// header start
+
+header.header.shop-header
+
+	.header__lower
+		.row
+
+			.col-12.d-flex.align-items-center.justify-content-between
+
+				.header__lower-inner
+					ul.lower-menu
+						li.lower-menu__item
+							a.lower-menu__link(href="#") Membership
+						li.lower-menu__item
+							a.lower-menu__link(href="#") Education
+						li.lower-menu__item
+							a.lower-menu__link(href="#") Map Zoo
+						li.lower-menu__item
+							a.lower-menu__link(href="#") Events
+						li.lower-menu__item
+							a.lower-menu__link(href="#") Donate
+						li.lower-menu__item
+							a.lower-menu__link(href="#") Foundation
+
+				.header__lower-inner
+					// lang select start
+					ul.lang-select
+						li.lang-select__item.lang-select__item--active
+							span English
+							ul.lang-select__sub-list
+								li
+									a(href="#") French
+								li
+									a(href="#") Spanish
+								li
+									a(href="#") Deutsch
+								li
+									a(href="#") Russian
+					// lang select end
+
+					ul.header__socials
+						li
+							a.item--facebook(href="#") #[+fa('facebook')]
+						li
+							a.item--twitter(href="#") #[+fa('twitter')]
+						li
+							a.item--youtube(href="#") #[+fa('youtube-play')]
+						li
+							a.item--instagram(href="#") #[+fa('instagram')]
+
+	.header__top
+		.row.align-items-center
+
+			.col-5.col-lg-3
+
+				a.logo(href="index.html")
+					img.logo__img(src="img/logo_zoo_black.png", alt="logo")
+
+			.col-7.col-lg-9.d-flex.justify-content-end.align-items-center
+
+				include ../../blocks/_main-menu/_main-menu
+
+				a.cabinet-trigger(href="javascript: void(0);")
+					+svg('user')
+
+				a.cart-trigger(href="shop-cart.html")
+					+svg('cart')
+					span.cart-trigger__count 3
+
+				a.header__button(href="#") Tickets
+
+				// menu-trigger start
+
+				.hamburger.d-inline-block.d-lg-none
+					.hamburger-box
+						.hamburger-inner
+
+				// menu-trigger end
+
+// header end

@@ -1,0 +1,94 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'buttons'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Element] #[span Buttons]
+
+	// promo end
+
+	// section start
+
+	section.section.elements.button-elements
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 1
+
+			.row
+
+				.col-xl-8
+
+					a.button.button--primary More about
+
+					a.button.button--primary.button--filled(href="#") More about
+
+	// section end
+
+	// section start
+
+	section.section.elements.button-elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 2
+
+			.row
+
+				.col-xl-8
+
+					a.button.button--primary.button--rounded More about
+
+					a.button.button--primary.button--rounded.button--filled(href="#") More about
+
+	// section end
+
+	// section start
+
+	section.section.elements.button-elements.no-padding-top
+
+		.container
+			.row
+				.col-xl-10
+					h4.elements__title Variant 3
+
+			.row
+
+				.col-xl-8
+
+					a.button.button--primary.button--radius More about
+
+					a.button.button--primary.button--radius.button--filled(href="#") More about
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

@@ -1,0 +1,62 @@
+/* filter panel start */
+
+.filter-panel
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	padding: 0
+	margin: 0
+
+.filter-panel
+	&__item
+		position: relative
+		color: #333
+		font-weight: 700
+		list-style: none
+		padding: 10px 0
+		cursor: pointer
+		transition: color .3s
+	&__item--active
+		color: #A3A3A3
+	&__item:not(:last-of-type)
+		margin-right: 30px
+
+	+r992
+		&__item:not(:last-of-type)
+			margin-right: 45px
+
+	&__item:hover
+		color: #A3A3A3
+	&__item::after
+		content: ""
+		display: block
+		height: 3px
+		width: 0%
+		background: $orange
+		position: absolute
+		bottom: 0
+		left: 0
+		transition: width .3s
+	&__item--active::after,
+	&__item:hover::after
+		width: 100%	
+
+.filter-panel--style-2
+	.filter-panel__item
+		color: #A3A3A3
+	.filter-panel__item::after
+		background: $green
+	.filter-panel__item--active,
+	.filter-panel__item:hover
+		color: #333
+
+.filter-panel--style-3
+	.filter-panel__item
+		color: #A3A3A3
+	.filter-panel__item::after
+		background: $cyan
+	.filter-panel__item--active,
+	.filter-panel__item:hover
+		color: #333
+
+/* filter panel end */

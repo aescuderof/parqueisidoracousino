@@ -1,0 +1,36 @@
+/* donation details start */
+
+.donation-details
+	&__img
+		position: relative
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(540/1170)
+	&__title
+		font-weight: 300
+		text-transform: uppercase
+		margin-top: 35px
+		margin-bottom: 30px
+	&__title strong
+		font-weight: 700
+
+/* donation form */
+
+.donation-form
+	&__title
+		margin-bottom: 15px
+
+	+r768
+
+		&__title
+			margin-bottom: 0
+
+	&__title span
+		color: $orange
+	.form__checkbox-label .form__label-text
+		font-size: 14px
+	.form__message
+		min-height: 150px
+
+/* donation details end */

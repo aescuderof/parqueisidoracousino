@@ -1,0 +1,1128 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'front_2'
+
+	-var type = 'front'
+
+block header
+
+	// menu dropdown start
+
+	.menu-dropdown.menu-dropdown--front-2
+
+		.menu-dropdown__inner(data-value="start")
+
+			.screen.screen--start
+				.screen__item.screen--trigger(data-category="home" class=(type === "front" ? "item--active" : undefined))
+					span Home
+					span #[+svg('chevron')]
+				.screen__item.screen--trigger(data-category="pages" class=(dest === "pages" ? "item--active" : undefined))
+					span Pages
+					span #[+svg('chevron')]
+				.screen__item(class=(page === "blog" ? "item--active" : undefined))
+					a.screen__link(href="blog.html") Blog
+				.screen__item.screen--trigger(data-category="shop" class=(dest === "shop" ? "item--active" : undefined))
+					span Shop
+					span #[+svg('chevron')]
+				.screen__item(class=(page === "contacts" ? "item--active" : undefined))
+					a.screen__link(href="contacts.html") Contacts
+				.screen__item.screen--trigger(data-category="elements" class=(dest === "elements" ? "item--active" : undefined))
+					span Elements
+					span #[+svg('chevron')]
+				.screen__item.screen--trigger(data-category="language")
+					span Language
+					span #[+svg('chevron')]
+
+				ul.screen__socials
+					li
+						a.item--facebook(href="#") #[+fa('facebook')]
+					li
+						a.item--twitter(href="#") #[+fa('twitter')]
+					li
+						a.item--youtube(href="#") #[+fa('youtube-play')]
+					li
+						a.item--instagram(href="#") #[+fa('instagram')]
+
+				a.screen__button(href="#") Tickets
+
+		.menu-dropdown__inner(data-value="home")
+
+			.screen.screen--sub
+				.screen__heading
+					h6.screen__back #[+svg('chevron-left')] #[span Home]
+				.screen__item(class=(page === "index" ? "item--active" : undefined))
+					a.screen__link(href="index.html") Home Zoo
+				.screen__item(class=(page === "front_2" ? "item--active" : undefined))
+					a.screen__link(href="front_2.html") Home Aquarium
+				.screen__item(class=(page === "front_3" ? "item--active" : undefined))
+					a.screen__link(href="front_3.html") Home Terrarium
+				.screen__item(class=(page === "front_4" ? "item--active" : undefined))
+					a.screen__link(href="front_4.html") Home Protections
+				.screen__item(class=(page === "front_5" ? "item--active" : undefined))
+					a.screen__link(href="front_5.html") Home Safari
+				.screen__item(class=(page === "front_6" ? "item--active" : undefined))
+					a.screen__link(href="front_6.html") Home Shop
+
+		.menu-dropdown__inner(data-value="pages")
+
+			.screen.screen--sub
+				.screen__heading
+					h6.screen__back #[+svg('chevron-left')] #[span Pages]
+				.screen__item(class=(page === "about" ? "item--active" : undefined))
+					a.screen__link(href="about.html") About
+				.screen__item(class=(page === "services" ? "item--active" : undefined))
+					a.screen__link(href="services.html") Services
+				.screen__item(class=(page === "blog-details" ? "item--active" : undefined))
+					a.screen__link(href="blog-details.html") Blog Details
+				.screen__item(class=(page === "gallery" ? "item--active" : undefined))
+					a.screen__link(href="gallery.html") Gallery
+				.screen__item(class=(page === "gallery_2" ? "item--active" : undefined))
+					a.screen__link(href="gallery_2.html") Gallery v.2
+				.screen__item(class=(page === "calendar" ? "item--active" : undefined))
+					a.screen__link(href="calendar.html") Calendar
+				.screen__item(class=(page === "membership" ? "item--active" : undefined))
+					a.screen__link(href="membership.html") Membership
+				.screen__item(class=(page === "events" ? "item--active" : undefined))
+					a.screen__link(href="events.html") Events
+				.screen__item(class=(page === "event-details" ? "item--active" : undefined))
+					a.screen__link(href="event-details.html") Event Details
+				.screen__item(class=(page === "tickets" ? "item--active" : undefined))
+					a.screen__link(href="tickets.html") Tickets
+				.screen__item(class=(page === "foundation" ? "item--active" : undefined))
+					a.screen__link(href="foundation.html") Foundation
+				.screen__item(class=(page === "education" ? "item--active" : undefined))
+					a.screen__link(href="education.html") Education
+				.screen__item(class=(page === "donation" ? "item--active" : undefined))
+					a.screen__link(href="donation.html") Donation
+				.screen__item(class=(page === "donation-details" ? "item--active" : undefined))
+					a.screen__link(href="donation-details.html") Donation Details
+				.screen__item(class=(page === "animals" ? "item--active" : undefined))
+					a.screen__link(href="animals.html") Animals
+				.screen__item(class=(page === "animal-details" ? "item--active" : undefined))
+					a.screen__link(href="animal-details.html") Animal Details
+				.screen__item(class=(page === "safari-tours" ? "item--active" : undefined))
+					a.screen__link(href="safari-tours.html") Safari Tours
+				.screen__item(class=(page === "tour-details" ? "item--active" : undefined))
+					a.screen__link(href="tour-details.html") Tour Details
+				.screen__item(class=(page === "typography" ? "item--active" : undefined))
+					a.screen__link(href="typography.html") Typography
+				.screen__item(class=(page === "faq" ? "item--active" : undefined))
+					a.screen__link(href="faq.html") Faq
+				.screen__item(class=(page === "map" ? "item--active" : undefined))
+					a.screen__link(href="map.html") Map
+				.screen__item(class=(page === "404" ? "item--active" : undefined))
+					a.screen__link(href="404.html") 404
+
+		.menu-dropdown__inner(data-value="shop")
+
+			.screen.screen--sub
+				.screen__heading
+					h6.screen__back #[+svg('chevron-left')] #[span Shop]
+				.screen__item(class=(page === "catalog" ? "item--active" : undefined))
+					a.screen__link(href="shop-catalog.html") Shop Catalog
+				.screen__item(class=(page === "single" ? "item--active" : undefined))
+					a.screen__link(href="shop-product.html") Shop Product
+				.screen__item(class=(page === "cart" ? "item--active" : undefined))
+					a.screen__link(href="shop-cart.html") Shop Cart
+				.screen__item(class=(page === "checkout" ? "item--active" : undefined))
+					a.screen__link(href="shop-checkout.html") Shop Checkout
+				.screen__item(class=(page === "account" ? "item--active" : undefined))
+					a.screen__link(href="shop-account.html") Shop Account
+
+		.menu-dropdown__inner(data-value="elements")
+
+			.screen.screen--sub
+				.screen__heading
+					h6.screen__back #[+svg('chevron-left')] #[span Elements]
+				.screen__item(class=(page === "accordion" ? "item--active" : undefined))
+					a.screen__link(href="accordion.html") Accordion
+				.screen__item(class=(page === "alerts" ? "item--active" : undefined))
+					a.screen__link(href="alerts.html") Alerts
+				.screen__item(class=(page === "breadcrumbs" ? "item--active" : undefined))
+					a.screen__link(href="breadcrumbs.html") Breadcrumbs
+				.screen__item(class=(page === "buttons" ? "item--active" : undefined))
+					a.screen__link(href="buttons.html") Buttons
+				.screen__item(class=(page === "charts" ? "item--active" : undefined))
+					a.screen__link(href="charts.html") Charts
+				.screen__item(class=(page === "counters" ? "item--active" : undefined))
+					a.screen__link(href="counters.html") Counters
+				.screen__item(class=(page === "forms" ? "item--active" : undefined))
+					a.screen__link(href="forms.html") Forms
+				.screen__item(class=(page === "icon-list" ? "item--active" : undefined))
+					a.screen__link(href="icon-list.html") Icon List
+				.screen__item(class=(page === "logos" ? "item--active" : undefined))
+					a.screen__link(href="logos.html") Logos
+				.screen__item(class=(page === "paginations" ? "item--active" : undefined))
+					a.screen__link(href="paginations.html") Paginations
+				.screen__item(class=(page === "pricing-tables" ? "item--active" : undefined))
+					a.screen__link(href="pricing-tables.html") Pricing Tables
+				.screen__item(class=(page === "tabs" ? "item--active" : undefined))
+					a.screen__link(href="tabs.html") Tabs
+				.screen__item(class=(page === "team" ? "item--active" : undefined))
+					a.screen__link(href="team.html") Tean
+				.screen__item(class=(page === "testimonials" ? "item--active" : undefined))
+					a.screen__link(href="testimonials.html") Testimonials
+
+		.menu-dropdown__inner(data-value="language")
+
+			.screen.screen--sub
+				.screen__heading
+					h6.screen__back #[+svg('chevron-left')] #[span Language]
+				.screen__item
+					a.screen__link(href="javascript:void(0);") English
+				.screen__item
+					a.screen__link(href="javascript:void(0);") French
+				.screen__item
+					a.screen__link(href="javascript:void(0);") Spanish
+				.screen__item
+					a.screen__link(href="javascript:void(0);") Deutsch
+				.screen__item
+					a.screen__link(href="javascript:void(0);") Russian
+
+	// menu dropdown end
+
+	// header start
+
+	header.header.shop-header.header-f2
+
+		.header__lower
+			.row
+
+				.col-12.d-flex.align-items-center.justify-content-between
+
+					.header__lower-inner
+
+						.header__phones Phone: #[a(href="tel:+31859644725") +31 85 964 47 25] #[a(href="tel:+31657926311") +31 65 792 63 11]
+
+					.header__lower-inner
+						ul.lower-menu
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Membership
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Education
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Map Zoo
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Events
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Donate
+							li.lower-menu__item
+								a.lower-menu__link(href="#") Foundation
+
+						// lang select start
+						ul.lang-select
+							li.lang-select__item.lang-select__item--active
+								span English
+								ul.lang-select__sub-list
+									li
+										a(href="#") French
+									li
+										a(href="#") Spanish
+									li
+										a(href="#") Deutsch
+									li
+										a(href="#") Russian
+						// lang select end
+
+		.header__top
+			.row.align-items-center
+
+				.col-8.col-lg-3
+
+					a.logo(href="index.html")
+						img.logo--white.logo__img(src="img/logo_aquarium.png", alt="logo")
+						img.logo--dark.logo__img(src="img/logo_aquarium_black.png", alt="logo")
+
+				.col-4.col-lg-9.d-flex.justify-content-end.align-items-center
+
+					include ../blocks/_main-menu/_main-menu
+
+					a.header__button(href="#") Tickets
+
+					include ../blocks/_menu-trigger/_menu-trigger
+
+	// header end
+
+
+block main
+
+	// promo start
+
+	section.promo.promo--front-2
+
+		.promo-slider.promo-slider--style-2
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/promo_1f2.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/promo_1f2.jpg' alt='img')
+				.container
+					.row
+						.col-xl-10.offset-xl-1.text-center
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span Amazing]#[br]#[span Underwater World]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing to EAZA being a recognised organisation in animal welfare best-practice.
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary.button--cyan Discover
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/promo_2f2.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/promo_2f2.jpg' alt='img')
+				.container
+					.row
+						.col-xl-7
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span Awesome]#[br] #[span Colorful Corals]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing to EAZA being a recognised 
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary.button--cyan Discover
+
+			.promo-slider__item.promo-slider__item--style-3
+				picture
+					source(srcset='img/promo_3f2.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/promo_3f2.jpg' alt='img')
+				.container
+					.row
+						.col-xl-8.offset-xl-2
+							.align-container
+								.align-container__item
+
+		// promo pannel start
+
+		.promo-pannel
+
+			a.video-trigger(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk")
+				img.img--bg(src="img/video-block_4.jpg" alt="image")
+				span.video-trigger__icon
+					+fa('play')
+					span Watch video
+
+			.promo-pannel__details
+
+				span.promo-pannel__subject Events
+
+				.row.align-items-end
+
+					.col-xl-6
+
+						span.promo-pannel__count.color--cyan 01
+						h6.promo-pannel__title.color--primary
+							a(href="#") Fishes Dancing
+						p.promo-pannel__date 01 Nov 2020
+
+					.col-xl-6
+
+						span.promo-pannel__count.color--cyan 02
+						h6.promo-pannel__title.color--primary
+							a(href="#") Aquarium Photosession
+						p.promo-pannel__date 02 Nov 2020
+
+		.promo-slider__nav-holder
+			.promo-slider__nav.dots--style-3
+			.promo-slider__count
+
+		// promo pannel end
+
+		ul.promo__socials
+			li
+				a(href="#")
+					+fa('facebook')
+			li
+				a(href="#")
+					+fa('twitter')
+			li
+				a(href="#")
+					+fa('youtube-play')
+			li
+				a(href="#")
+					+fa('instagram')
+
+	// promo end
+
+	// section start
+
+	section.section.about-aquarium.no-padding-bottom
+
+		.container
+			.row.bottom-70
+
+				.col-lg-4
+
+					.heading.heading--style-2.heading--cyan.bottom-30
+						span.heading__pre-title About aquarium
+						h2.heading__title.no-margin-bottom #[span Awesome]#[br] #[span aquarium]
+
+					a.button.button--cyan.d-none.d-lg-inline-block(href="#") More about
+
+				.col-lg-8
+
+					p #[strong Ghost pipefish yellow bass New Zealand sand diver eulachon brook lamprey driftfish, Atlantic trout. Mudfish: blue eye, arrowtooth eel french angelfish yellowfin pike unicorn fish.]
+					p.no-margin-bottom Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish. Ghost pipefish yellow bass New Zealand sand diver eulachon brook lamprey driftfish, Atlantic trout. Mudfish: blue eye, arrowtooth eel french angelfish yellowfin pike unicorn fish. Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny deserRudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish.
+
+			.row
+
+				.col-12
+
+					.about-aquarium__img
+						img.img--bg(src="img/about-aquarium.jpg", alt="img")
+
+			.row.top-50.d-flex.d-lg-none
+
+				.col-12.text-center
+
+					a.button.button--cyan(href="#") Read more
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-bottom
+		.container
+			.row.bottom-70
+
+				.col-xl-4
+
+					.heading.heading--style-2.heading--cyan.bottom-30.bottom-lg-none
+						span.heading__pre-title Our fishes
+						h2.heading__title.no-margin-bottom #[span Awesome fishes]#[br] #[span in our aquariums]
+
+				.col-xl-8
+
+					p.no-margin-bottom Zebra oto pikeperch yellow jack nibbler ronquil duckbill round stingray greenling eulachon: rough scad ray, driftfish bobtail snipe eel anchovy stingray grunt sculpin. Soldierfish flounder bleak gouramie algae eater flying gurnard
+
+			.row.offset-margin
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/9.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Tunas
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/10.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Sharks
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/11.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Dolphins
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/12.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Whales
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/13.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Tunas
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/14.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Flounders
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/15.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Deep-water angler
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/16.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Starfishes
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/17.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Sea Urchins
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/18.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Crabs
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/19.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Octopuses
+
+				.col-6.col-sm-4.col-md-3.col-lg-2
+
+					.icon-item.text-center
+
+						.icon-item__img
+
+							img(src="img/20.svg" alt="icon")
+
+						h6.icon-item__title.no-margin-bottom Perches
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-bottom
+		.container
+
+			.row.bottom-50.align-items-end
+
+				.col-xl-6
+
+					.heading.heading--style-2.heading--cyan
+						span.heading__pre-title Fishes
+						h2.heading__title.no-margin-bottom #[span Fishes] #[span type]
+
+				.col-xl-6.d-none.d-xl-block
+
+					.row.offset-30
+
+						.col-md-4.text-left
+
+							.counter-item.counter-item--front-2
+								.counter-item__top
+									h6.counter-item__title Fishes Types
+								.counter-item__lower
+									span.js-counter.color--cyan 850
+
+						.col-md-4.text-left
+
+							.counter-item.counter-item--front-2
+								.counter-item__top
+									h6.counter-item__title Species
+								.counter-item__lower
+									span.js-counter.color--cyan 230
+
+						.col-md-4.text-left
+
+							.counter-item.counter-item--front-2
+								.counter-item__top
+									h6.counter-item__title Visitors per Year
+								.counter-item__lower
+									span.js-counter.color--cyan 160.000
+
+			.row.no-gutters.left-3.right-3
+
+				.col-md-6.col-xl-3
+
+					.text-box.margin-3
+						img.img--bg(src="img/text-box_1.jpg", alt="img")
+						.text-box__details
+							span.text-box__count 01
+							h6.text-box__title Colorful Fishes
+							.text-box__text Fangtooth yellowtail banded killifish seamoth triplefin blenny
+
+				.col-md-6.col-xl-3
+
+					.text-box.margin-3
+						img.img--bg(src="img/text-box_2.jpg", alt="img")
+						.text-box__details
+							span.text-box__count 02
+							h6.text-box__title Colorful Fishes
+							.text-box__text Fangtooth yellowtail banded killifish seamoth triplefin blenny fangtooth yellowtail banded killifish seamoth triplefin blenny 
+
+				.col-md-6.col-xl-3
+
+					.text-box.margin-3
+						img.img--bg(src="img/text-box_3.jpg", alt="img")
+						.text-box__details
+							span.text-box__count 03
+							h6.text-box__title Colorful Fishes
+							.text-box__text Fangtooth yellowtail banded killifish seamoth triplefin blenny
+
+				.col-md-6.col-xl-3
+
+					.text-box.margin-3
+						img.img--bg(src="img/text-box_4.jpg", alt="img")
+						.text-box__details
+							span.text-box__count 04
+							h6.text-box__title Colorful Fishes
+							.text-box__text Fangtooth yellowtail banded killifish seamoth triplefin blenny fangtooth yellowtail banded killifish seamoth triplefin blenny
+
+	// section end
+
+	// gallery start
+
+	section.section.gallery.no-padding-bottom
+		.container
+			.row.bottom-50.align-items-end
+
+				.col-lg-5.col-xl-6
+
+					.heading.heading--style-2.heading--cyan
+						span.heading__pre-title Our gallery
+						h2.heading__title.no-margin-bottom #[span Gallery] #[br] #[span of aquarium]
+
+				.col-lg-7.col-xl-6.text-right.d-none.d-lg-block
+
+					// filter panel start
+
+					ul.filter-panel.filter-panel--style-3.justify-content-end
+						li.filter-panel__item.filter-panel__item--active(data-filter="*")
+							span All
+						li.filter-panel__item(data-filter=".category_2")
+							span Jellyfish
+						li.filter-panel__item(data-filter=".category_3")
+							span Cephalopod
+						li.filter-panel__item(data-filter=".category_4")
+							span Fish
+						li.filter-panel__item(data-filter=".category_5")
+							span Reptiles
+						li.filter-panel__item(data-filter=".category_6")
+							span Corals
+
+					// filter panel end
+
+		.row.gallery-masonry.no-gutters
+
+			.category_1.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_25.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_25.jpg", alt="img")
+					.gallery-masonry__description
+						span Marine mammals
+						span Dolphins
+
+			.category_1.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_26.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_26.jpg", alt="img")
+					.gallery-masonry__description
+						span Cephalopod
+						span Octopus
+
+			.category_1.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_27.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_27.jpg", alt="img")
+					.gallery-masonry__description
+						span Fish
+						span Salt Fish
+
+			.category_2.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_28.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_28.jpg", alt="img")
+					.gallery-masonry__description
+						span Reptiles
+						span Leopard tortoise
+
+			.category_2.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_29.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_29.jpg", alt="img")
+					.gallery-masonry__description
+						span Corals
+						span White Coral
+
+			.category_2.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_30.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_30.jpg", alt="img")
+					.gallery-masonry__description
+						span Fish
+						span Batoidea
+
+			.category_3.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_31.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_31.jpg", alt="img")
+					.gallery-masonry__description
+						span Jellyfish
+						span Mastigias papua
+
+			.category_3.col-sm-6.col-lg-4.col-xl-3.gallery-masonry__item.gallery-masonry__item--cyan
+
+				a.gallery-masonry__img.gallery-masonry__item--height-1(href="img/gallery_32.jpg" data-fancybox="gallery")
+					img.img--bg(src="img/gallery_32.jpg", alt="img")
+					.gallery-masonry__description
+						span Marine mammals
+						span Orca
+
+		.container.d-block.d-md-none.top-50.padding-bottom-70
+			.row
+				.col-12.text-center
+
+					a.button.button--cyan(href="#") All Animals
+
+	// gallery end
+
+	// section start
+
+	section.section.background--gray
+
+		img.img--aside.t50.l0(src="img/price-aside-bg.png", alt="img")
+
+		img.section__bg--fill(src="img/price-bg.png", alt="img")
+
+		.container
+			.row.bottom-50.justify-content-end
+
+				.col-xl-9
+
+					.heading.heading--style-2.heading--cyan
+						span.heading__pre-title Price
+						h2.heading__title.no-margin-bottom #[span # Buy] #[span online tickets]
+
+			.row.justify-content-lg-end
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--white.pricing-item--style-1.text-center
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('adult')
+							.pricing-item__subject Adult (12+ yrs)
+							.pricing-item__price
+								span $
+								span.color--cyan 25.00
+						.pricing-item__lower
+							a.pricing-item__button.button.button--cyan(href="#") Buy tickets
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--white.pricing-item--style-1.text-center
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('child')
+							.pricing-item__subject Child (4-12 yrs)
+							.pricing-item__price
+								span $
+								span.color--cyan 15.00
+						.pricing-item__lower
+							a.pricing-item__button.button.button--cyan(href="#") Buy tickets
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--white.pricing-item--style-1.text-center
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('baby')
+							.pricing-item__subject Baby (0-3 yrs)
+							.pricing-item__price
+								span 
+								span.color--cyan Free
+						.pricing-item__lower
+							a.pricing-item__button.button.button--cyan(href="#") Buy tickets
+
+	// section end
+
+	// info block start
+
+	section.section.info-block
+		img.img--bg(src="img/promo_2f2.jpg" alt="img")
+		.container
+			.row
+
+				.col-xl-5
+
+					.heading.heading--style-2.heading--cyan
+						span.heading__pre-title.color--white Donations
+						h2.heading__title.color--white #[span # Donations for] #[br] #[span the zoo Berlin]
+
+					p.color--white Zoo Berlin relies on your support as a non-profit organisation. You donations help to fund not only the food supply and the upkeep of our animals, but also the maintenance and structural adaptation of the enclosures in accordance with the latest insights into modern animal management. We have a lot on our agenda at Zoo Berlin for the future-exactly what can be seen in our target and development plan.
+					a.info-block__button.button.button--cyan(href="#") Donate
+
+	// info block end
+
+	// section start
+
+	section.section.testimonials.testimonials--style-1.testimonials--cyan
+
+		.container
+			.row
+
+				.col-lg-3.d-none.d-lg-block
+
+					.testimonials__img
+						img.img--bg(src="img/man.jpg" alt="img")
+
+				.col-lg-9
+
+					.row.align-items-center
+
+						.col-md-7
+
+							.heading.heading--primary
+								span.heading__pre-title Testimonials
+								h2.heading__title #[span What People#[br] Says] #[span About Us]
+
+						.col-md-5
+
+							.testimonials--style-1__dots.dots--style-3.text-md-right
+
+					.row
+
+						.col-12
+
+							.testimonials-slider.testimonials-slider--style-1
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+										p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein
+
+	// section end
+
+	// section start
+
+	section.section.events-carousel.no-padding-bottom
+
+		img.events-carousel__bg(src="img/line-bg.jpg" alt="bg")
+
+		.container
+			.row.bottom-50.align-items-end
+
+				.col-md-7.col-lg-6
+
+					.heading.heading--style-2.heading--cyan
+						span.heading__pre-title Events
+						h2.heading__title.no-margin-bottom #[span What’s] #[span coming up?]
+
+				.col-md-5.col-lg-6.d-flex.align-items-center.justify-content-md-end
+
+					.destination-slider__dots.destination-slider__dots--front-2.dots--style-3
+
+					a.button.button--cyan.d-none.d-lg-inline-block(href="#") Full calendar
+
+		.slider-holder
+			.slider-holder__wrapper
+
+				.destination-slider.destination-slider--style-2
+
+					.destination-slider__item
+
+						.destination-item.destination-item--style-3
+							img.img--bg(src="img/events-sl_6.jpg" alt="img")
+							.destination-item__count
+								span 01
+								span nov
+							.destination-item__details
+								span.destination-item__day Tuesday
+								h6.destination-item__title Colorful Fishes
+								a.destination-item__link(href="#") Read more
+
+					.destination-slider__item
+
+						.destination-item.destination-item--style-3
+							img.img--bg(src="img/events-sl_7.jpg" alt="img")
+							.destination-item__count
+								span 13
+								span nov
+							.destination-item__details
+								span.destination-item__day Tuesday
+								h6.destination-item__title Jellyfish Dance
+								a.destination-item__link(href="#") Read more
+
+					.destination-slider__item
+
+						.destination-item.destination-item--style-3
+							img.img--bg(src="img/events-sl_8.jpg" alt="img")
+							.destination-item__count
+								span 13
+								span nov
+							.destination-item__details
+								span.destination-item__day Tuesday
+								h6.destination-item__title Awesome Corals
+								a.destination-item__link(href="#") Read more
+
+					.destination-slider__item
+
+						.destination-item.destination-item--style-3
+							img.img--bg(src="img/events-sl_9.jpg" alt="img")
+							.destination-item__count
+								span 14
+								span nov
+							.destination-item__details
+								span.destination-item__day Tuesday
+								h6.destination-item__title Amazing Water World
+								a.destination-item__link(href="#") Read more
+
+					.destination-slider__item
+
+						.destination-item.destination-item--style-3
+							img.img--bg(src="img/events-sl_7.jpg" alt="img")
+							.destination-item__count
+								span 15
+								span nov
+							.destination-item__details
+								span.destination-item__day Tuesday
+								h6.destination-item__title Awesome Corals
+								a.destination-item__link(href="#") Read more
+
+		.container.top-50.d-block.d-lg-none
+			.row
+				.col-12.text-center
+
+					a.button.button--cyan(href="#") Full calendar
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Our partners
+						h2.heading__title.no-margin-bottom #[span People Who] #[span Trust Us]
+
+			.row
+
+				.col-12
+
+					.logos-slider
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_5.png" alt="logo")
+
+					.logos-slider__dots.dots--style-3
+
+	// section end
+
+	// instagram start
+
+	section.section.instagram.no-padding-top
+
+		.container
+			.row.align-items-end.bottom-50
+
+				.col-12
+
+					.heading.heading--style-2.heading--cyan
+						span.heading__pre-title Instagram
+						h2.heading__title.no-margin-bottom #[span # Awesome] #[span aquarium]
+
+		.instagram-slider.instagram-slider--style-2
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-1.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-2.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-3.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-4.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-5.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-6.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+			a.instagram-slider__item(href="#")
+				img.img--bg(src="img/a_ig-4.jpg", alt="img")
+				span.instagram-slider__icon
+					+fa('instagram')
+				span.instagram-slider__icon-hover
+					+fa('instagram')
+
+	// instagram end
+
+block footer
+
+	// footer start
+
+	footer.footer.footer--front-2
+		img.footer__bg.img--bg(src="img/footer-bg.png" alt="bg")
+
+		.footer__top
+			.container
+				.row
+
+					.col-12
+
+						ul.footer-menu
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Home
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Pages
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Animals
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Schedule
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Gallery
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Blog
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Contacts
+							li.footer-menu__item
+								a.footer-menu__link(href="#") Elements
+
+					.col-12
+
+						ul.socials
+							li.socials__item
+								a.socials__link(href="#") #[+fa('facebook')]
+							li.socials__item
+								a.socials__link(href="#") #[+fa('twitter')]
+							li.socials__item
+								a.socials__link(href="#") #[+fa('youtube-play')]
+							li.socials__item
+								a.socials__link(href="#") #[+fa('instagram')]
+
+					.col-12
+
+						ul.footer-submenu
+							li.footer-submenu__item
+								a.footer-submenu__link(href="#") Membership
+							li.footer-submenu__item
+								a.footer-submenu__link(href="#") Education
+							li.footer-submenu__item
+								a.footer-submenu__link(href="#") Map
+							li.footer-submenu__item
+								a.footer-submenu__link(href="#") Events
+							li.footer-submenu__item
+								a.footer-submenu__link(href="#") Donate
+							li.footer-submenu__item
+								a.footer-submenu__link(href="#") Foundation
+
+		.footer__lower
+			.container
+				.row.align-items-center
+
+					.col-lg-4.text-center.text-lg-left
+
+						a.footer__link(href="#")
+							img(src="img/footer-logo.png", alt="logo")
+
+					.col-lg-4.text-center
+
+						.footer-privacy
+							a.footer-privacy__link(href="#") Privacy Policy
+							span.footer-privacy__divider |
+							a.footer-privacy__link(href="#") Term and Condision
+
+					.col-lg-4
+
+						.footer__details.text-center.text-lg-right
+
+							p #[strong Location:] #[span av. Washington 165, NY CA 54003]
+							p #[strong Phone:] #[a(href="tel:+31859644725") +31 85 964 47 25] #[a(href="tel:+31859644725") +31 65 792 63 11]
+
+	// footer end

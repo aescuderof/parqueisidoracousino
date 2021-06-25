@@ -1,0 +1,114 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'donation'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/donation.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/donation.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Donate to] #[span zoo]
+
+	// promo end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-70
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2
+
+					.donation-item
+
+						.row
+
+							.col-lg-6
+
+								.donation-item__img
+									img.img--bg(src="img/donation_1.jpg", alt="img")
+
+							.col-lg-6
+
+								h4.donation-item__title
+									a(href="#") SAFE: Saving Animals From Extinction
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat voluptatum labore suscipit saepe ipsa repudiandae vel beatae vitae at, officia veritatis nobis exercitationem dolores cum magnam velit autem. Aperiam dolor facilis impedit illo voluptates reprehenderit natus eius eligendi enim. Aperiam dolor facilis impedit illo voluptates.
+								a.button.button--primary(href="#") Donate now
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2
+
+					.donation-item
+
+						.row
+
+							.col-lg-6
+
+								.donation-item__img
+									img.img--bg(src="img/donation_2.jpg", alt="img")
+
+							.col-lg-6
+
+								h4.donation-item__title
+									a(href="#") Conservation Grants Fund (CGF)
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat voluptatum labore suscipit saepe ipsa repudiandae vel beatae vitae at, officia veritatis nobis exercitationem dolores cum magnam velit autem. Aperiam dolor facilis impedit illo voluptates reprehenderit natus eius eligendi enim. Aperiam dolor facilis impedit illo voluptates.
+								a.button.button--primary(href="#") Donate now
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2
+
+					.donation-item
+
+						.row
+
+							.col-lg-6
+
+								.donation-item__img
+									img.img--bg(src="img/donation_3.jpg", alt="img")
+
+							.col-lg-6
+
+								h4.donation-item__title
+									a(href="#") Employee Relief Fund (GFSD)
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat voluptatum labore suscipit saepe ipsa repudiandae vel beatae vitae at, officia veritatis nobis exercitationem dolores cum magnam velit autem. Aperiam dolor facilis impedit illo voluptates reprehenderit natus eius eligendi enim. Aperiam dolor facilis impedit illo voluptates.
+								a.button.button--primary(href="#") Donate now
+
+	// section end
+
+	// section start
+
+	section.section
+		img.img--bg.width100.height100.t0(src="img/section-bg.png", alt="bg")
+
+		.container
+			.row
+
+				.col-12
+
+					blockquote.blockquote.no-margin-bottom
+						p.blockquote__text.no-margin-bottom Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout Chinook salmon bramble shark sand stargazer Steve fish.  Scat zebra pleco graveldiver river shark tripod fish; flagtail bala shark warbonnet
+				
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

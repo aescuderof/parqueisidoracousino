@@ -1,0 +1,254 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'tickets'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/tickets.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/tickets.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Tickets &] #[span Prices]
+
+	// promo end
+
+	// cta start
+
+	.cta-block
+
+		.container
+			.row.align-items-center
+				.col-12
+
+					p.cta-block__text #[strong An all ticket can be purchased during the opening times of the ServiceCenter: 9:00 AM - 5:00 PM or you can purchase tickets online.]
+
+	// cta end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Tickets
+						h2.heading__title.no-margin-bottom #[span One-time] #[span Ticket]
+
+			.row
+
+				.col-12.bottom-50
+
+					.table.ticket-table
+						.table__header
+								.table__cell #[strong Tickets]
+								.table__cell #[strong Details]
+								.table__cell #[strong Zoo]
+								.table__cell #[strong Zoo & Aquarium]
+						.table__body
+							.table__row
+								.table__cell(data-label="Ticket") #[span #[strong Adults]]
+								.table__cell(data-label="Details") #[span 0 up to 4 years]
+								.table__cell(data-label="Zoo") #[span #[strong 15.50$]]
+								.table__cell(data-label="Zoo & Aquarium") #[span #[strong 21.00$]]
+							.table__row
+								.table__cell(data-label="Ticket") #[span #[strong Children]]
+								.table__cell(data-label="Details") #[span 4 up to 15 years]
+								.table__cell(data-label="Zoo") #[span #[strong 8.00$]]
+								.table__cell(data-label="Zoo & Aquarium") #[span #[strong 10.00$]]
+							.table__row
+								.table__cell(data-label="Ticket") #[span #[strong Small Families]]
+								.table__cell(data-label="Details") #[span includes 1 adult and his/her own children resp. children living at the same postal address (ages 4–15)]
+								.table__cell(data-label="Zoo") #[span #[strong 26.00$]]
+								.table__cell(data-label="Zoo & Aquarium") #[span #[strong 35.00$]]
+							.table__row
+								.table__cell(data-label="Ticket") #[span #[strong Large Families]]
+								.table__cell(data-label="Details") #[span includes 1 adult and his/her own children resp. children living at the same postal address (ages 4–15)]
+								.table__cell(data-label="Zoo") #[span #[strong 41.00$]]
+								.table__cell(data-label="Zoo & Aquarium") #[span #[strong 50.00$]]
+							.table__row
+								.table__cell(data-label="Ticket") #[span #[strong Concession]]
+								.table__cell(data-label="Details") #[span Students, apprentices, ALG I + II recipients, berlinpass]
+								.table__cell(data-label="Zoo") #[span #[strong 10.50$]]
+								.table__cell(data-label="Zoo & Aquarium") #[span #[strong 15.00$]]
+
+				.col-12.text-center
+					a.button.button--primary(href="#") Buy Tickets
+
+	// section end
+
+	// section start
+
+	section.section.background--gray
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Price
+						h2.heading__title.no-margin-bottom #[span Buy] #[span online tickets]
+
+			.row
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--style-1.text-center.pricing-item--white
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('adult')
+							.pricing-item__subject Adult (12+ yrs)
+							.pricing-item__price
+								span $
+								span 25.00
+						.pricing-item__lower
+							a.pricing-item__button.button.button--primary(href="#") Buy tickets
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--style-1.text-center.pricing-item--white
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('child')
+							.pricing-item__subject Child (4-12 yrs)
+							.pricing-item__price
+								span $
+								span 15.00
+						.pricing-item__lower
+							a.pricing-item__button.button.button--primary(href="#") Buy tickets
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--style-1.text-center.pricing-item--white
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('baby')
+							.pricing-item__subject Baby (0-3 yrs)
+							.pricing-item__price
+								span 
+								span Free
+						.pricing-item__lower
+							a.pricing-item__button.button.button--primary(href="#") Buy tickets
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.pricing-item.pricing-item--style-1.text-center.pricing-item--white
+						.pricing-item__top
+							.pricing-item__icon
+								+svg('family')
+							.pricing-item__subject Family (4-12+ yrs)
+							.pricing-item__price
+								span $
+								span 50.00
+						.pricing-item__lower
+							a.pricing-item__button.button.button--primary(href="#") Buy tickets
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50.align-items-end
+
+				.col-lg-8
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title Events
+						h2.heading__title.no-margin-bottom #[span Special] #[span Events]
+
+				.col-lg-4.text-right.d-none.d-lg-block
+
+					a.button.button--primary(href="events.html") More Events
+
+			.row.offset-margin
+
+				.col-md-6.col-lg-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 5
+								span May
+							img.img--bg(src="img/events_4.jpg" alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Cinco de Mayo celebration
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-lg-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 12
+								span May
+							img.img--bg(src="img/events_5.jpg" alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Mother’s Day
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+				.col-md-6.col-lg-4
+
+					.events-item
+						.events-item__img
+							.events-item__date
+								span 16
+								span Jun
+							img.img--bg(src="img/events_6.jpg" alt="img")
+						h6.events-item__title
+							a.events-item__link(href="#") Father’s Day Car Show
+						p Celebrate Earth Day with a Party for the Planet! This environmental fair gives everyone the opportunity to learn how to protect and care for the
+
+		.container.top-50.d-block.d-lg-none
+			.row
+				.col-12.text-center
+
+					a.button.button--primary(href="events.html") More Events
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.row.no-gutters
+
+			.col-lg-6
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_1.jpg" alt="img")
+						h3.action-block__title #[span The Biggest Aquarium]#[br] #[span in America]
+
+			.col-lg-6
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_2.jpg" alt="img")
+						h3.action-block__title #[span Amazing Terrarium]#[br] #[span in Europe]
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

@@ -1,0 +1,115 @@
+/* tabs start */
+
+.tabs
+	.r-tabs-accordion-title
+		text-align: center
+	p:last-of-type
+		margin-bottom: 0
+	&__title
+		margin: 40px 0 10px 0
+	.fa
+		margin-right: 8px
+
+/* horizontal tabs */
+
+.horizontal-tabs
+	&__header a,
+	.r-tabs-anchor
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #C3C3C3
+		font-weight: 700
+		text-decoration: none
+		padding: 10px 20px
+	.r-tabs-state-active
+		background: #F3F4F5
+
+	+r769
+
+		.r-tabs-anchor
+			display: inline-flex
+			padding: 25px 20px
+
+	&__header a:hover,
+	.r-tabs-state-active a
+		color: #333333
+	.r-tabs-panel
+		padding: 30px 15px
+	
+	+r769
+
+		.r-tabs-panel
+			padding: 50px
+			background: #F3F4F5
+
+/* vertical tabs */
+
+.vertical-tabs
+	display: flex
+
+.vertical-tabs
+	&__header
+		width: 130px
+
+	+r769
+
+		&__content
+			width: calc(100% - 130px)
+
+	&__header a,
+	.r-tabs-anchor
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #C3C3C3
+		font-weight: 700
+		text-decoration: none
+		padding: 10px 0
+		border-left: 3px solid transparent
+
+	.r-tabs-state-active a
+		background: #F9F7F6
+
+	+r769
+		.r-tabs-state-active a
+			background: none
+
+	+r769
+		.r-tabs-anchor
+			display: inline-flex
+			padding: 0 0 0 15px
+	
+	&__header a:hover,
+	.vertical-tabs__header .r-tabs-state-active a
+		color: #333333
+	.r-tabs-tab
+		display: block
+		padding: 15px 0
+	.r-tabs-state-active
+		background: #FFF
+
+	+r769
+
+		.r-tabs-state-active
+			background: #F3F4F5
+
+	.r-tabs-panel
+		padding: 30px 0
+
+	+r769
+		.r-tabs-panel
+			padding: 50px
+
+/* shop product tabs */
+
+.shop-product-tabs
+
+	.r-tabs-state-active
+		background: #F3F4F5
+
+	+r769
+		.r-tabs-state-active
+			background: none
+
+/* tabs end */

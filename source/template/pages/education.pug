@@ -1,0 +1,183 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'education'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/education.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/education.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span EARLY] #[span CHILDHOOD]
+
+	// promo end
+
+	// cta start
+
+	.cta-block
+
+		.container
+			.row.align-items-center
+				.col-12
+
+					p.cta-block__text #[strong Do lemurs really leap? Do all monkeys swing by their tails? Discover the answers to all these questions and more in one of our interactive programs designed for tiny tots.]
+					p.cta-block__text Kids ages newborn-kindergarten will love the opportunity to play and learn as they are introduced to animals from around the world. All early childhood programs are designed for parent participation
+
+	// cta end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-lg-10.offset-lg-1.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.bottom-70
+
+					.education-item
+						.row.flex-column-reverse.flex-md-row
+
+							.col-md-6
+
+								h5.education-item__title
+									a(href="#") Ewe & Me
+								strong.education-item__category Ages 4 through kindergarten
+								p Kids wear their pajamas for this evening class, which includes a lesson, craft, Zoo experience, bedtime story, and snack.
+								a.button.button--primary(href="#") More Info
+
+							.col-md-6
+
+								.education-item__img
+									img.img--bg(src="img/education_1.jpg", alt="img")
+									.education-item__date
+										span 09
+										span nov
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.bottom-70
+
+					.education-item
+						.row.flex-column-reverse.flex-md-row
+
+							.col-md-6
+
+								h5.education-item__title
+									a(href="#") Get Into Nature
+								strong.education-item__category All ages
+								p Kids wear their pajamas for this evening class, which includes a lesson, craft, Zoo experience, bedtime story, and snack.
+								a.button.button--primary(href="#") More Info
+
+							.col-md-6
+
+								.education-item__img
+									img.img--bg(src="img/education_2.jpg", alt="img")
+									.education-item__date
+										span 12
+										span apr
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.bottom-70
+
+					.education-item
+						.row.flex-column-reverse.flex-md-row
+
+							.col-md-6
+
+								h5.education-item__title
+									a(href="#") Owlet
+								strong.education-item__category Ages 2-3
+								p Kids wear their pajamas for this evening class, which includes a lesson, craft, Zoo experience, bedtime story, and snack.
+								a.button.button--primary(href="#") More Info
+
+							.col-md-6
+
+								.education-item__img
+									img.img--bg(src="img/education_3.jpg", alt="img")
+									.education-item__date
+										span 25
+										span apr
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.bottom-70
+
+					.education-item
+						.row.flex-column-reverse.flex-md-row
+
+							.col-md-6
+
+								h5.education-item__title
+									a(href="#") Pajama Party
+								strong.education-item__category Newborn through 1st grade
+								p Kids wear their pajamas for this evening class, which includes a lesson, craft, Zoo experience, bedtime story, and snack.
+								a.button.button--primary(href="#") More Info
+
+							.col-md-6
+
+								.education-item__img
+									img.img--bg(src="img/education_4.jpg", alt="img")
+									.education-item__date
+										span 02
+										span may
+
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.bottom-70
+
+					.education-item
+						.row.flex-column-reverse.flex-md-row
+
+							.col-md-6
+
+								h5.education-item__title
+									a(href="#") Sunset Safari
+								strong.education-item__category Ages 1–6
+								p Kids wear their pajamas for this evening class, which includes a lesson, craft, Zoo experience, bedtime story, and snack.
+								a.button.button--primary(href="#") More Info
+
+							.col-md-6
+
+								.education-item__img
+									img.img--bg(src="img/education_5.jpg", alt="img")
+									.education-item__date
+										span 12
+										span may
+
+				.col-12
+
+					ul.pagination.justify-content-center
+						li.pagination__item.pagination__item--prev
+							+fa('angle-left')
+							span Back
+						li.pagination__item
+							span 1
+						li.pagination__item.pagination__item--active
+							span 2
+						li.pagination__item
+							span 3
+						li.pagination__item
+							span 4
+						li.pagination__item
+							span 5
+						li.pagination__item.pagination__item--next
+							span Next
+							+fa('angle-right')
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

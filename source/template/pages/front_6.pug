@@ -1,0 +1,961 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'front_6'
+
+	-var type = 'front'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_shop-header/_shop-header
+
+block main
+
+	// promo start
+
+	section.promo.promo--front-6
+
+		.promo-slider
+
+			.promo-slider__item.promo-slider__item--style-2
+				picture
+					source(srcset='img/shop-promo_1.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/shop-promo_1.jpg' alt='img')
+				.container
+					.row
+						.col-lg-7.offset-lg-5.col-xl-6.offset-xl-6
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span The Greatest Zoo]#[br] #[span with Shop]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary Discover
+
+			.promo-slider__item.promo-slider__item--style-2.color--primary
+				picture
+					source(srcset='img/shop-promo_2.jpg' media='(min-width: 992px)')
+					img.img--bg(src='img/shop-promo_2.jpg' alt='img')
+				.container
+					.row
+						.col-lg-8.col-xl-7
+							.align-container
+								.align-container__item
+									.promo-slider__wrapper-1
+										h2.promo-slider__title #[span You will find all the]#[br]#[span Best offers]
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle.color--primary Animals World accreditation standards. Members are proactive in both undertaking and applying animal welfare scientific research, contributing
+									.promo-slider__wrapper-3
+										a(href="#").button.promo-slider__button.button--primary.border--white Discover
+
+		a.promo__anchor(href="#about")
+			span Scroll Down
+
+		.container
+			.row
+				.col-12
+
+					// slider nav start
+
+					.promo-slider__nav
+
+					// slider nav end
+
+	// promo end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.row
+
+			.col-lg-6
+
+				.cta-banner
+
+					img.img--bg(src="img/cta-banner_1.jpg", alt="img")
+
+					h3.cta-banner__title #[span Rhino week in] zoo
+
+					a.button.button--primary.button--white.color--primary(href="#") Buy tickets
+
+			.col-lg-6
+
+				.cta-banner
+
+					img.img--bg(src="img/cta-banner_2.jpg", alt="img")
+
+					h3.cta-banner__title.color--white #[span.color--orange Big Cat] weekend
+
+					a.button.button--primary.button--white(href="#") Shop map
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-bottom
+		.container
+			.row.offset-margin
+
+				.col-6.col-lg-3
+
+					.icon-item.text-center
+	
+						.icon-item__icon.size-60
+							+svg('lock')
+						h6.icon-item__title.no-margin-bottom High Security
+
+				.col-6.col-lg-3
+
+					.icon-item.text-center
+	
+						.icon-item__icon.size-60
+							+svg('box')
+						h6.icon-item__title.no-margin-bottom Home Delivery
+
+				.col-6.col-lg-3
+
+					.icon-item.text-center
+	
+						.icon-item__icon.size-60
+							+svg('support2')
+						h6.icon-item__title.no-margin-bottom 24/7 Service
+
+				.col-6.col-lg-3
+
+					.icon-item.text-center
+	
+						.icon-item__icon.size-60
+							+svg('debitcard')
+						h6.icon-item__title.no-margin-bottom PayPass
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-bottom
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title Category
+						h2.heading__title.no-margin-bottom #[span Awesome Zoo Shop] #[span Categories]
+
+		.row.offset-margin
+
+			.col-sm-6.col-lg-4
+
+				.categorie-item
+					img.img--bg(src="img/category_1.jpg", alt="img")
+					.categorie-item__details
+						span.categorie-item__pretitle Good Juality
+						h4.categorie-item__title Clothes
+
+			.col-sm-6.col-lg-4
+
+				.categorie-item
+					img.img--bg(src="img/category_2.jpg", alt="img")
+					.categorie-item__details
+						span.categorie-item__pretitle Useful
+						h4.categorie-item__title Accessories
+
+			.col-sm-6.col-lg-4
+
+				.categorie-item
+					img.img--bg(src="img/category_3.jpg", alt="img")
+					.categorie-item__details
+						span.categorie-item__pretitle Special
+						h4.categorie-item__title Kids Toys
+
+	// section end
+
+	// section start
+
+	section.section
+		img.section__bg.t50.l0(src="img/shop-sale_bg.png", alt="bg")
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title top sale
+						h2.heading__title.no-margin-bottom #[span Sale 50 %] #[span for Accessories]
+
+			.row.offset-30
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_13.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Mama Lama Cup
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__price 15.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							span.shop-item__badge.shop-item__badge--hot Hot
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_14.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Zoo G T-Shirt
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__price 35.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							span.shop-item__badge.shop-item__badge--new New
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_15.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Monkey Toy
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__price 65.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							span.shop-item__badge.shop-item__badge--sale Sale
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_16.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Zoo L T-Shirt
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__sale
+									s.shop-item__price-old 15.99
+									span.shop-item__price 10.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_17.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Mama Lama Cup
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__price 15.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							span.shop-item__badge.shop-item__badge--hot Hot
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_18.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Zoo G T-Shirt
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__price 35.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							span.shop-item__badge.shop-item__badge--new New
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_19.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Monkey Toy
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__price 65.99 USD
+
+				.col-12.col-sm-6.col-md-4.col-lg-3
+
+					.shop-item
+						.shop-item__img
+							span.shop-item__badge.shop-item__badge--sale Sale
+							a.shop-item__add(href="#")
+								+svg('bag')
+								span Add to cart
+							img.img--contain(src="img/shop_20.png" alt="img")
+						.shop-item__details
+							h6.shop-item__name
+								a(href="shop-product.html") Zoo L T-Shirt
+							ul.rating-list
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item
+									+fa('star')
+								li.rating-list__item.rating-list__item--disabled
+									+fa('star')
+							.shop-item__details-lower
+								span.shop-item__sale
+									s.shop-item__price-old 15.99
+									span.shop-item__price 10.99 USD
+
+			.row.top-50
+
+				.col-12.text-center
+
+					a.button.button--primary(href="#") See all products
+
+	// section end
+
+	// section start
+
+	section.section.banner
+		img.img--bg(src="img/banner-bg.jpg" alt="img")
+		img.banner__img(src="img/banner-img.png" alt="img")
+
+		.container
+			.row
+
+				.col-xl-6
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title Banner
+						h2.heading__title.color--white #[mark Sale 50 %] #[span for Accessories]
+						p.color--white Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert  dogfish whalefish.		
+						a.button.button--primary(href="#") More details
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title product
+						h2.heading__title.no-margin-bottom #[span New] #[span products]
+
+			.row.offset-30
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--sale Sale
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_4.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Zoo L T-Shirt
+									.shop-item__details-lower
+										span.shop-item__sale
+											s.shop-item__price-old 15.99
+											span.shop-item__price 10.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--new New
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_6.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Monkey Toy
+									.shop-item__details-lower
+										span.shop-item__price 65.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_2.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Zoo G T-Shirt
+									.shop-item__details-lower
+										span.shop-item__price 35.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--new New
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_3.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Monkey Toy
+									.shop-item__details-lower
+										span.shop-item__price 65.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_5.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Giraffe Toy
+									.shop-item__details-lower
+										span.shop-item__price 35.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_1.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Mama Lama Cup
+									.shop-item__details-lower
+										span.shop-item__price 15.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_10.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Monkey Packpack
+									.shop-item__details-lower
+										span.shop-item__price 35.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--new New
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_11.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Zoo T-Shirt
+									.shop-item__details-lower
+										span.shop-item__price 35.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+				.col-sm-6.col-xl-4
+
+					.shop-item.shop-item--style-2
+
+						.row.align-items-center
+
+							.col-lg-6
+
+								.shop-item__img
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_12.png" alt="img")
+
+							.col-lg-6
+
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Lion Toy
+									.shop-item__details-lower
+										span.shop-item__price 35.99 USD
+
+										ul.rating-list
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item
+												+fa('star')
+											li.rating-list__item.rating-list__item--disabled
+												+fa('star')
+
+	// section end
+
+	// section start
+
+	.testimonials.testimonials--style-2
+		.container
+			.row
+
+				.col-xl-1
+
+					.testimonials__icon “
+
+				.col-xl-11
+
+					.row.align-items-center
+
+						.col-md-7
+
+							.heading.heading--primary
+								span.heading__pre-title Testimonials
+								h2.heading__title #[span People] #[span Says]
+						
+						.col-md-5
+
+							.testimonials--style-2__dots.text-md-right
+
+					.row
+
+						.col-12
+
+							.testimonials-slider.testimonials-slider--style-2
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein, 
+										span.testimonials-slider__position CEO Solar Systems LLC
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+										p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein, 
+										span.testimonials-slider__position CEO Solar Systems LLC
+
+								.testimonials-slider__item
+									.testimonials-slider__text
+										p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+										p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+										p Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu yellow-and-black triplefin Atlantic saury swordfish southern sandfish
+
+									.testimonials-slider__details
+										span.testimonials-slider__name John Maclein, 
+										span.testimonials-slider__position CEO Solar Systems LLC
+
+	// section end
+
+	// section start
+
+	section.section.blogs.no-padding-bottom
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Blogs
+						h2.heading__title.no-margin-bottom #[span our Lates] #[span Updates]
+
+		.slider-holder.blogs-slider-holder.bottom-70
+			.slider-holder__wrapper
+
+				.blogs-slider
+
+					.blogs-slider__item
+
+						.blogs-item
+
+							img.img--bg(src="img/blogs_1.png" alt="img")
+
+							.blogs-item__details
+								.blogs-item__date 12 November
+								h5.blogs-item__title #[span Help us more]#[br] protect animals
+								p Rudderfish long-finned pike--razorfish menhaden paradise fish
+								.blogs-item__comments
+									+svg('comment2')
+									span.blogs-item__comments-count 14
+								a.blogs-item__link(href="#") Read More
+
+					.blogs-slider__item
+
+						.blogs-item
+
+							img.img--bg(src="img/blogs_2.png" alt="img")
+
+							.blogs-item__details
+								.blogs-item__date 14 November
+								h5.blogs-item__title #[span Help us more]#[br] protect animals
+								p Rudderfish long-finned pike--razorfish menhaden paradise fish
+								.blogs-item__comments
+									+svg('comment2')
+									span.blogs-item__comments-count 16
+								a.blogs-item__link(href="#") Read More
+
+					.blogs-slider__item
+
+						.blogs-item
+
+							img.img--bg(src="img/blogs_3.png" alt="img")
+
+							.blogs-item__details
+								.blogs-item__date 16 November
+								h5.blogs-item__title #[span Help us more]#[br] protect animals
+								p Rudderfish long-finned pike--razorfish menhaden paradise fish
+								.blogs-item__comments
+									+svg('comment2')
+									span.blogs-item__comments-count 12
+								a.blogs-item__link(href="#") Read More
+
+					.blogs-slider__item
+
+						.blogs-item
+
+							img.img--bg(src="img/blogs_1.png" alt="img")
+
+							.blogs-item__details
+								.blogs-item__date 12 November
+								h5.blogs-item__title #[span Help us more]#[br] protect animals
+								p Rudderfish long-finned pike--razorfish menhaden paradise fish
+								.blogs-item__comments
+									+svg('comment2')
+									span.blogs-item__comments-count 11
+								a.blogs-item__link(href="#") Read More
+
+		.container
+			.row.align-items-center.flex-column-reverse.flex-sm-row
+
+				.col-sm-6.text-center.text-sm-left
+
+					a.button.button--primary(href="#") All blogs
+
+				.col-sm-6.text-center.text-sm-right
+
+					.blogs-slider__dots
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Our partners
+						h2.heading__title.no-margin-bottom #[span People Who] #[span Trust Us]
+
+			.row
+
+				.col-12
+
+					.logos-slider
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_5.png" alt="logo")
+
+					.logos-slider__dots
+
+	// section end
+
+	.cta-block
+		img.img--bg(src="img/cta-bg_2.png" alt="bg")
+
+		.container
+			.row.align-items-center
+				.col-lg-6
+
+					h4.cta-block__title Our #[span Newsletters]
+					p.cta-block__text Subscribe and get our lates updates
+
+				.col-lg-6.offset-30
+
+					form.form.cta-form.bottom-30(action="javascript:void(0);")
+						input.form__field(type="email" placeholder="Your Email")
+						input.form__submit(type="submit" value="Subscribe")
+
+block footer
+
+	include ../blocks/_shop-footer/_shop-footer

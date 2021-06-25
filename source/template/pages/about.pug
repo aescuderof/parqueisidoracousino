@@ -1,0 +1,313 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'about'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/about-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/about-bg.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span About] #[span Zoo]
+
+	// promo end
+
+	// section start
+
+	section.section
+		img.section__bg.t50.r0(src="img/about_bg.png" alt="img")
+		.container
+			.row
+
+				.col-lg-6.col-xl-5
+
+					.img-box
+						.img-box__img
+							img.img--bg(src="img/img-box.jpg" alt="img")
+
+				.col-lg-6.col-xl-6.offset-xl-1
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title About ZOO
+						h2.heading__title #[span Words about]#[br] #[span Animal World Zoo]
+
+					p #[strong Silver carp pygmy sunfish blue triggerfish longneck eel dory bullhead shark; spotted dogfish perch silver dollar fangtooth dab Rainbow trout.]
+					p Cornish Spaktailed Bream shark goldeye Black scalyfin murray cod Shingle Fish; oceanic whitetip shark clown loach! Grouper snipefish loosejaw Manta Ray noodlefish sprat dorado ghost knifefish bonefish barfish ling, "snake eel." Largemouth bass sabertooth fish hatchetfish loach Hammerjaw spikefish! Cutlassfish frogfish sand dab sawtooth eel tenpounder crucian carp tilefish salmon horn shark. 
+					p Trevally conger eel, Pacific cod spiderfish bleak, greenling sea bass pupfish yellowbanded perch threespine stickleback bigscale fish silverside trout rough pomfret temperate bass. Dwarf loach slimehead pigfish pollock dartfish zebra
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top
+		.container
+			.row.flex-column-reverse.flex-lg-row
+
+				.col-lg-6.col-xl-6
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title Mission
+						h2.heading__title #[span Awesome AnimalS in]#[br] #[span our Zoo]
+
+					p Silver carp pygmy sunfish blue triggerfish longneck eel dory bullhead shark; spotted dogfish perch silver dollar fangtooth dab Rainbow trout. Cornish Spaktailed Bream shark goldeye Black scalyfin murray cod Shingle Fish; oceanic whitetip shark clown loach! Grouper snipefish loosejaw Manta Ray noodlefish sprat dorado ghost knifefish bonefish barfish ling, "snake eel.
+					p.no-margin-bottom Largemouth bass sabertooth fish hatchetfish loach Hammerjaw spikefish! Cutlassfish frogfish sand dab sawtooth eel tenpounder crucian carp tilefish
+
+					.row.top-30
+
+						.col-md-4
+
+							.counter-item.counter-item--front-1
+								.counter-item__top
+									h6.counter-item__title Animals
+								.counter-item__lower
+									span.js-counter 850
+
+						.col-md-4
+
+							.counter-item.counter-item--front-1
+								.counter-item__top
+									h6.counter-item__title Species
+								.counter-item__lower
+									span.js-counter 230
+
+						.col-md-4
+
+							.counter-item.counter-item--front-1
+								.counter-item__top
+									h6.counter-item__title Visitors per Year
+								.counter-item__lower
+									span.js-counter 160.000
+
+				.col-lg-6.col-xl-5
+
+					.img-box
+						.img-box__img
+							img.img--contain(src="img/wild-world.jpg" alt="img")
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.row.no-gutters
+
+			.col-xl-4
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_3.jpg" alt="img")
+						h3.action-block__title #[span The Biggest Zoo]#[br] #[span in America]
+
+			.col-xl-4
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_1.jpg" alt="img")
+						h3.action-block__title #[span The Biggest Aquarium]#[br] #[span in America]
+
+			.col-xl-4
+
+				a.action-block(href="#")
+					.action-block__inner
+						img.img--bg(src="img/action-block_2.jpg" alt="img")
+						h3.action-block__title #[span Amazing Terrarium]#[br] #[span in Europe]
+
+	// section end
+
+	// section start
+
+	section.section
+
+		img.section__bg.t0.l0(src="img/front-services__bg.jpg", alt="img")
+
+		.container
+			.row.align-items-end.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title Zoo staff
+						h2.heading__title.no-margin-bottom #[span Team in our] #[span Zoo]
+
+			.row.offset-margin
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_1.jpg", alt="img")
+						.team-item__name Chris Patt
+						.team-item__position Director of Animal Health
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_2.jpg", alt="img")
+						.team-item__name Anastasia Lee
+						.team-item__position Presedent & CEO
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_3.jpg", alt="img")
+						.team-item__name Martin Harix
+						.team-item__position Director of Terrarium
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+				.col-sm-6.col-lg-3
+
+					.team-item.team-item--style-1
+						.team-item__img
+							img.img--bg(src="img/team_4.jpg", alt="img")
+						.team-item__name Chris Patt
+						.team-item__position Director of Animal Health
+						ul.team-item__socials
+							li
+								a.link--facebook(href="#") #[+fa('facebook')]
+							li
+								a.link--twitter(href="#") #[+fa('twitter')]
+							li
+								a.link--youtube(href="#") #[+fa('youtube-play')]
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top.no-padding-bottom
+		.testimonials.testimonials--style-1
+			.container
+				.row
+
+					.col-lg-3.d-none.d-lg-block
+
+						.testimonials__img
+							img.img--bg(src="img/man.jpg", alt="img")
+
+					.col-lg-9
+
+						.row.align-items-center
+
+							.col-md-7
+
+								.heading.heading--primary
+									span.heading__pre-title Testimonials
+									h2.heading__title #[span What People#[br] Says] #[span About Us]
+							
+							.col-md-5
+
+								.testimonials--style-1__dots.text-md-right
+
+						.row
+
+							.col-12
+
+								.testimonials-slider.testimonials-slider--style-1
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+									.testimonials-slider__item
+										.testimonials-slider__text
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+											p Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.
+
+										.testimonials-slider__details
+											span.testimonials-slider__name John Maclein
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Our partners
+						h2.heading__title.no-margin-bottom #[span People Who] #[span Trust Us]
+
+			.row
+
+				.col-12
+
+					.logos-slider
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_5.png" alt="logo")
+
+					.logos-slider__dots
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

@@ -1,0 +1,185 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'membership'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/membership.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/membership.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Become a] #[span Member]
+
+	// promo end
+
+	// cta start
+
+	.cta-block
+
+		.container
+			.row.align-items-center
+				.col-12
+
+					strong Become a member at SCZ and you’ll enjoy a year of unlimited visits, special pricing on select events and classes, and more exclusive perks.
+
+	// cta end
+
+	// section start
+
+	section.section.benefits
+
+		img.benefits__img(src="img/benefits-bg.png", alt="img")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--style-2
+						span.heading__pre-title Benefits
+						h2.heading__title #[span Membership] #[span Benefits]
+						p Bonito parasitic catfish, plownose chimaera ling cod Black swallower freshwater flyingfish electric eel platy stream catfish fangtooth sablefish, weever European chub cardinalfish yellowfin croaker. Spiny basslet Red whalefish sawfish skilfish alooh alligatorfish. Mola Reef triggerfish Manta Ray splitfin; surf sardine whale catfish northern squawfish bangus snubnose parasitic eel, streamer fish climbing catfish hammerhead shark.
+
+			.row.offset-margin
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__icon
+							+svg('photo-camera')
+						h6.icon-item__title Photos with Animals
+						p Rudderfish long-finned pike razorfish menhaden paradise fish, barramundi oceanic flyingfish blenny desert.
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__icon
+							+svg('cutlery')
+						h6.icon-item__title Restaraunts & Fast Foods
+						p Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__icon
+							+svg('wifi')
+						h6.icon-item__title Free Wi-Fi with Hi Speed
+						p Lake trout, squeaker, spiny eel bala shark rice eel rohu medaka. Rudd convict blenny ray redside Rabbitfish;
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__icon
+							+svg('trophy')
+						h6.icon-item__title Many Competitions
+						p Desea Cat shark worm eel lenok, beachsalmon: ronquil requiem shark loach goby sucker Black scalyfin rock
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						h2.heading__title.no-margin-bottom #[span Become a] #[span Member]
+
+			.row
+
+				.col-12
+
+					form.form.member-form(action="javascript:void(0);")
+
+						.row
+
+							.col-lg-8
+
+								.row
+
+									.col-md-6
+
+										input.form__field(type="text" name="first-name" placeholder="First Name")
+
+									.col-md-6
+
+										input.form__field(type="text" name="last-name" placeholder="Last Name")
+
+									.col-md-6
+
+										input.form__field(type="tel" name="phone" placeholder="Your Phone")
+
+									.col-md-6
+
+										input.form__field(type="email" name="email" placeholder="Your Email")
+
+							.col-lg-4
+
+								textarea.form__field.form__message(name="message" placeholder="Text")
+
+							.col-12.text-center
+
+								button.form__submit(type="submit") Accept
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						h2.heading__title #[span Membership a] #[span Pricing]
+
+			include ../blocks/_pricing--style-2/_pricing--style-2
+
+	// section end
+
+	// section start
+
+	section.section.no-padding-top
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Price
+						h2.heading__title #[span Buy] #[span Online Tickets]
+
+			include ../blocks/_pricing--style-1/_pricing--style-1
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

@@ -1,0 +1,120 @@
+/* gallery start */
+
+.gallery
+	.filter-panel
+		justify-content: flex-start
+	&__button
+		margin-top: 70px
+
+/* projects start */
+
+.gallery-masonry
+	&__item
+		transition: background 1s
+	&__img
+		position: relative
+		display: block
+		overflow: hidden
+	&__item &__img img
+		transform: scale(1.001)
+		transition: transform 1s
+	&__item:hover &__img img
+		transform: scale(1.2)
+	&__description
+		position: absolute
+		bottom: 0
+		left: 0
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		width: 100%
+		padding: 18px 15px 15px 15px
+		transition: background 1s
+
+	+r1200
+
+		&__description
+			padding: 40px
+
+	&__description span:first-of-type
+		font-size: 12px
+		text-transform: uppercase
+		transition: color 1s
+	&__description span:nth-of-type(2)
+		color: #FFF
+		font-size: 18px
+		font-weight: 700
+		transition: color 1s
+
+.gallery-masonry__item--height-1::before
+	content: ""
+	display: block
+	padding-top: percentage(400/475)
+
+.gallery-masonry__item--height-2::before
+	content: ""
+	display: block
+	padding-top: percentage(800/950)
+
+.gallery-masonry__item--height-3::before
+	content: ""
+	display: block
+	padding-top: percentage(800/475)
+
+.gallery-masonry__item--height-4::before
+	content: ""
+	display: block
+	padding-top: percentage(400/950)
+
+.gallery-masonry__item:hover
+	background: rgba(253, 211, 64, 0.4)
+
+.gallery-masonry__item:hover
+	.gallery-masonry__description
+		background: $orange
+	.gallery-masonry__description span:first-of-type
+		color: #4B4B4B
+	.gallery-masonry__description span:nth-of-type(2)
+		color: #333333
+
+.gallery-masonry__item--green
+	.gallery-masonry__description span:first-of-type
+		color: $green
+
+.gallery-masonry__item--green:hover
+	background: rgba(46, 184, 114, 0.4)
+
+.gallery-masonry__item--green:hover
+	.gallery-masonry__description
+		background: $green
+	.gallery-masonry__description span:first-of-type
+		color: #FFF
+		opacity: 0.6
+	.gallery-masonry__description span:nth-of-type(2)
+		color: #FFF
+
+.gallery-masonry__item--cyan
+	.gallery-masonry__description span:first-of-type
+		color: $cyan
+
+.gallery-masonry__item--cyan:hover
+	background: rgba(48, 227, 202, 0.5)
+
+.gallery-masonry__item--cyan:hover
+	.gallery-masonry__description
+		background: transparent
+	.gallery-masonry__description span:first-of-type
+		color: $cyan
+	.gallery-masonry__description span:nth-of-type(2)
+		color: #FFF
+
+.gallery-masonry__item--cyan
+	.gallery-masonry__img
+		transition: all .3s
+		background: rgba(0, 44, 89, 0.3)
+
+.gallery-masonry__item--cyan:hover
+	.gallery-masonry__img
+		background: rgba(48, 227, 202, 0.03)
+
+/* gallery end */

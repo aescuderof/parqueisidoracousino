@@ -1,0 +1,75 @@
+/* video block start */
+
+.video-frame
+	position: relative
+
+.video-frame::before
+	content: ""
+	display: block
+	padding-top: percentage(600/1170)
+	background: rgba(29, 37, 43, 0.5)
+	position: relative
+	z-index: 1
+
+.video-frame
+	.img--bg
+		z-index: 0
+	&__img-layout
+		display: none
+		position: absolute
+		bottom: -18%
+		left: 50%
+		transform: translateX(-50%)
+		z-index: -1
+
+	+r992
+
+		&__img-layout
+			display: inline-block
+
+	&__trigger
+		display: flex
+		flex-direction: column
+		align-items: center
+		color: #FFF
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 2
+		text-decoration: none
+		transition: color .3s
+	&__icon
+		display: inline-block
+		height: 50px
+		width: 50px
+		line-height: 50px
+		border-radius: 50%
+		background: $gray
+		text-align: center
+		transition: all .3s
+
+	+r768
+
+		&__icon
+			height: 80px
+			width: 80px
+			line-height: 80px
+
+	&__icon .fa
+		font-size: 20px
+		line-height: 50px
+
+	+r768
+
+		&__icon .fa
+			line-height: 80px
+
+
+	&__trigger:hover &__icon
+		background: $orange
+		color: #FFF
+	&__text
+		margin-top: 15px
+
+/* video block end */

@@ -1,0 +1,41 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'safari-tours'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/safari-tours.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/safari-tours.jpg' alt='img')
+
+		.container
+			.row
+
+				.col-auto
+
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span All safari] #[span Tours]
+
+	// promo end
+
+	include ../blocks/_tours/_tours
+
+block footer
+
+	include ../blocks/_footer/_footer

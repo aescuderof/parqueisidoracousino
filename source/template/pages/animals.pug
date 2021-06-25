@@ -1,0 +1,160 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'animals'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/animals.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/animals.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span All] #[span Animals]
+
+	// promo end
+
+	// section start
+
+	section.section.animals
+
+		.container
+			.row.align-items-center.bottom-30
+
+				.col-12
+
+					// filter panel start
+					ul.filter-panel.justify-content-start
+						li.filter-panel__item.filter-panel__item--active
+							span All animals
+						li.filter-panel__item
+							span Invertebrates
+						li.filter-panel__item
+							span Mammals
+						li.filter-panel__item
+							span Birds
+						li.filter-panel__item
+							span Fishes
+					// filter panel end
+
+			.row.no-gutters.left-3.right-3
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_1.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Lion
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_2.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Deer
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_3.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Giraffe
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_4.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Badoon
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_5.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Meerkat
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_6.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Horse
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_7.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Tiger
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_8.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Elephant
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_9.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Fox
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_10.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Brown Bear
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_11.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Leopard
+							a.animal-block__link(href="#") Learn more
+
+				.col-sm-6.col-md-4.col-xl-3
+
+					.animal-block
+						img.img--bg(src="img/animal_12.jpg", alt="img")
+						.animal-block__details
+							h6.animal-block__title Wolf
+							a.animal-block__link(href="#") Learn more
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

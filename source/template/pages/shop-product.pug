@@ -1,0 +1,350 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'single'
+
+	-var dest = 'shop'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_shop-header/_shop-header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/elements.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/elements.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Shop] #[span Single Product]
+
+	// promo end
+
+	include ../blocks/_shop-product/_shop-product
+
+	// section start
+
+	section.section.no-padding-top
+		.container
+			.row
+
+				.col-lg-8
+
+					// shop product tabs start
+
+					.tabs.horizontal-tabs.shop-product-tabs
+
+						ul.horizontal-tabs__header
+							li
+								a(href="#horizontal-tabs__item-1")
+									span Description 
+							li
+								a(href="#horizontal-tabs__item-2")
+									span Reviews
+
+						.horizontal-tabs__content
+
+							#horizontal-tabs__item-1.horizontal-tabs__item
+
+								p Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert  dogfish whalefish.Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert  dogfish whalefish.Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert  dogfish whalefish.Rudderfish long-finned pike--razorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert  dogfish whalefish.
+
+								.table
+									.table__body
+										.table__row
+											.table__cell #[strong Material]
+											.table__cell #[strong Laser]
+										.table__row
+											.table__cell #[strong Color]
+											.table__cell #[strong Black]
+										.table__row
+											.table__cell #[strong Coutry]
+											.table__cell #[strong Ukraine]
+
+							#horizontal-tabs__item-2.horizontal-tabs__item
+
+								.comments
+
+									.comments__item
+										.comments__item-img
+											img.img--bg(src="img/author_5.png", alt="img")
+										.comments__item-description
+											.row.align-items-center
+
+												.col-12.col-md-3
+
+													span.comments__item-name Ellen Gringe
+
+												.col-9.col-md-7
+
+													ul.rating-list
+														li.rating-list__item
+															+fa('star')
+														li.rating-list__item
+															+fa('star')
+														li.rating-list__item
+															+fa('star')
+														li.rating-list__item
+															+fa('star')
+														li.rating-list__item.rating-list__item--disabled
+															+fa('star')
+
+													span.rate-count 4.0
+
+												.col-3.col-md-2.text-right
+
+													span.comments__item-action
+														+svg('previous')
+
+												.col-12
+
+													.comments__item-text
+														p Asian carps sailback scorpionfish; dragon goby lemon sole triplefin blenny hog sucker. Smelt sleeper shovelnose sturgeon merluccid hake cow shark herring smelt trout-perch
+
+									.comments__item
+										.comments__item-img
+											img.img--bg(src="img/author_6.png", alt="img")
+										.comments__item-description
+											.row.align-items-center
+
+												.col-12.col-md-3
+
+													span.comments__item-name John Tringe
+
+												.col-9.col-md-7
+
+													ul.rating-list
+														li.rating-list__item
+															+fa('star')
+														li.rating-list__item
+															+fa('star')
+														li.rating-list__item.rating-list__item--disabled
+															+fa('star')
+														li.rating-list__item.rating-list__item--disabled
+															+fa('star')
+														li.rating-list__item.rating-list__item--disabled
+															+fa('star')
+
+													span.rate-count 2.0
+
+												.col-3.col-md-2.text-right
+
+													span.comments__item-action
+														+svg('previous')
+
+												.col-12
+
+													.comments__item-text
+														p Dragon goby lemon sole triplefin blenny hog sucker. Smelt sleeper shovelnose sturgeon merluccid hake cow shark herring smelt trout-perch
+
+										.comments__item.comments__item--sub
+											.comments__item-img
+												img.img--bg(src="img/author_7.png", alt="img")
+											.comments__item-description
+												.row.align-items-center
+
+													.col-12.col-md-3
+
+														span.comments__item-name Naomi Fringe
+
+													.col-9.col-md-7
+
+														ul.rating-list
+															li.rating-list__item
+																+fa('star')
+															li.rating-list__item
+																+fa('star')
+															li.rating-list__item
+																+fa('star')
+															li.rating-list__item
+																+fa('star')
+															li.rating-list__item
+																+fa('star')
+
+														span.rate-count 5.0
+
+													.col-3.col-md-2.text-right
+
+														span.comments__item-action
+															+svg('previous')
+
+													.col-12
+
+														.comments__item-text
+															p Cow shark herring smelt trout-perch Asian carps sailback scorpionfish; dragon goby lemon sole triplefin blenny hog sucker. Smelt sleeper shovelnose sturgeon merluccid hake 
+
+								include ../blocks/_comments-form/_comments-form
+
+	// section end
+
+	// section start
+
+	section.section.background--brown.no-padding-top
+
+		.container
+			.row.align-items-end.bottom-50
+
+				.col-md-7.col-lg-8
+
+					.heading.heading--primary
+
+						h2.heading__title.no-margin-bottom #[span Related] #[span Products]
+
+				.col-md-5.col-lg-4.text-md-right
+
+					.related-slider__dots
+
+			.row.offset-margin
+				.col-12
+
+					.related-slider
+
+						.related-slider__item
+
+							.shop-item
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--new New
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_3.png" alt="img")
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Monkey Toy
+									ul.rating-list
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item.rating-list__item--disabled
+											+fa('star')
+									.shop-item__details-lower
+										span.shop-item__price 65.99 USD
+
+						.related-slider__item
+
+							.shop-item
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--sale Sale
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_4.png" alt="img")
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Zoo L T-Shirt
+									ul.rating-list
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item.rating-list__item--disabled
+											+fa('star')
+									.shop-item__details-lower
+										span.shop-item__sale
+											s.shop-item__price-old 15.99
+											span.shop-item__price 10.99 USD
+
+						.related-slider__item
+
+							.shop-item
+								.shop-item__img
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_5.png" alt="img")
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Giraffe Toy
+									ul.rating-list
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item.rating-list__item--disabled
+											+fa('star')
+									.shop-item__details-lower
+										span.shop-item__price 65.99 USD
+
+						.related-slider__item
+
+							.shop-item
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--new New
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_6.png" alt="img")
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Monkey Toy
+									ul.rating-list
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item.rating-list__item--disabled
+											+fa('star')
+									.shop-item__details-lower
+										span.shop-item__price 65.99 USD
+
+						.related-slider__item
+
+							.shop-item
+								.shop-item__img
+									span.shop-item__badge.shop-item__badge--sale Sale
+									a.shop-item__add(href="#")
+										+svg('bag')
+										span Add to cart
+									img.img--contain(src="img/shop_4.png" alt="img")
+								.shop-item__details
+									h6.shop-item__name
+										a(href="shop-product.html") Zoo L T-Shirt
+									ul.rating-list
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item
+											+fa('star')
+										li.rating-list__item.rating-list__item--disabled
+											+fa('star')
+									.shop-item__details-lower
+										span.shop-item__sale
+											s.shop-item__price-old 15.99
+											span.shop-item__price 10.99 USD
+
+	// section end
+
+block footer
+
+	include ../blocks/_shop-footer/_shop-footer

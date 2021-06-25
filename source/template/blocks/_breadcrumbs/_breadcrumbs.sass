@@ -1,0 +1,79 @@
+/* breadcrumbs start */
+
+.breadcrumbs
+	padding: 0
+	margin: 0
+	list-style: none
+	font-size: 14px
+	display: inline-flex
+	flex-wrap: wrap
+
+.breadcrumbs
+	&__item
+		margin-bottom: 8px
+	&__item + &__item
+		padding-left: 0.5rem
+	&__item + &__item::before
+		display: inline-block
+		padding-right: 0.5rem
+		color: #6c757d
+		content: "/"
+	&__item &__link
+		color: #333
+		text-decoration: none
+		transition: color .3s
+	&__item &__link:hover
+		color: $orange
+	&__item--active
+		color: $orange
+
+/* breadcrumbs with-line */
+
+.breadcrumbs--with-line
+	.breadcrumbs__item + .breadcrumbs__item::before
+		content: "—"
+
+/* breadcrumbs with-dot */
+
+.breadcrumbs--with-dot
+	.breadcrumbs__item + .breadcrumbs__item::before
+		content: "·"
+
+/* breadcrumbs with-icon */
+
+.breadcrumbs--with-icon
+	.breadcrumbs__item .fa
+		margin-right: 8px
+
+/* breadcrumbs with-number */
+
+.breadcrumbs--with-number
+	counter-reset: counter
+
+.breadcrumbs--with-number
+	.breadcrumbs__item
+		counter-increment: counter
+	.breadcrumbs__item .breadcrumbs__link::before
+		content: counter(counter)
+		position: relative
+		top: -2px
+		display: inline-block
+		height: 15px
+		width: 15px
+		padding: 2px 3px 0 3px
+		margin-right: 8px
+		text-align: center
+		font-size: 10px
+		line-height: 10px
+		border: 1px solid #333
+		transition: all .3s
+	.breadcrumbs__item:not(:last-of-type)::after
+		padding-left: 0.5em
+	.breadcrumbs__link:hover::before,
+	.breadcrumbs__item--active .breadcrumbs__link
+		color: $orange
+		border-color: $orange
+	.breadcrumbs__item--active a::before
+		border-color: $orange
+
+/* breadcrumbs end */

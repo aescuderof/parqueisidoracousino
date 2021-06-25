@@ -1,0 +1,63 @@
+/* testimonials style-2 start */
+
+.testimonials--style-2
+	position: relative
+	padding: 70px 0
+
+.testimonials--style-2
+	&__dots
+		margin-bottom: 20px
+
+	+r768
+
+		&__dots
+			margin-bottom: 0px
+
+.testimonials--style-2::before
+	content: ""
+	position: absolute
+	top: 0
+	left: 0
+	display: none
+	height: 100%
+	width: 100px
+	background: $orange
+
++r1600
+	.testimonials--style-2::before
+		display: block
+
+.testimonials--style-2::after
+	content: ""
+	display: block
+	height: 100%
+	width: 100%
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	background: #F3F4F5
+	z-index: -1
+
++r1600
+
+	.testimonials--style-2::after
+		width: calc(100% - 260px)
+
+.testimonials--style-2
+	.testimonials__icon
+		display: none
+		height: 75px
+		width: 60px
+		background: $orange
+		font-size: 85px
+		font-weight: 300
+		padding-top: 10px
+		text-align: center
+
+	+r1200
+
+		.testimonials__icon
+			display: block
+
+/* testimonials style-2 end */

@@ -1,0 +1,111 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'foundation'
+
+	-var dest = 'pages'
+
+block header
+
+	include ../blocks/_menu-dropdown/_menu-dropdown
+
+	include ../blocks/_header/_header
+
+block main
+
+	// promo start
+
+	section.promo-primary
+
+		picture
+			source(srcset='img/foundation.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/foundation.jpg' alt='img')
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title Wild World
+							h1.promo-primary__title #[span Join] #[span Us]
+
+	// promo end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					.heading.heading--primary.heading--center
+						span.heading__pre-title Join Us
+						h2.heading__title #[span become part of] #[span our big team]
+						p.no-margin-bottom Darter kokopu tadpole fish Ganges shark beaked salmon frilled shark grayling smooth dogfish sea bass. Megamouth shark gopher rockfish, zebra oto Old World knifefish wasp fish rockweed gunnel clown triggerfish. Sand lance, tailor snook beardfish eel cod, sea devil: Devario: morid cod clown triggerfish
+
+	// section end
+
+	// section start
+
+	section.section.background--gray
+		.container
+			.row.offset-70
+
+				.col-12
+
+					.advantages-item
+						.row.align-items-center
+
+							.col-lg-6
+
+								.advantages-item__img
+									img.img--bg(src="img/advantages_1.jpg", alt="img")
+
+							.col-lg-6.col-xl-5.offset-xl-1
+
+								h3.advantages-item__title Who among us is ready #[br] #[strong to save the] planet ?
+								p #[strong Green. That’s how we’d like the world to be]
+								p There are many ways to take small steps in changing your living habits while making big strides in helping the environment.
+								a.button.button--primary(href="#") Join us
+
+				.col-12
+
+					.advantages-item
+						.row.align-items-center.flex-column-reverse.flex-lg-row
+
+							.col-lg-6.col-xl-5
+
+								h3.advantages-item__title Who among us is ready #[br] #[strong to save the] planet ?
+								p #[strong Green. That’s how we’d like the world to be]
+								p There are many ways to take small steps in changing your living habits while making big strides in helping the environment.
+								a.button.button--primary(href="#") Join us
+
+							.col-lg-6.offset-xl-1.col-xl-6
+
+								.advantages-item__img
+									img.img--bg(src="img/advantages_2.jpg", alt="img")
+
+				.col-12
+
+					.advantages-item
+						.row.align-items-center
+
+							.col-lg-6
+
+								.advantages-item__img
+									img.img--bg(src="img/advantages_3.jpg", alt="img")
+
+							.col-lg-6.col-xl-5.offset-xl-1
+
+								h3.advantages-item__title Who among us is ready #[br] #[strong to save the] planet ?
+								p #[strong Green. That’s how we’d like the world to be]
+								p There are many ways to take small steps in changing your living habits while making big strides in helping the environment.
+								a.button.button--primary(href="#") Join us
+
+	// section end
+
+block footer
+
+	include ../blocks/_footer/_footer

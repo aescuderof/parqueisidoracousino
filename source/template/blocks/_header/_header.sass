@@ -1,0 +1,600 @@
+/* header start */
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 5
+	left: 50%
+	width: 100%
+	max-width: 1336px
+	transform: translateX(-50%)
+	box-shadow: 0 3px 10px 5px rgba(0,0,0, 0.06)
+	transition: all .3s
+
+.header
+	&__top
+		position: relative
+		z-index: 10
+		padding: 10px 15px 0px 15px
+		background: #FFF
+		min-height: 60px
+		transition: all .3s
+
+	+r576
+
+		&__top
+			padding: 6px 15px 2px 15px
+
+	+r992
+
+		&__top
+			padding: 0 0 0 30px
+
+	&__button
+		display: none
+		color: #181919
+		font-size: 14px
+		line-height: 68px
+		font-weight: 700
+		text-transform: uppercase
+		background: $orange
+		height: 67px
+		width: 176px
+		text-align: center
+		margin-left: 65px
+		padding: 0 30px
+		transition: all .3s
+
+	+r992
+
+		&__button
+			display: inline-block
+
+	+r1366
+
+		&__button
+			height: 85px
+			line-height: 85px
+
+	&__button:hover
+		color: #FFF
+		background: #282F34
+		text-decoration: none
+	&__lower
+		display: none
+		position: fixed
+		z-index: 1
+		background: $gray
+		opacity: 1
+		transition: all .3s
+		transition-delay: .3s
+
+	+r992
+
+		&__lower
+			display: block
+
+	&__lower--fixed
+		opacity: 0
+		transform: translateY(-100%)
+	&__lower-inner
+		display: inline-flex
+		align-items: center
+	&__socials
+		padding: 0
+		margin: 0
+		display: inline-flex
+		list-style: none
+	&__socials a
+		color: #FFF
+		font-size: 18px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		height: 44px
+		width: 44px
+		transition: background .3s
+	&__socials a:hover
+		text-decoration: none
+	&__phones
+		color: #919BA2
+		font-size: 14px
+		margin-left: 35px
+	&__phones a
+		display: inline-block
+		color:#919BA2
+		transition: opacity .3s
+	&__phones a:not(:last-of-type)
+		margin-right: 10px
+	&__phones a:hover
+		opacity: 0.6
+
+.item--facebook
+	background: #3C5A9A
+
+.item--twitter
+	background: #1DA1F2
+
+.item--youtube
+	background: #F11819
+
+.item--instagram
+	background-image: linear-gradient(#8B24A7, 30%, #D35252)
+
+/* logo */
+
+.logo
+	display: inline-flex
+	align-items: center
+	color: #333
+
+.logo:hover
+	color: inherit
+	text-decoration: none
+
+.logo
+	&__img
+		display: inline-block
+		height: 38px
+		width: auto
+
+	+r576
+
+		&__img
+			height: 45px
+
+	+r1366
+
+		&__img
+			height: 61px
+
+	&__text
+		display: none
+		flex-direction: column
+		align-items: flex-start
+		margin-left: 15px
+
+	+r576
+
+		&__text
+			display: flex
+
+	&__text span:first-of-type
+		font-size: 18px
+		line-height: 24px
+		font-weight: 700
+		font-family: $quicksand
+
+	+r1366
+
+		&__text span:first-of-type
+			font-size: 20px
+			line-height: 25px
+
+	&__text span:nth-of-type(2)
+		color: #B6B9BB
+		font-size: 10px
+		text-transform: uppercase
+
+/* lower menu */
+
+.lower-menu
+	display: inline-flex
+	list-style: none
+	margin: 0
+	padding: 0 25px
+
+.lower-menu
+	&__item:not(:last-of-type)
+		margin-right: 30px
+	&__link
+		position: relative
+		display: inline-block
+		color: #FFF
+		font-size: 14px
+		padding: 10px 0 11px 0
+		transition: color .3s
+	&__link:hover
+		color: #8D9296
+		text-decoration: none
+	&__link::after
+		content: ""
+		display: block
+		width: 0%
+		height: 2px
+		position: absolute
+		bottom: 1px
+		left: 0
+		background: $orange
+		transition: width .3s
+	&__link:hover::after
+		width: 100%
+
+/* lang select */
+
+.lang-select
+	display: inline-flex
+	padding: 0
+	margin: 0
+	list-style: none
+
+.lang-select
+	&__item--active
+		cursor: pointer
+		position: relative
+		background: #282F34
+		transition: color .3s
+		padding: 10px 55px 10px 25px
+		min-width: 126px
+	&__item--active span
+		display: inline-block
+		color: #FFF
+		font-size: 14px
+		position: relative
+	&__item--active span::before,
+	&__item--active span::after
+		content: ""
+		display: block
+		width: 6px
+		height: 2px
+		background: #CFC4CC
+		position: absolute
+		top: 10px
+		transition: all .3s
+		pointer-events: none
+	&__item--active span::before
+		right: -27px
+		transform: rotate(45deg)
+	&__item--active span::after
+		right: -30px
+		transform: rotate(-45deg)
+	&__item--active:hover span::after
+		transform: rotate(45deg)
+	&__item--active:hover span::before
+		transform: rotate(-45deg)
+	&__sub-list
+		margin: 0
+		padding: 12px 30px 18px 30px
+		list-style: none
+		background: $gray
+		position: absolute
+		top: 100%
+		right: 0px
+		transform: translateY(15px)
+		width: 126px
+		opacity: 0
+		visibility: hidden
+		transition: all .3s
+	&__sub-list::before
+		content: ""
+		display: inline-block
+		border: 15px solid transparent
+		position: absolute
+		top: -15px
+		right: 33px
+		transform: rotate(90deg)
+	&__sub-list li a
+		position: relative
+		display: inline-block
+		color: #FFF
+		font-size: 14px
+		line-height: 36px
+		font-weight: 400
+		text-decoration: none
+		transition: color .3s
+	&__sub-list li a:hover
+		color: #C4C4C4
+	&__item--active:hover &__sub-list
+		transform: translate(0)
+		opacity: 1
+		visibility: visible 
+	&__sub-list li a::after
+		content: ""
+		display: block
+		width: 0%
+		height: 2px
+		background: $orange
+		position: absolute
+		bottom: 0px
+		left: 0
+		transition: width .3s
+	&__sub-list li a:hover::after
+		width: 100%
+
+/* cart trigger */
+
+.cart-trigger
+	position: relative
+	text-decoration: none
+	margin-right: 20px
+	transition: color .3s
+	margin: 0 30px 0 25px
+
++r992
+
+	.cart-trigger
+		margin: 0 0 0 30px
+
+.cart-trigger
+	.icon
+		font-size: 24px
+		stroke: #333
+		color: transparent
+		transition: stroke .3s
+	&__count
+		display: inline-block
+		position: absolute
+		top: 0
+		right: -8px
+		color: #333
+		font-size: 12px
+		font-weight: 700
+		line-height: 14px
+		height: 19px
+		min-width: 19px
+		background: $orange
+		border: 2px solid #FFF
+		border-radius: 50%
+		text-align: center
+		transition: color .3s
+
+.cart-trigger:hover
+	.cart-trigger__count
+		color: #333
+	.icon
+		stroke: $orange
+
+/* cart trigger */
+
+.cabinet-trigger
+	position: relative
+	text-decoration: none
+	transition: color .3s
+
++r992
+	.cabinet-trigger
+		margin-left: 80px
+
+.cabinet-trigger
+	.icon
+		font-size: 24px
+		stroke: #333
+		color: transparent
+		transition: stroke .3s
+
+.cabinet-trigger:hover
+	.icon
+		stroke: $orange
+
+/* shop header */
+
+.shop-header
+	.header__button
+		margin-left: 30px
+	.header__lower
+		position: relative
+		z-index: 11
+
+/* header f2 */
+
+.header-f2
+	box-shadow: none
+
+.header-f2
+	.logo--dark
+		display: inline-block
+	.logo--white
+		display: none
+
+	+r992
+
+		.logo--dark,
+		.lower--fixed .logo--white
+			display: none
+
+		.logo--white
+			display: inline-block
+
+		.lower--fixed .logo--dark
+			display: inline-block
+
+	.logo__img
+		height: 38px
+
+	+r576
+
+		.logo__img
+			height: 45px
+
+	+r1366
+
+		.logo__img
+			height: 50px
+
+	.header__phones
+		margin-left: 15px
+
+	+r1366
+
+		.header__phones
+			margin-left: 30px
+
+	.header__lower
+		height: 0px
+
+	+r992
+
+		.header__lower
+			height: auto
+
+	.header__lower::after
+		content: ""
+		display: block
+		height: 1px
+		width: 100vw
+		background: #595959
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		opacity: 0.47
+	.header__phones,
+	.header__phones a
+		color:#FFF
+
+	+r992
+
+		.header__top
+			padding: 13px 15px 12px 15px
+
+	+r1366
+
+		.header__top
+			padding: 0px 15px 0px 30px
+
+	.header__top
+		background: #FFF
+	
+	+r992
+
+		.header__top,
+		.header__lower,
+		.lang-select__item--active
+			background: transparent
+
+	.header__button
+		height: 60px
+		line-height: 60px
+		background: $cyan
+	.header__button:hover
+		color: inherit
+		background: #78F7E5
+	.main-menu
+		margin-right: 45px
+
+	+r1200
+
+		.main-menu
+			margin-right: 85px
+
+	.main-menu__item .main-menu__link
+		color: #FFF
+	.main-menu__item--has-child > .main-menu__link > span::before,
+	.main-menu__item--has-child > .main-menu__link > span::after
+		background: #FFF
+	.lower-menu__link::after,
+	.lang-select__sub-list li a::after,
+	.main-menu__sub-list li a::after,
+	.main-menu__item .main-menu__link::before
+		background: $cyan
+	.lang-select__item--active
+		min-width: 100px
+		padding: 10px 45px 10px 25px
+	.lower--fixed
+		background: #FFF
+		box-shadow: 0 3px 10px 5px rgba(0,0,0,.06)
+	.lower--fixed .main-menu__item .main-menu__link
+		color: #181919
+	.lower--fixed .main-menu__item--has-child > .main-menu__link > span::before,
+	.lower--fixed .main-menu__item--has-child > .main-menu__link > span::after
+		background: #181919
+	.lower--fixed .main-menu__item--active .main-menu__link
+		color: #a3a3a3
+	.lower--fixed .main-menu__item--active .main-menu__link > span::before,
+	.lower--fixed .main-menu__item--active .main-menu__link > span::after
+		background: #a3a3a3
+
+/* header f3 */
+
+.header-f3
+	.hamburger-inner,
+	.hamburger-inner::after,
+	.hamburger-inner::before
+		background: #FFF
+	.header__lower
+		padding: 0 30px 0 0
+		height: 0
+
+	+r992
+
+		.header__lower
+			height: auto
+
+	.header__top
+		padding: 10px 15px 5px 15px
+		background: #282f34
+
+	+r992
+
+		.header__top
+			padding: 20px 30px 20px 55px
+
+	.lower-menu
+		padding: 0
+	.lang-select__item--active
+		background: #30373C
+	.lower-menu__link
+		color: #919BA2
+	.lower-menu__link:hover
+		color: #FFF
+	.lower-menu__link::after,
+	.main-menu__item .main-menu__link::before,
+	.main-menu__sub-list li a::after
+		background: $green
+	.header__socials a
+		height: auto
+		width: auto
+		transition: color .3s
+	.header__socials a:hover
+		color: $green
+	.header__socials li:not(:last-of-type)
+		margin-right: 23px
+	.lang-select__sub-list li a::after
+		background: $green
+	.main-menu__item .main-menu__link
+		color: #FFF
+	.main-menu__item--has-child > .main-menu__link > span::before,
+	.main-menu__item--has-child > .main-menu__link > span::after
+		background: #FFF
+	.main-menu
+		margin-right: 45px
+
+	+r1366
+
+		.main-menu
+			margin-right: 85px
+
+	.header__button
+		height: 60px
+		line-height: 60px
+		background: $green
+		color: #FFF
+	.header__button:hover
+		background: #59DA99
+	.lower--fixed
+		box-shadow: 0 3px 10px 5px rgba(0,0,0,.06)
+
+	+r992
+
+		.lower--fixed
+			padding: 12px 15px 12px 55px
+
+	+r1366
+
+		.lower--fixed
+			padding: 0px 15px 0px 55px
+
++r1600
+
+	.header-f3
+		max-width: 1460px
+
+/* header f4 */
+
+.header-f4 
+	.header__button
+		margin-left: 70px
+
+/* header end */

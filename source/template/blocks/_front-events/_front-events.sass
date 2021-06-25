@@ -1,0 +1,147 @@
+/* front events start */
+
+.front-events
+	padding-bottom: 0 !important
+
++r1200
+	.front-events
+		padding-bottom: 140px !important
+
+.front-events
+	&__button
+		margin-top: 50px
+
+/* nearest item */
+
+.nearest-item
+	background: #FFFFFF
+	color: #777
+	box-shadow: 0 3px 10px 5px rgba(0,0,0,.03)
+	padding-bottom: 25px
+
++r768
+
+	.nearest-item
+		padding-bottom: 0
+
+.nearest-item:not(:last-of-type)
+	margin-bottom: 20px
+
+.nearest-item
+	&__img
+		position: relative
+	.img--bg
+		z-index: 0
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(130/203)
+	&__description,
+	&__date
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding: 0 15px
+	&__description
+		padding-top: 23px
+
+	+r768
+
+		&__description,
+		&__date
+			padding: 0
+
+	&__link
+		font-family: $quicksand
+	&__link,
+	&__date span:first-of-type
+		color: #333
+		font-size: 18px
+		font-weight: 700
+		transition: opacity .3s
+	&__link:hover
+		color: #333
+		opacity: 0.75
+
+/* main event */
+
+.main-event
+	position: relative
+	background: rgba(0,0,0,0.4)
+	color: #FFF
+	margin-top: 70px
+	padding: 52px 30px 60px 30px
+
++r768
+
+	.main-event
+		padding: 42px 70px 70px 50px
+
++r992
+
+	.main-event
+		padding: 62px 70px 70px 70px
+
++r1200
+
+	.main-event
+		padding: 70px
+		display: flex
+		align-items: center
+		position: absolute
+		height: 100%
+		top: 0
+		right: 0
+		width: 41%
+		margin-top: 0
+
+.main-event
+	&__inner
+		width: 100%
+		max-width: 540px
+
+	+r1200
+
+		&__inner
+			max-width: 320px
+
+	.heading
+		margin-bottom: 20px
+
+	+r1200
+
+		.heading
+			margin-bottom: 30px
+
+	.heading .heading__title,
+	.heading .heading__pre-title
+		color: #FFF
+	p
+		color: inherit
+	p:not(:last-of-type)
+		margin-bottom: 35px
+	&__date
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin-top: 28px
+
+	+r1200
+
+		&__date
+			margin-top: 44px
+
+	&__date span:first-of-type
+		color: $orange
+		font-size: 18px
+		font-weight: 700
+	&__button
+		color: #FFF
+		margin-top: 45px
+
+	+r1200
+
+		&__button
+			margin-top: 130px
+
+/* front events end */

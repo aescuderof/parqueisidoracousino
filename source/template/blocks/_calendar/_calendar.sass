@@ -1,0 +1,131 @@
+/* calendar start */
+
+.calendar-filter
+	justify-content: flex-start
+
++r1200
+
+	.calendar-filter
+		justify-content: flex-end
+
+.calendar
+	&__date
+		margin-bottom: 15px
+
+	+r992
+
+		&__date
+			margin-bottom: 0
+
+	&__date span
+		display: block
+		font-family: $quicksand
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: -0.050em
+	&__date span:first-of-type
+		font-size: 50px
+		line-height: 50px
+
+/* dates filter */
+
+.dates-filter
+	display: inline-flex
+	align-items: center
+	list-style: none
+	padding: 0
+	margin: 0 0 30px 0
+
++r1200
+
+	.dates-filter
+		margin: 0
+
+.dates-filter
+	&__current
+		font-size: 25px
+		font-weight: 700
+		margin: 0 25px
+
+	+r576
+
+		&__current
+			margin: 0 50px
+
+	&__prev,
+	&__next
+		cursor: pointer
+		transition: color .3s
+	&__prev:hover,
+	&__next:hover
+		color: $orange
+
+/* calendar item */
+
+.calendar-item
+	background: #F3F4F5
+	transition: background .3s
+
+.calendar-item:not(:last-of-type)
+	margin-bottom: 15px
+
+.calendar-item
+	&__img
+		position: relative
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(100/245)
+	&__img img
+		z-index: 0
+	&__details
+		padding: 15px
+	&__title
+		font-size: 18px
+		margin-bottom: 5px
+	&__title a
+		color: inherit
+		transition: color .3s
+	&__title a:hover
+		color: $orange !important
+	&__category
+		color: #777
+	&__time
+		font-size: 20px
+		font-weight: 700
+		font-family: $quicksand
+		text-transform: uppercase
+		padding: 0 15px 0 0
+		transition: all .3s
+
+	+r992
+
+		&__time
+			padding: 0
+
+	&__link
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-weight: 700
+		opacity: 0
+		visibility: hidden
+		transition: all .3s
+	&__link:hover
+		color: #FFF
+
+.calendar-item:hover
+	background: #1D252B
+
+.calendar-item:hover
+	.calendar-item__title a
+		color: #FFF
+	.calendar-item__time
+		opacity: 0
+		visibility: hidden
+	.calendar-item__link
+		opacity: 1
+		visibility: visible
+
+/* calendar end */
