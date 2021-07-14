@@ -37,6 +37,493 @@
 
 			font()
 		</script>
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695470858449',
+        node: document.getElementById('product-component-1626228944041'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695479640273',
+        node: document.getElementById('product-component-1626229447475'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695470858449',
+        node: document.getElementById('product-component-1626229604649'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
 	</head>
 		<body>
 		<div class="page-wrapper">
@@ -463,7 +950,8 @@
 										<div class="pricing-item__subject">Estudiantes </div>
 										<div class="pricing-item__price"><span>$</span><span>2.000</span></div>
 									</div>
-									<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>
+									
+									<div class="pricing-item__lower" id='product-component-1626228944041'></div>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4 col-xl-3">
@@ -477,7 +965,7 @@
 										<div class="pricing-item__subject">Personas Mayores</div>
 										<div class="pricing-item__price"><span>$</span><span>2.000</span></div>
 									</div>
-									<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>
+									<div class="pricing-item__lower"  id='product-component-1626229447475' ></div>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4 col-xl-3">
@@ -491,7 +979,6 @@
 										<div class="pricing-item__subject">Menores de 3 años</div>
 										<div class="pricing-item__price"><span> </span><span>Gratis</span></div>
 									</div>
-									<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4 col-xl-3">
@@ -505,7 +992,7 @@
 										<div class="pricing-item__subject">Entrada General</div>
 										<div class="pricing-item__price"><span>$</span><span>4.000</span></div>
 									</div>
-									<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>
+									<div class="pricing-item__lower"  id='product-component-1626229604649'></div>
 								</div>
 							</div>
 						</div>

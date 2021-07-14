@@ -37,6 +37,494 @@
 
 			font()
 		</script>
+
+		<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695470858449',
+        node: document.getElementById('product-component-1626225628109'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695480656081',
+        node: document.getElementById('product-component-1626228053476'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695479640273',
+        node: document.getElementById('product-component-1626228251752'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+	
+
 	</head>
 		<body>
 		<div class="page-wrapper">
@@ -54,10 +542,10 @@
 							<svg class="icon">
 								<use xlink:href="como-llegar.html"></use>
 							</svg></span></div>
-					<div class="screen__item screen--trigger" data-category="elements"><span>Servicios</span><span>
+					<!--<div class="screen__item screen--trigger" data-category="elements"><span>Servicios</span><span>
 							<svg class="icon">
 								<use xlink:href="#chevron"></use>
-							</svg></span></div>
+							</svg></span></div>-->
 
 						<div class="screen__item screen--trigger" data-category="elements"><span>Boletería</span><span>
 							<svg class="icon">
@@ -119,16 +607,16 @@
 						<div class="screen__heading">
 							<h6 class="screen__back">
 								<svg class="icon">
-									<use xlink:href="como-llegar.html#comollegar"></use>
+									<use xlink:href="como-llegar.html"></use>
 								</svg> <span>Visítanos</span>
 							</h6>
 						</div>
 					
 						<div class="screen__item"><a class="screen__link" href="como-llegar.html#comollegar">Cómo llegar</a></div>
-						<div class="screen__item"><a class="screen__link"  href="como-llegar.html#comollegar">Reglamento del visitante</a></div>
+						<div class="screen__item"><a class="screen__link"  href="como-llegar.html#reglamento">Reglamento del visitante</a></div>
 					</div>
 				</div>
-				<div class="menu-dropdown__inner" data-value="elements">
+				<!--<div class="menu-dropdown__inner" data-value="elements">
 					<div class="screen screen--sub">
 						<div class="screen__heading">
 							<h6 class="screen__back">
@@ -143,7 +631,7 @@
 						<div class="screen__item"><a class="screen__link" href="auspicio.html">Auspicio</a></div>
 						<div class="screen__item"><a class="screen__link" href="practica.html">Realiza tu práctica</a></div>
 					</div>
-				</div>
+				</div>-->
 				
 				<div class="menu-dropdown__inner" data-value="elements">
 					<div class="screen screen--sub">
@@ -265,7 +753,7 @@
 									</ul>
 									<!-- sub menu end-->
 								</li>
-								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Visítanos</span></a>
+								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="como-llegar.html"><span>Visítanos</span></a>
 									<!-- sub menu start-->
 									<ul class="main-menu__sub-list">
 										
@@ -275,16 +763,16 @@
 									<!-- sub menu end-->
 								</li>
 								
-								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Servicios</span></a>
-									<!-- sub menu start-->
+								<!--<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Servicios</span></a>
+									
 									<ul class="main-menu__sub-list sub-list--style-2">
 										<li><a href="eventos.html"><span>Eventos</span></a></li>
 										<li><a href="tours_especiales.html"><span>Tours Especiales</span></a></li>
 										<li><a href="audioguia.html"><span>Audio Guía</span></a></li>
 										<li><a href="practica.html"><span>Realiza tu práctica</span></a></li>
 									</ul>
-									<!-- sub menu end-->
-								</li>
+									
+								</li>-->
 
 			
 
@@ -536,21 +1024,37 @@
 										<div class="col-lg-4 text-center">
 											<div class="pricing-item__price">$4.000</div>
 										</div>
-										<div class="col-lg-4 text-lg-right"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar</a></div>
+										<div class="col-lg-4 text-lg-center" id='product-component-1626225628109'></div>
+										
 									</div>
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="pricing-item pricing-item--style-2 pricing-item--selected">
 									<div class="row align-items-center">
-										<div class="col-lg-4"><span>Estudiantes y Personas Mayores:</span></div>
+										<div class="col-lg-4"><span>Estudiantes:</span></div>
 										<div class="col-lg-4 text-center">
 											<div class="pricing-item__price">$2.000</div>
 										</div>
-										<div class="col-lg-4 text-lg-right"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar</a></div>
+										<div class="col-lg-4 text-lg-right" id='product-component-1626228053476'></div>
 									</div>
 								</div>
 							</div>
+
+
+
+							<div class="col-12">
+								<div class="pricing-item pricing-item--style-2">
+									<div class="row align-items-center">
+										<div class="col-lg-4"><span>Personas Mayores:</span></div>
+										<div class="col-lg-4 text-center">
+											<div class="pricing-item__price">$2.000</div>
+										</div>
+										<div class="col-lg-4 text-lg-right" id='product-component-1626228251752'></div>
+									</div>
+								</div>
+							</div>
+						
 					
 						</div>
 					</div>
@@ -594,7 +1098,7 @@
 							<ul class="footer-menu footer-menu--style-2">
 								<li class="footer-menu__item"><a class="footer-menu__link" href="historia.html">Conócenos</a></li>
 								<li class="footer-menu__item"><a class="footer-menu__link" href="como-llegar.html">Visítanos</a></li>
-								<li class="footer-menu__item"><a class="footer-menu__link" href="servicios.html">Servicios</a></li>
+								<!--<li class="footer-menu__item"><a class="footer-menu__link" href="servicios.html">Servicios</a></li>-->
 								<li class="footer-menu__item"><a class="footer-menu__link" href="#">El Parque</a></li>
 								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Membresía</a></li>
 								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Noticias</a></li>
