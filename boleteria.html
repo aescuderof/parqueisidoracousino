@@ -66,8 +66,8 @@
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: '6695470858449',
-        node: document.getElementById('product-component-1626228944041'),
+        id: '6695480656081',
+        node: document.getElementById('product-component-1626743496156'),
         moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
         options: {
   "product": {
@@ -200,6 +200,170 @@
 })();
 /*]]>*/
 </script>
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'senoritamaria.myshopify.com',
+      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6695470858449',
+        node: document.getElementById('product-component-1626745886668'),
+        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Comprar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px",
+        "padding-left": "54px",
+        "padding-right": "54px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        "background-color": "#2eb872",
+        ":focus": {
+          "background-color": "#29a667"
+        },
+        "border-radius": "40px"
+      }
+    },
+    "text": {
+      "title": "Carrito de compras",
+      "total": "Subtotal",
+      "empty": "Tu carro esta vacío",
+      "notice": "",
+      "button": "Ir a pagar"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#2eb872",
+        ":hover": {
+          "background-color": "#29a667"
+        },
+        ":focus": {
+          "background-color": "#29a667"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
 
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -229,7 +393,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '6695479640273',
-        node: document.getElementById('product-component-1626229447475'),
+        node: document.getElementById('product-component-1626746060012'),
         moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
         options: {
   "product": {
@@ -363,330 +527,6 @@
 /*]]>*/
 </script>
 
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'senoritamaria.myshopify.com',
-      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6695470858449',
-        node: document.getElementById('product-component-1626229604649'),
-        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Comprar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px"
-      }
-    },
-    "text": {
-      "title": "Carrito de compras",
-      "total": "Subtotal",
-      "empty": "Tu carro esta vacío",
-      "notice": "",
-      "button": "Ir a pagar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Roboto, sans-serif",
-        "background-color": "#2eb872",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        ":focus": {
-          "background-color": "#29a667"
-        }
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-
-
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'senoritamaria.myshopify.com',
-      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6695480656081',
-        node: document.getElementById('product-component-1626385351192'),
-        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Comprar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px"
-      }
-    },
-    "text": {
-      "title": "Carrito de compras",
-      "total": "Subtotal",
-      "empty": "Tu carro esta vacío",
-      "notice": "",
-      "button": "Ir a pagar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Roboto, sans-serif",
-        "background-color": "#2eb872",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        ":focus": {
-          "background-color": "#29a667"
-        }
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
 	</head>
 		<body>
 		<div class="page-wrapper">
@@ -1050,36 +890,31 @@
 										<div class="table__cell"><strong>Tickets</strong></div>
 										<div class="table__cell"><strong>Details</strong></div>
 										<div class="table__cell"><strong>Zoo</strong></div>
-										<div class="table__cell"><strong>Zoo & Aquarium</strong></div>
-									</div>
-									<div class="table__body">
-										<div class="table__row">
-											<div class="table__cell" data-label="Ticket"><span><strong>Adults</strong></span></div>
+										<div class="table__cell"><st									<div cl__row">
+		<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>									<div class="table__cell" data-label="Ticket"><span><strong>Adults</strong></span></div>
 											<div class="table__cell" data-label="Details"><span>0 up to 4 years</span></div>
 											<div class="table__cell" data-label="Zoo"><span><strong>15.50$</strong></span></div>
 											<div class="table__cell" data-label="Zoo &amp; Aquarium"><span><strong>21.00$</strong></span></div>
 										</div>
 										<div class="table__row">
-											<div class="table__cell" data-label="Ticket"><span><strong>Children</strong></span></div>
-											<div class="table__cell" data-label="Details"><span>4 up to 15 years</span></div>
+											<div class="table__cell" data-label="Ticket"><spanetails"><span>4 up to 15 y<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>ears</span></div>
 											<div class="table__cell" data-label="Zoo"><span><strong>8.00$</strong></span></div>
 											<div class="table__cell" data-label="Zoo &amp; Aquarium"><span><strong>10.00$</strong></span></div>
 										</div>
 										<div class="table__row">
 											<div class="table__cell" data-label="Ticket"><span><strong>Small Families</strong></span></div>
-											<div class="table__cell" data-label="Details"><span>includes 1 adult and his/her own children resp. children living at the same postal address (ages 4–15)</span></div>
+											<div class="table__cell" data-label="Details"><span>includes 1 adult and his/her own children resp. children living at the same post
+									<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>al address (ages 4–15)</span></div>
 											<div class="table__cell" data-label="Zoo"><span><strong>26.00$</strong></span></div>
 											<div class="table__cell" data-label="Zoo &amp; Aquarium"><span><strong>35.00$</strong></span></div>
 										</div>
 										<div class="table__row">
 											<div class="table__cell" data-label="Ticket"><span><strong>Large Families</strong></span></div>
-											<div class="table__cell" data-label="Details"><span>includes 1 adult and his/her own children resp. children living at the same postal address (ages 4–15)</span></div>
-											<div class="table__cell" data-label="Zoo"><span><strong>41.00$</strong></span></div>
+											<div class="table__cell" data-label="Details"><span>includes 1 adult and his/her own children reclass="table__cell" data-l<div class="pricing-item__lower"><a class="pricing-item__button button button--green button--rounded" href="#">Comprar tickets</a></div>abel="Zoo"><span><strong>41.00$</strong></span></div>
 											<div class="table__cell" data-label="Zoo &amp; Aquarium"><span><strong>50.00$</strong></span></div>
 										</div>
 										<div class="table__row">
-											<div class="table__cell" data-label="Ticket"><span><strong>Concession</strong></span></div>
-											<div class="table__cell" data-label="Details"><span>Students, apprentices, ALG I + II recipients, berlinpass</span></div>
+											<div class="table__cell" data-label="Tihttps://book.timify.com/availability?accountId=608b302a894a1050f89e8a62&fullscreen=1&hideCloseButton=1&locale=es-cle__cell" data-label="De5ails"><span>Students, apprentices, ALG I + II recipients, berlinpass</span></div>
 											<div class="table__cell" data-label="Zoo"><span><strong>10.50$</strong></span></div>
 											<div class="table__cell" data-label="Zoo &amp; Aquarium"><span><strong>15.00$</strong></span></div>
 										</div>
@@ -1112,7 +947,8 @@
 										</div>
 										<div class="pricing-item__subject">Estudiantes </div>
 										<div class="pricing-item__price"><span>$</span><span>2.000</span></div>
-										<div class="pricing-item__lower" id='product-component-1626385351192'></div>
+										<div class="pricing-item__lower"></div>
+                    <div id='product-component-1626743496156'></div>
 									</div>
 									
 									
@@ -1128,7 +964,11 @@
 										</div>
 										<div class="pricing-item__subject">Personas Mayores</div>
 										<div class="pricing-item__price"><span>$</span><span>2.000</span></div>
-										<div class="pricing-item__lower"  id='product-component-1626229447475' ></div>
+										<div class="pricing-item__lower" id='product-component-1626746060012' >
+            
+            <div id='product-component-1626746060012'></div>          
+                    </div>
+
 									</div>
 									
 								</div>
@@ -1156,7 +996,9 @@
 										</div>
 										<div class="pricing-item__subject">Entrada General</div>
 										<div class="pricing-item__price"><span>$</span><span>4.000</span></div>
-										<div class="pricing-item__lower"  id='product-component-1626229604649'></div>
+										<div class="pricing-item__lower" ></div>
+                    <div id='product-component-1626745886668'></div>
+
 									</div>
 									
 								</div>
