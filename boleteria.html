@@ -39,494 +39,6 @@
 		</script>
 
 
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'senoritamaria.myshopify.com',
-      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6695480656081',
-        node: document.getElementById('product-component-1626743496156'),
-        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Comprar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px"
-      }
-    },
-    "text": {
-      "title": "Carrito de compras",
-      "total": "Subtotal",
-      "empty": "Tu carro esta vacío",
-      "notice": "",
-      "button": "Ir a pagar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Roboto, sans-serif",
-        "background-color": "#2eb872",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        ":focus": {
-          "background-color": "#29a667"
-        }
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-
-
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'senoritamaria.myshopify.com',
-      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6695470858449',
-        node: document.getElementById('product-component-1626745886668'),
-        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Comprar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px"
-      }
-    },
-    "text": {
-      "title": "Carrito de compras",
-      "total": "Subtotal",
-      "empty": "Tu carro esta vacío",
-      "notice": "",
-      "button": "Ir a pagar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Roboto, sans-serif",
-        "background-color": "#2eb872",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        ":focus": {
-          "background-color": "#29a667"
-        }
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-
-
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'senoritamaria.myshopify.com',
-      storefrontAccessToken: 'bb1592289a5041bfc04824b77611fc27',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6695479640273',
-        node: document.getElementById('product-component-1626746060012'),
-        moneyFormat: '%24%7B%7Bamount_no_decimals%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Comprar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px",
-        "padding-left": "54px",
-        "padding-right": "54px"
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Roboto, sans-serif",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        "background-color": "#2eb872",
-        ":focus": {
-          "background-color": "#29a667"
-        },
-        "border-radius": "40px"
-      }
-    },
-    "text": {
-      "title": "Carrito de compras",
-      "total": "Subtotal",
-      "empty": "Tu carro esta vacío",
-      "notice": "",
-      "button": "Ir a pagar"
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Roboto, sans-serif",
-        "background-color": "#2eb872",
-        ":hover": {
-          "background-color": "#29a667"
-        },
-        ":focus": {
-          "background-color": "#29a667"
-        }
-      }
-    },
-    "googleFonts": [
-      "Roboto"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-
 	</head>
 		<body>
 		<div class="page-wrapper">
@@ -544,37 +56,34 @@
 							<svg class="icon">
 								<use xlink:href="como-llegar.html"></use>
 							</svg></span></div>
-					<div class="screen__item screen--trigger" data-category="elements"><span>Servicios</span><span>
+					<!--<div class="screen__item screen--trigger" data-category="elements"><span>Servicios</span><span>
 							<svg class="icon">
 								<use xlink:href="#chevron"></use>
-							</svg></span></div>
+							</svg></span></div>-->
 
-						<div class="screen__item screen--trigger" data-category="elements"><span>Boletería</span><span>
-							<svg class="icon">
-								<use xlink:href="boleteria.html"></use>
-							</svg></span></div>
-						<div class="screen__item screen--trigger" data-category="language"><span>El Parque</span><span>
+						<!--<div class="screen__item screen--trigger" data-category="language"><span>El Parque</span><span>
 							<svg class="icon">
 								<use xlink:href="#chevron"></use>
 							</svg></span></div>
-						<div class="screen__item screen--trigger" data-category="pages"><span>Membresía</span><span>
+					   <div class="screen__item screen--trigger" data-category="pages"><span>Membresía</span><span>
 							<svg class="icon">
 								<use xlink:href="#chevron"></use>
-							</svg></span></div>	
+							</svg></span></div>
 						<div class="screen__item screen--trigger" data-category="pages"><span>Noticias</span><span>
 							<svg class="icon">
 								<use xlink:href="#chevron"></use>
-							</svg></span></div>	
+							</svg></span></div> -->
 						<div class="screen__item screen--trigger" data-category="pages"><span>Contacto</span><span>
 							<svg class="icon">
 								<use xlink:href="#chevron"></use>
 							</svg></span></div>	
 						<ul class="screen__socials">
-							<li><a class="item--facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a class="item--twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a class="item--youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-							<li><a class="item--instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						</ul><a class="screen__button" href="boleteria.html">Boletería</a>
+							<li><a class="item--facebook" href="https://web.facebook.com/ParqueLota/?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<!--<li><a class="item--twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a class="item--youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
+							<li><a class="item--instagram" href="https://www.instagram.com/parquelota/?hl=es"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						</ul>
+            <a class="screen__button" href="https://circuito-turistico-patrimonial.myshopify.com/?key=a2881ff04e6ccddc8cb3d952acaf57ab922fb1bc8b13cf9639bf83b7f38ac28f">Boletería</a>
 					</div>
 				</div>
 				<div class="menu-dropdown__inner" data-value="home">
@@ -589,36 +98,22 @@
 						
 					</div>
 				</div>
-				<div class="menu-dropdown__inner" data-value="pages">
-					<div class="screen screen--sub">
-						<div class="screen__heading">
-							<h6 class="screen__back">
-								<svg class="icon">
-									<use xlink:href="#chevron-left"></use>
-								</svg> <span>Conócenos</span>
-							</h6>
-						</div>
-						<div class="screen__item"><a class="screen__link" href="historia.html">Historia</a></div>
-						<div class="screen__item"><a class="screen__link" href="equipo.html">Equipo</a></div>
-						<div class="screen__item"><a class="screen__link" href="procultura.html">Procultura</a></div>
-					
-					</div>
-				</div>
+				
 				<div class="menu-dropdown__inner" data-value="shop">
 					<div class="screen screen--sub">
 						<div class="screen__heading">
 							<h6 class="screen__back">
 								<svg class="icon">
-									<use xlink:href="como-llegar.html#comollegar"></use>
+									<use xlink:href="como-llegar.html"></use>
 								</svg> <span>Visítanos</span>
 							</h6>
 						</div>
-						<div class="screen__item"><a class="screen__link"  href="como-llegar.html#comollegar">Mapa del Parque</a></div>
-						<div class="screen__item"><a class="screen__link" href="como-llegar.html#comollegar">Cómo llegar</a></div>
-						<div class="screen__item"><a class="screen__link"  href="como-llegar.html#comollegar">Reglamento del visitante</a></div>
+					
+						<div class="screen__item"><a class="screen__link" href="como-llegar.html">Cómo llegar</a></div>
+						<div class="screen__item"><a class="screen__link"  href="como-llegar.html#reglamento">Reglamento del visitante</a></div>
 					</div>
 				</div>
-				<div class="menu-dropdown__inner" data-value="elements">
+				<!--<div class="menu-dropdown__inner" data-value="elements">
 					<div class="screen screen--sub">
 						<div class="screen__heading">
 							<h6 class="screen__back">
@@ -633,9 +128,9 @@
 						<div class="screen__item"><a class="screen__link" href="auspicio.html">Auspicio</a></div>
 						<div class="screen__item"><a class="screen__link" href="practica.html">Realiza tu práctica</a></div>
 					</div>
-				</div>
+				</div>-->
 				
-				<div class="menu-dropdown__inner" data-value="elements">
+				<!--<div class="menu-dropdown__inner" data-value="elements">
 					<div class="screen screen--sub">
 						<div class="screen__heading">
 							<h6 class="screen__back">
@@ -686,7 +181,7 @@
 						<div class="screen__item"><a class="screen__link" href="noticia5.html">Restauración Casa Jacarandá</a></div>
 						<div class="screen__item"><a class="screen__link" href="noticia6.html">Liberación Fauna Silvestre</a></div>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="menu-dropdown__inner" data-value="elements">
 					<div class="screen screen--sub">
@@ -694,11 +189,10 @@
 							<h6 class="screen__back">
 								<svg class="icon">
 									<use xlink:href="#chevron-left"></use>
-								</svg> <span>Contacto</span>
+								</svg> <span>Boletería</span>
 							</h6>
 						</div>
-						<div class="screen__item"><a class="screen__link" href="formulario.html">Formulario</a></div>
-						<div class="screen__item"><a class="screen__link" href="formulario.html">Trabaja con nosotros</a></div>
+						<div class="screen__item"><a class="screen__link" href="https://circuito-turistico-patrimonial.myshopify.com/?key=a2881ff04e6ccddc8cb3d952acaf57ab922fb1bc8b13cf9639bf83b7f38ac28f">Comprar entradas</a></div>
 
 					</div>
 				</div>
@@ -715,24 +209,24 @@
 								<ul class="lang-select">
 									<li class="lang-select__item lang-select__item--active"><span>Español</span>
 										<ul class="lang-select__sub-list">
-											<li><a href="#">English</a></li>
+											<li><a href="index.html">English</a></li>
 										</ul>
 									</li>
 								</ul>
 								<!-- lang select end-->
-								<div class="header__phones d-none d-xl-block">Llámanos: <a href="tel:+31859644725">+56 85 964 47 25</a> <a href="tel:+31657926311">+41 65 792 87</a></div>
+								<div class="header__phones d-none d-xl-block">Llámanos: <a href="tel:412871022">(41) 287 1022</a></div>
 							</div>
 							<div class="header__lower-inner d-none d-xl-block">
 								<ul class="header__socials">
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="https://web.facebook.com/ParqueLota/?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<!--<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
+									<li><a href="https://www.instagram.com/parquelota/?hl=es"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
 							<div class="header__lower-inner">
 								<ul class="lower-menu">
-									<li class="lower-menu__item"><a class="lower-menu__link" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+									<li class="lower-menu__item"><a class="lower-menu__link" href="index.html">Preguntas Frecuentes</a></li>
 									
 								</ul>
 							</div>
@@ -755,31 +249,31 @@
 									</ul>
 									<!-- sub menu end-->
 								</li>
-								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Visítanos</span></a>
+								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="como-llegar.html"><span>Visítanos</span></a>
 									<!-- sub menu start-->
 									<ul class="main-menu__sub-list">
-										<li><a href="como-lls"><span>Mapa del Parque</span></a></li>
-										<li><a href="como-llegar.html#comollegar"><span>Cómo llegar</span></a></li>
+										
+										<li><a href="como-llegar.html"><span>Cómo llegar</span></a></li>
 										<li><a href="como-llegar.html#reglamento"><span>Reglamento interno visitante</span></a></li>
 									</ul>
 									<!-- sub menu end-->
 								</li>
 								
-								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Servicios</span></a>
-									<!-- sub menu start-->
+								<!--<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Servicios</span></a>
+									
 									<ul class="main-menu__sub-list sub-list--style-2">
 										<li><a href="eventos.html"><span>Eventos</span></a></li>
 										<li><a href="tours_especiales.html"><span>Tours Especiales</span></a></li>
 										<li><a href="audioguia.html"><span>Audio Guía</span></a></li>
 										<li><a href="practica.html"><span>Realiza tu práctica</span></a></li>
 									</ul>
-									<!-- sub menu end-->
-								</li>
+									
+								</li>-->
 
 			
 
-								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>El&nbspParque</span></a>
-									<!-- sub menu start-->
+								<!-- <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>El Parque</span></a>
+									 
 									<ul class="main-menu__sub-list">
 										<li><a href="mapa_interactivo.html"><span>Mapa interactivo</span></a></li>
 										<li><a href="flora.html"><span>Flora</span></a></li>
@@ -788,11 +282,11 @@
 										<li><a href="edificaciones.html"><span>Edificaciones</span></a></li>
 										<li><a href="multimedia.html"><span>Multimedia</span></a></li>
 									</ul>
-									<!-- sub menu end-->
-								</li>
+									
+								</li> 
 
 								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Membresía</span></a>
-									<!-- sub menu start-->
+									
 									<ul class="main-menu__sub-list sub-list--style-2">
 										<li><a href="familia_minera.html"><span>Familia Minera</span></a></li>
 										<li><a href="personas_mayores.html"><span>Personas Mayores</span></a></li>
@@ -800,11 +294,11 @@
 										<li><a href="estudiantes.html"><span>Estudiantes</span></a></li>
 										<li><a href="tour_operadores.html"><span>Tour Operadores</span></a></li>
 									</ul>
-									<!-- sub menu end-->
+									
 								</li>
 
 								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Noticias</span></a>
-									<!-- sub menu start-->
+									
 									<ul class="main-menu__sub-list sub-list--style-2">
 										<li><a href="noticia1.html"><span> Juan Grimm | Paisajista</span></a></li>
 										<li><a href="noticia2.html"><span>Luis Montes | Restaurador de las esculturas</span></a></li>
@@ -813,7 +307,7 @@
 										<li><a href="noticia5.html"><span>Restauración Casa Jacarandá</span></a></li>
 										<li><a href="noticia6.html"><span>Liberación Fauna Silvestre</span></a></li>
 									</ul>
-									<!-- sub menu end-->
+									-->
 								</li>
 
 								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Contacto</span></a>
@@ -828,7 +322,7 @@
 
 							
 							</ul>
-							<!-- main menu end--><a class="header__button" href="boleteria.html">Boletería</a>
+							<!-- main menu end--><a class="header__button" href="https://circuito-turistico-patrimonial.myshopify.com/?key=a2881ff04e6ccddc8cb3d952acaf57ab922fb1bc8b13cf9639bf83b7f38ac28f">Boletería</a>
 							<!-- menu-trigger start-->
 							<div class="hamburger">
 								<div class="hamburger-box">
